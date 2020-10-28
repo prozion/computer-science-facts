@@ -1,0 +1,89 @@
+applications
+	archivators
+		RAR start:1993 designer:Eugene_Roshal
+	browsers history-knowledge:`computer_science/browsers.tree`
+		Netscape_Navigator start:12.1994 company:Netscape
+		Opera start:04.1995 company:Opera_Software
+		Internet_Explorer start:08.1995 company:Microsoft
+		Chrome start:2008 company:Google
+		Firefox start:2002 company:Mozilla_Foundation
+	code_editors
+		TECO start:1962 designer:Dan_Murphy
+		QED start:1966 designer:Butler_Lampson,Peter_Deutsch from:<?>
+		ed start:1971 designer:Ken_Thompson from:QED
+		sed start:1974 designer:Lee_McMahon from:ed	
+		vi start:1976 designer:Bill_Joy written-in:C from:<?>	
+		Emacs start:1976 designer:Richard_Stallman,Guy_Steele	
+		PSPad start:03.2001 designer:Jan_Fiala
+		Notepad++ start:11.2003 designer:Don_Ho
+		Atom start:02.2014 company:GitHub_Inc
+	code_repositories
+		Bitbucket
+		Github company:Microsoft
+		Gitlab
+	computer_algebra_systems
+		FORMAC start:196x designer:Jean_Sammet
+		Mathcad start:1986 company:Mathsoft
+		SciLab start:1990 research-center:INRIA,ENPC
+	cloud_repositories
+		Azure company:Microsoft
+		EC2 alt-id:Amazon,AWS company:Amazon
+		GAE deabbr:"Google App Engine" company:Google
+	database_management_systems
+		Access start:1992 company:Microsoft
+		HeidiSQL start:04.2006 designer:Ansgar_Becker
+		MySQL start:1995 org:MySQL_AB:1995-2008,Sun:2008-2009,Oracle designer:David_Axmark,Michael_Widenius
+		PhpMyAdmin start:09.1998 group:The_phpMyAdmin_Project designer:Tobias_Ratschiller
+	file_managers
+		Norton_Commander start:1986 designer:John_Socha
+		Volkov_Commander start:1992 designer:Vsevolod_Volkov
+		Midnight_Commander start:1994 designer:Miguel_de_Icaza
+		Far_Manager start:1996 deabbr:"File and archive manager" designer:Eugene_Roshal
+		Total_Commander start:1993 designer:Christian_Ghisler previous-name:Windows_Commander
+	graph_editors
+		Graphviz start:1991 company:AT&T_Labs_Research
+		SocNetV
+	ide
+		Microsoft_Visual_Studio start:1997 company:Microsoft
+		NetBeans start:1996 company:Apache_Software_Foundation,Oracle_Corporation
+		Eclipse start:11.2001 company:Eclipse_Foundation
+		WebStorm start:2010 company:JetBrains
+	issue_trackers
+		Redmine
+		YouTrack company:JetBrains type:"issue tracker"
+		Waffle.io d:"track GitHub issues"
+	messengers
+	 	Skype dev:Priit_Kasesalu,Jaan_Tallinn org:Skype_Technologies
+		Telegram start:14.08.2013 dev:Pavel_Durov,Nikolai_Durov org:Telegram_FZ_LLC,Telegram_Messenger_Inc knowledge:`telegram/**` protocol:MTProto invested-by:Digital_Fortress
+		Zoom org:Zoom_Video_Communications url:zoom.us
+	note_takers
+		Google_Keep
+		Evernote
+	ontology_editors
+		Protege start:1999 uni:UStanford,UManchester
+	project_management_systems
+		Asana
+		Basecamp
+		ClickUp company:Mango_Technologies
+		Jira
+		Trello start:2011 company:Fog_Creek_Software
+	project_communication
+		Slack
+	runtime_environments
+		Node.js
+	spreadsheets
+		Airtable start:2012 company:Airtable_company
+	software_frameworks
+		.NET company:Microsoft
+	task_managers
+		Teamwork d:"task manager"
+		TickTick
+		Todoist
+	timers
+		ClearFocus
+	time_trackers
+		Toggl company:Toggl_OU
+	web_application_frameworks
+		ASP.NET company:Microsoft
+		Zend_Framework alt-id:Zend company:Zend_Technologies released:2006
+;		

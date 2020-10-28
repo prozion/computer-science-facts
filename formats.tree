@@ -1,0 +1,33 @@
+; formats or descriptive languages
+graphics
+	SVG year:2001 group:W3C deabbr:"Scalable Vector Graphics" from:XML
+	Canvas
+graphics_3d
+	VRML year:1994 designer:Dave_Raggett
+	3DMLW year:200x deabbr:"3D Markup Language for Web" company:3D_Technologies_R&D from:XML
+text_document
+	GML-1969 year:1969 designer:Charles_Goldfarb,Edward_Mosher,Raymond_Lorie company:IBM from:<unique>
+	SGML year:1969 group:ISO from:GML-1969
+	HTML year:1993 group:W3C,WHATWG from:SGML
+	Interpress year:197x company:Xerox_PARC from:Forth_concept
+	PostScript year:1982 designer:John_Warnock from:Interpress		
+tree_structure
+	XML year:1997 name:"Extensible Markup Language (XML)" organization:W3C from:SGML
+data_serialization
+	JSON year:2001 deabbr:"JavaScript Object Notation" designer:Douglas_Crockford company:State_Software from:JavaScript
+	YAML year:2001 deabbr:"YAML Ain't Markup Language" designer:Clark_Evans,Ingy_dot_Net,Oren_Ben-Kiki from:JSON
+	CSON year:2011 deabbr:"CoffeeScript Object Notation" company:Bevry from:JSON,CoffeeScript
+geography
+	GeoJSON year:2007 from:JSON
+	KML deabbr:"Keyhole Markup Language"
+graph_description
+	GraphML organization:Graph_Drawing native-app:Graphlet
+	GraphViz
+	Adjacency
+	EdgeList
+	Pajek
+	UCINET
+	GML year:2010  deabbr:"Graph Modelling Language" designer:Michael_Himsolt uni:UPassau
+	TGF deabbr:"Trivial Graph Format"
+	DOT native-app:Graphviz
+	TabTree year:2018 designer:Denis_Shirshov from:Racket,YAML,Emacs_Org_Mode

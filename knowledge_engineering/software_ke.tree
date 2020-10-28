@@ -1,0 +1,66 @@
+software keys-order:deabbr,developer,company,uni,released,start,built-with,implements,language-from,plugin-for,type,d
+	A.k.a_software company:The_Synercon_Group type:ontology_editor
+	Anzo_for_Excel company:Cambridge_Semantics type:ontology_editor
+	Be_Informed_Suite type:ontology_editor
+	Chimaera uni:UStanford type:ontology_editor
+	CAKE deabbr:"Computer Aided Knowledge Engineering"
+	CmapTools company:IHMC built-with:Java type:ontology_editor
+	DENDRAL developer:Edward_Feigenbaum
+	DOGMA type:ontology_editor
+	DogmaModeler type:ontology_editor
+	Dot15926_Editor built-with:Python type:ontology_editor
+	EMFText_OWL2_Manchester_Editor built-with:Eclipse type:ontology_editor
+	Enterprise_Architect company:Sparx_Systems type:ontology_editor
+	Ergo company:Coherent_Knowledge extends:Flora-2
+	Flora-2 language-from:F-Logic,HiLog,Transaction_logic d:"Open source semantic rule-based system for knowledge representation and reasoning"
+	Fluent_Editor type:ontology_editor
+	HOZO company:UOsaka,Enegate_Co built-with:Java type:ontology_editor
+	JOE deabbr:"Java Ontology Editor" type:ontology_editor
+	KAON company:FZI/AIFB type:ontology_editor
+	Karma type:nonrdf->rdf
+	KMgen type:ontology_editor
+	Knoodl company:Revelytix_Inc type:ontology_editor
+	Linked_Pipes_ETL type:nonrdf->rdf
+	Menthor_Editor type:ontology_editor
+	Model_Futures_IDEAS_Addin plugin-for:Enterprise_Architect type:ontology_editor
+	Model_Futures_OWL_Editor type:ontology_editor
+	MYCIN start:197x type:expert_system lang:Lisp developer:Edward_Shortliffe,Bruce_Buchanan,Stanley_Cohen
+	MyWeb built-with:Java type:ontology_editor
+	Neologism built-with:Drupal type:ontology_editor
+	NeOn_Toolkit company:NeOn_Project built-with:Eclipse type:ontology_editor
+	OBIS type:ontology_editor
+	OBO-Edit built-with:Java type:ontology_editor url:oboedit.org developer:BBOP
+	ODE deabbr:"Ontology-based software Development Environment" start:2003 uni:FUES type:ontology_editor
+	OilEd type:ontology_editor
+	OntoClean type:ontology_editor
+	OntoEdit type:ontology_editor
+	Onto_Studio company:Semafora_Systems built-with:Eclipse implements:Object_Logic type:ontology_editor
+	Ontolingua company:UStanford type:ontology_editor
+	ONTOLIS type:ontology_editor
+	OntoSaurus
+	OSF deabbr:"Open Semantic Framework" type:ontology_editor
+	OWLGrEd type:ontology_editor d:"Graphical ontology editor"
+	PoolParty_Thesaurus_Server company:Semantic_Web_Company type:ontology_editor
+	PROMPT plugin-for:Protege
+	Protege company:UManchester,UStanford built-with:Java type:ontology_editor
+	RML-Mapper type:nonrdf->rdf
+	SAPPHIRE deabbr:"Situational Awareness and Preparedness for Public Health Incidences and Reasoning Engines" developer:Parsa_Mirhaji company:UTexas released:2004 type:health_information_system
+	ScholOnto type:ontology_editor
+	Semantic_Turkey company:URome,URome2 built-with:Java,Firefox type:ontology_editor
+	Semaphore_Ontology_Manager company:Smartlogic type:ontology_editor
+	SETLr type:nonrdf->rdf
+	Sigma_Knowledge_Engineering_Environment type:ontology_editor
+	SPARQL-Generate type:nonrdf->rdf
+	SWCLOS deabbr:"Semantic WEb processor for OWL based on CLOS" lang:Common_Lisp lang-impl:Allegro_CL url:www-kasm.nii.ac.jp/~koide/SWCLOS2-en.htm github:github.com/SeijiKoide/SWCLOS
+	Swoop company:UMaryland built-with:Java type:ontology_editor
+	Synaptica company:Synaptica_LLC type:ontology_editor
+	Tarql type:nonrdf->rdf
+	Thesaurus_Master type:ontology_editor
+	TODE built-with:DOTNET type:ontology_editor
+	TopBraid_Composer company:TopQuadrant built-with:Eclipse type:ontology_editor
+	Transinsight type:ontology_editor
+	TwoUse_Toolkit built-with:Eclipse type:ontology_editor
+	VocBench company:URome2,FAO type:ontology_editor
+	WebODE company:TUMadrid type:ontology_editor
+	WebOnto type:ontology_editor
+	ВИКОНТ deabbr:"ВИзуальный Конструктор ОНТологий"

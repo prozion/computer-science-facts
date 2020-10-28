@@ -1,0 +1,34 @@
+operating_system
+	Android
+		Android_1.0 released:09.2008
+		Android_1.1 alt-id:Petit_Four released:02.2009
+		Android_1.5 alt-id:Cupcake released:04.2009
+		Android_1.6 alt-id:Donut released:09.2009
+		Android_2.0 alt-id:Eclair released:10.2009
+		Android_2.2 alt-id:Froyo released:05.2010
+		Android_2.3 alt-id:Gingerbread released:12.2010
+		Android_3.0 alt-id:Honeycomb released:02.2011
+		Android_4.0 alt-id:Ice_Cream_Sandwich released:10.2011
+		Android_4.1 alt-id:Jelly_Bean released:07.2012
+		Android_4.4 alt-id:KitKat released:10.2013
+		Android_5.0 alt-id:Lollipop released:11.2014
+		Android_6.0 alt-id:Marshmallow released:10.2015
+		Android_7.0 alt-id:Nougat released:08.2016
+		Android_8.0 alt-id:Oreo released:08.2017
+		Android_9.0 alt-id:Pie released:08.2018
+	iOS
+	CTSS year:1961 uni:MIT
+	Fuchsia company:Google release:2016 system-language:Dart
+	Windows
+		Windows_95
+		Windows_98
+		Windows_Me
+		Windows_XP
+		Windows_Vista
+		Windows_7
+		Windows_8
+		Windows_10
+	Linux
+	Android
+	MacOS
+	Solaris
