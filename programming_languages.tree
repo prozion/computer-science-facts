@@ -114,7 +114,7 @@ programming_language
 	JOSS-II year:1966 designer:Chuck_Baker company:RAND_Corporation from:JOSS-I
 	ALGOL_W year:1966 designer:Niklaus_Wirth,Tony_Hoare from:ALGOL_60
 	FORTRAN_66 year:1966 from:FORTRAN-IV
-	ISWIM_concept year:1966 designer:Peter_Landin from:LISP
+	ISWIM year:1966 designer:Peter_Landin from:LISP
 	CORAL66 year:1966 company:RRE from:ALGOL_60
 	APL	year:1966 designer:Kenneth_Iverson from:APL_concept	
 	EXEC year:1966 company:CMS_EXEC from-os:CTSS 
@@ -162,8 +162,9 @@ programming_language
 	INTERCAL year:1972 designer:Don_Woods,James_Lyon from:<unique>
 	Prolog year:1972 designer:Alain_Colmerauer from:W-Grammar
 	SQL year:1972 company:IBM from:ALPHA,Quel
+	SASL year:1972 designer:David_Turner uni:UStAnd from:ISWIM
 	COMAL year:1973 designer:Borge_Christensen,Benedict_Lofstedt from:Pascal,BASIC
-	ML year:1973 designer:Robin Milner from:ISWIM_concept
+	ML year:1973 designer:Robin_Milner from:ISWIM
 	LIS year:1973 designer:Jean_Ichbiah company:Bull_SAS from:Pascal,Sue
 	COBOL-74 year:1973 from:COBOL-68
 	Speakeasy-3 year:1973 designer:Stanley_Cohen,Steven_Pieper company:ANL from:Speakeasy-2
@@ -198,6 +199,7 @@ programming_language
 	Yellow-SRI year:1977 designer:Jay_Spitzen company:SRI_International from:ALGOL_68
 	Euclid year:1977 designer:Butler_Lampson,Ric_Holt,James_Cordy company:Xerox_PARC uni:UToronto from:ALGOL_68
 	Applesoft_BASIC year:1977 designer:Marc_McDonald,Ric_Weiland from:BASIC
+	NPL year:1977 designer:Rod_Burstall,John_Darlington
 	RAPT year:1978 designer:Pat_Ambler,Robin_Popplestone from:APT
 	C_shell year:1978 abbr:"csh" designer:Bill_Joy from:C
 	RPG-III year:1978 company:IBM from:FARGO,RPG,RPG-II
@@ -212,9 +214,11 @@ programming_language
 	AWK year:1979 designer:Alfred_Aho,Peter_Weinberger,Brian_Kernighan from:C,SNOBOL
 	Icon year:1979 designer:Ralph_Griswold from:Icon_concept
 	dBase year:1979 designer:Wayne_Ratliff from:<unique>
+	KRC deabbr:"Kent Recursive Calculator" year:1979 designer:David_Turner
 	EXEC_2 year:197x company:CMS_EXEC from:EXEC
 	MBASIC year:197x company:Microsoft from:Altair_BASIC
 	NIL year:197x uni:MIT from:Maclisp
+	Hope year:197x uni:UEdinburgh from:NPL
 	;; 1980s
 	MicroProlog year:1980 designer:Frank_McCabe,Richard_Ennals research-center:ICLondon from:Prolog
 	Ada_80 year:1980 designer:Jean_Ichbiah company:Bull_SAS from:Green
@@ -248,6 +252,7 @@ programming_language
 	Standard_ML year:1984 from:ML
 	Redcode year:1984 designer:Alexander_Dewdney,Douglas_Jones 
 	OPL year:1984 company:Psion from:BASIC
+	Orwell year:1984 uni:UOxford designer:Martin_Raskovsky,Philip_Wadler from:Miranda
 	PARADOX year:1985 company:Borland from:dBase
 	QuickBASIC year:1985 company:Microsoft from:BASIC
 	COBOL-85 year:1985 from:COBOL-74		
@@ -260,7 +265,7 @@ programming_language
 	GFA_BASIC year:1986 designer:Frank_Ostrowski from:BASIC
 	Informix-4GL year:1986 company:Informix 
 	LabVIEW year:1986 company:National_Instruments 
-	Miranda year:1986 designer:David_Turner uni:UKent 
+	Miranda year:1986 designer:David_Turner uni:UKent from:KRC,ML,SASL,Hope
 	Object_Pascal year:1986 company:Apple from:Pascal
 	PROMAL year:1986 deabbr:"PROgrammer's Microapplication Language" company:Systems_Management_Associates from:C
 	Erlang year:1986 designer:Joe_Armstrong company:Ericsson from:Prolog
@@ -273,7 +278,7 @@ programming_language
 	Oberon year:1987 designer:Niklaus_Wirth from:Modula-2
 	Mathematica year:1987 company:Wolfram_Research from:<unique>
 	Turbo_Basic year:1987 designer:Robert_Zale from:BASIC/Z
-	Clean year:1987 uni:UNijmegen from:<unique>
+	Clean year:1987 uni:UNijmegen from:Lean,Miranda,Haskell
 	XLISP year:1987 desigmer:David_Betz from:Lisp
 	RPG/400 year:1988 company:IBM from:FARGO,RPG,RPG-II,RPG-III
 	Octave year:1988 designer:John_Eaton from:MATLAB
@@ -295,6 +300,7 @@ programming_language
 	Magik year:1989 designer:Arthur_Chance company:Smallworld_Systems from:Smalltalk
 	rc year:1989 designer:Tom_Duff company:Bell_Labs from:Bourne_Shell
 	IgorPRO year:1989 company:WaveMetrics
+	Coq year:1989 company:Coq_development_team
 	XLISP year:198x designer:David_Betz from:Scheme
 	FALSE year:198x designer:Wouter_van_Oortmerssen from:Forth,TECO_language
 	; 1990s
@@ -372,6 +378,7 @@ programming_language
 	sdlBasic year:1998 designer:Neil_Hodgson from:AMOS_BASIC,wxBasic
 	Game_Maker_Language year:1999 designer:Mark_Overmars from:Game_Maker
 	Harbour year:1999 designer:Antonio_Linares from:dBase
+	ALF deabbr:"Another logical framework" year:199x uni:Chalmers
 	; 2000s
 	Join_Java year:2000 designer:Stewart_von_Itzstein from:Java
 	C# year:2000 designer:Anders_Hejlsberg organization:ECMA company:Microsoft from:C,C++,Java,Delphi,Modula-2
@@ -401,6 +408,7 @@ programming_language
 	FreeBASIC year:2004 designer:Andre_Victor from:QBasic
 	Groovy year:2004 designer:James_Strachan from:Java
 	Little_b year:2004 designer:Aneil_Mallavarapu from:Lisp
+	Epigram year:2004 designer:Conor_McBride from:ALF
 	Fantom year:2005 designer:Brian_Frank,Andy_Frank from:C#,Scala,Ruby,Erlang
 	F# year:2005 designer:Don_Syme research-center:Microsoft_Research from:OCaml,C#,Haskell
 	Haxe year:2005 designer:Nicolas_Cannasse from:ActionScript,OCaml,Java
@@ -447,6 +455,7 @@ programming_language
 	Produire year:2013 name:"プロデル" designer:Yuuto from:Visual_Basic,TTSneo
 	Hy year:2013 designer:Paul_Tagliamonte from:Lisp
 	ArnoldC year:2013 designer:Lauri_Hartikka type:esoteric
+	Lean_Microsoft year:2013 company:Microsoft
 	Crystal year:2014 designer:Ary_Borenszweig company:Manas_Technology_Solutions from:Ruby,C,Rust,Go,C#,Python
 	Hack year:2014 company:Facebook from:PHP
 	Swift year:2014 company:Apple from:Objective-C,Rust,Haskell,Ruby,Python,C#,CLU
