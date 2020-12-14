@@ -8,7 +8,7 @@ hardware
 		EDSAC year:1950 uni:UCambridge
 		Whirlwind_I year:1951 uni:MIT
 		ERA_ATLAS year:1950 company:US_Navy 
-			UNIVAC_1101 year:1951 designer:Seymour_Cray company:ERA
+		UNIVAC_1101 year:1951 from:ERA_ATLAS designer:Seymour_Cray company:ERA
 		IBM_701 year:1952 designer:Nathaniel_Rochester lang:Speedcoding company:IBM
 		UNIVAC_I year:1951 designer:Presper_Eckert company:Remington_Rand
 		UNIVAC_1103 year:1953 designer:Seymour_Cray company:ERA

@@ -456,6 +456,7 @@ programming_language
 	Hy year:2013 designer:Paul_Tagliamonte from:Lisp
 	ArnoldC year:2013 designer:Lauri_Hartikka type:esoteric
 	Lean_Microsoft year:2013 company:Microsoft
+	PureScript year:2013 designer:Phil_Freeman from:Haskell,JavaScript
 	Crystal year:2014 designer:Ary_Borenszweig company:Manas_Technology_Solutions from:Ruby,C,Rust,Go,C#,Python
 	Hack year:2014 company:Facebook from:PHP
 	Swift year:2014 company:Apple from:Objective-C,Rust,Haskell,Ruby,Python,C#,CLU

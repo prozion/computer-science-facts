@@ -21,6 +21,9 @@ applications
 		Bitbucket
 		Github company:Microsoft
 		Gitlab
+	compilers
+		GNU_GCC
+		Watcom_C
 	computer_algebra_systems
 		FORMAC start:196x designer:Jean_Sammet
 		Mathcad start:1986 company:Mathsoft

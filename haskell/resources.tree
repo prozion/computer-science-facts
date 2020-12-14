@@ -1,0 +1,14 @@
+resources
+	Hackage start:01.2007 url:hackage.haskell.org d:"Haskell community's central package archive of open source software"
+	Haskell_Wiki url:wiki.haskell.org
+	ide
+		Leksah url:leksah.org
+	moocs
+		Функциональное_программирование_на_языке_Haskell year:2015 url:stepik.org/lesson/7859
+		UPenn_CIS_194 year:2016 url:seas.upenn.edu/~cis194/fall16
+	references
+		Devdocs url:devdocs.io/haskell~8
+		Hoogle url:hoogle.haskell.org
+		Zvon url:zvon.org/other/haskell/Outputglobal
+	standards
+		Haskell_2010 url:haskell.org/onlinereport/haskell2010

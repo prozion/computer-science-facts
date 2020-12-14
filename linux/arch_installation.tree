@@ -1,0 +1,59 @@
+_import file:aliases.tree,sources.tree
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+arch_installation
+	make_partitions
+		list_partitions cmd:`fdisk -l`,`lsblk`
+		edit_partitions cmd:`fdisk` d:"make gpt partitions with g command"
+			make_boot_partition-full type:efi/fat32 size:512M add-option:bootable
+			make_swap_partition-full type:linux/swap size:~1G
+			make_root_partition-full type:ext4
+		format_partitions
+			format_boot_partition-full cmd:`mkfs.vfat /dev/sda1`
+			format_swap_partition-full cmd:`mkswap /dev/sda2`
+			format_root_partition-full cmd:`mkfs.ext4 /dev/sda1`
+	mount_partitions
+		create_mounting_point cmd:`mkdir /mnt/boot`
+		mount_bootable_partition-full cmd:`mount /dev/sda1 /mnt/boot/`
+		make_fstab cmd:`genfstab -U /mnt >> /mnt/etc/fstab`
+	install_linux
+		download_kernel cmd:`pacstrap /mnt linux`
+		download_base_packages cmd:`pacstrap /mnt base linux-firmware`
+	install_bootloader
+		create_grub_dir cmd:`mkdir /mnt/boot/grub`
+		write_grub cmd:`grub-install --target={pc_arc}-efi --efi-directory=/mnt/boot/ --root-directory=/mnt`
+		change_root cmd:`arch-chroot /mnt`
+		install_grub install:grub,efibootmgr optional-install:os-prober
+		write_configuration cmd:`grub-mkconfig > /mnt/boot/grub/grub.cfg`
+	setup_users_1
+		set_root_password cmd:`passwd`
+	network_setup_1
+		install_dhcpcd install:dhcpcd
+	reboot cmd:`reboot`
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	network_setup_2
+		list_network_interfaces cmd:`ip address`
+		setup_ethernet_peripheral cmd:`ip link set up enp0s3`
+		start_DHCP_client cmd:`systemctl start dhcpcd.service` autorun:`echo 'systemctl start dhcpcd.service' >> /etc/profile`
+	install_base_packages install:symlinks,vim
+	setup_users_2
+		install_sudo install:sudo
+		make_link cmd:`ln -s /bin/vim /bin/vi`
+		check_groups cmd:`less /etc/group`
+		add_group cmd:`groupadd`
+		add_user cmd:`useradd -g {groupname} {username}`
+		add_user_password cmd:`passwd {user}`
+		edit_sudoers file:etc/sudoers cmd:`visudo` code:`%{groupname} ALL=(ALL) ALL`
+	handy_things
+		bashrc file:`{home}/.bashrc` code:`alias vi=vim`
+	;;;;;;;;;;;;;;;;; X ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	setup_x_server
+		install_xorg install:xorg options:default
+		install_x install:xorg-xinit,xorg-twm,xorg-xclock,xterm
+		install_virtuabox_utils applied-to:VirtualBox install:virtualbox-guest-utils,xf86-video-fbdev
+		edit_xinitrc path:`~/.xinitrc`
+		run_x_server cmd:`xinit`
+	setup_x_window_manager
+		xfce
+			
+	
+		

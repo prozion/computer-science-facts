@@ -1,0 +1,4 @@
+references use-as:ref
+	FD_tg_chat d:"Telegram chat for people who study Haskell following Fullstack Development program"
+libs
+	Http_client url:github.com/snoyberg/http-client ref:FD_tg_chat

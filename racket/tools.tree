@@ -1,0 +1,3 @@
+tools
+	Rash github:github.com/willghatch/racket-rash doc:docs.racket-lang.org/rash d:"Linux shell"
+	Rwind github:github.com/Metaxal/rwind d:"X11 window manager"

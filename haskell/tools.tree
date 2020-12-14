@@ -1,0 +1,23 @@
+implementations
+  Hugs standard:Haskell_98 translator:interpreter end:<?> d:"had been used as a teaching platform"
+  GHC standard:Haskell_2010
+    Ghc translator:compiler
+      Ghc_6.8.2 start:2007
+      Ghc_6.10.1 start:11.2008
+      Ghc_6.12.3 start:06.2010
+      Ghc_7.0.1 start:11.2010
+      Ghc_7.10.3 start:12.2015
+      Ghc_8.0.1 start:05.2016
+      Ghc_8.4.1 start:03.2018 d:"last stable in Debian repo"
+      Ghc_8.10.1 start:03.2020
+      Ghc_8.8.4 start:07.2020
+      Ghc_8.10.2 start:08.2020
+    Ghci
+    Runghc d:"running Haskell programs as scripts, no compilation"
+package_systems
+  Cabal deabbr:"The Common Architecture for Building Applications and Libraries"
+  Stack
+standards
+  Haskell_1.x start:1990 versions:1.0-1.4
+  Haskell_98 start:02.1999
+  Haskell_2010 start:24.11.2009
