@@ -1,0 +1,158 @@
+/ d:"This is the root directory. This is where the whole tree starts"
+	bin d:"This directory contains executable programs which are needed in single user mode and to bring the system up or repair it"
+	boot d:"Contains static files for the boot loader. This directory holds only the files which are needed during the boot process.  The map installer and configuration files should go to /sbin and /etc.  The operating system kernel (initrd for example) must be located in either / or /boot"
+	efi d:"If the boot partition /boot/ is maintained separately from the EFI System Partition (ESP), the latter is mounted here. Tools that need to operate on the EFI system partition should look for it at this mount point first, and fall back to /boot/ — if the former doesn't qualify (for example if it is not a mount point or does not have the correct file system type MSDOS_SUPER_MAGIC)"
+	dev d:"Special or device files, which refer to physical devices" see:`man 1 mknod`
+		shm d:"Place for POSIX shared memory segments, as created via shm_open(3). This directory is flushed on boot, and is a 'tmpfs' file system. Since all users have write access to this directory, special care should be taken to avoid name clashes and vulnerabilities. For normal users, shared memory segments in this directory are usually deleted when the user logs out. Usually, it is a better idea to use memory mapped files in /run/ (for system programs) or $XDG_RUNTIME_DIR (for user programs) instead of POSIX shared memory segments, since these directories are not world-writable and hence not vulnerable to security-sensitive name clashes"
+	etc d:"Contains configuration files which are local to the machine. Some larger software packages, like X11, can have their own subdirectories below /etc. Site-wide configuration files may be placed here or in /usr/etc. Nevertheless, programs should always look for these files in /etc and you may have links for these files to /usr/etc"
+		opt d:"Host-specific configuration files for add-on applications installed in /opt"
+		sqml
+		skel d:"When a new user account is created, files from this directory are usually copied into the user's home directory"
+		X11 d:"Configuration files for the X11 window system" optional:<t>
+		xml
+	home d:"The location for normal user's home directories. Possibly shared with other systems, and never read-only. This directory should only be used for normal users, never for system users. This directory and possibly the directories contained within it might only become available or writable in late boot or even only after user authentication. This directory might be placed on limited-functionality network file systems, hence applications should not assume the full set of file API is available on this directory. Applications should generally not reference this directory directly, but via the per-user $HOME environment variable, or via the home directory field of the user database"
+		.cache d:"Persistent user cache data. User programs may place non-essential data in this directory. Flushing this directory should have no effect on operation of programs, except for increased runtimes necessary to rebuild these caches. If an application finds $XDG_CACHE_HOME set, it should use the directory specified in it instead of this directory"
+		.config d:"Application configuration and state. When a new user is created, this directory will be empty or not exist at all. Applications should fall back to defaults should their configuration or state in this directory be missing. If an application finds $XDG_CONFIG_HOME set, it should use the directory specified in it instead of this directory"
+		.local
+			bin d:"Executables that shall appear in the user's $PATH search path. It is recommended not to place executables in this directory that are not useful for invocation from a shell; these should be placed in a subdirectory of ~/.local/lib/ instead. Care should be taken when placing architecture-dependent binaries in this place, which might be problematic if the home directory is shared between multiple hosts with different architectures"
+			lib d:"Static, private vendor data that is compatible with all architectures"
+				<arch-id> d:"Location for placing public dynamic libraries. The architecture identifier to use is defined on Multiarch Architecture Specifiers (Tuples) list"
+			share d:"Resources shared between multiple packages, such as fonts or artwork. Usually, the precise location and format of files stored below this directory is subject to specifications that ensure interoperability. If an application finds $XDG_DATA_HOME set, it should use the directory specified in it instead of this directory"
+	lib d:"This directory should hold those shared libraries that are necessary to boot the system and to run the commands in the root filesystem"
+		modules d:"Loadable kernel modules" optional:<t>
+	lib64 d:"On some architecture ABIs, this compatibility symlink points to $libdir, ensuring that binaries referencing this legacy path correctly find their dynamic loader. This symlink only exists on architectures whose ABI places the dynamic loader in this path"
+	lost+found d:"This directory contains items lost in the filesystem. These items are usually chunks of files mangled as a consequence of a faulty disk or a system crash"
+	media d:"This directory contains mount points for removable media such as CD and DVD disks or USB sticks.  On systems where more than one device exists for mounting a certain type of media, mount directories can be created by appending a digit to the name of those available above starting with '0', but the unqualified name must also exist"
+		floppy
+		cdrom
+		cdrecorder
+		zip
+		usb
+	mnt d:"This directory is a mount point for a temporarily mounted filesystem.  In some distributions, /mnt contains subdirectories intended to be used as mount points for several temporary filesystems"
+	opt d:"This directory should contain add-on packages that contain static files"
+	proc d:"This is a mount point for the proc filesystem, which provides information about running processes and the kernel" see:`man 3 proc`
+		sys d:"A hierarchy below /proc/ that exposes a number of kernel tunables. The primary way to configure the settings in this API file tree is via sysctl.d(5) files. In sandboxed/containerized setups, this directory is generally mounted read-only"
+	root d:"This directory is usually the home directory for the root user" optional:<t>
+	run d:"A 'tmpfs' file system for system packages to place runtime data in. This directory is flushed on boot, and generally writable for privileged programs only. Always writable"
+		log d:"Runtime system logs. System components may place private logs in this directory. Always writable, even when /var/log/ might not be accessible yet"
+		user d:"Contains per-user runtime directories, each usually individually mounted 'tmpfs' instances. Always writable, flushed at each reboot and when the user logs out. User code should not reference this directory directly, but via the $XDG_RUNTIME_DIR environment variable, as documented in the XDG Base Directory Specification"
+	sbin d:"Like /bin, this directory holds commands needed to boot the system, but which are usually not executed by normal users"
+	srv d:"The place to store general server payload, managed by the administrator. No restrictions are made how this directory is organized internally. Generally writable, and possibly shared among systems. This directory might become available or writable only very late during boot"
+	sys d:"This is a mount point for the sysfs filesystem, which provides information about the kernel like /proc, but better structured, following the formalism of kobject infrastructure"
+	tmp d:"This directory contains temporary files which may be deleted with no notice, such as by a regular job or at system boot up. This directory is usually mounted as a 'tmpfs' instance, and should hence not be used for larger files. (Use /var/tmp/ for larger files.) This directory is usually flushed at boot-up. Also, files that are not accessed within a certain time may be automatically deleted."
+	usr d:"This directory is usually mounted from a separate partition.  It should hold only shareable, read-only data, so that it can be mounted by various machines running Linux"
+		bin d:"This is the primary directory for executable programs. Most programs executed by normal users which are not needed for booting or for repairing the system and which are not installed locally should be placed in this directory"
+			mh d:"Commands for the MH mail handling system" optional:<t>
+			X11 d:"traditional place to look for X11 executables; on Linux" often-links-to:`/usr/X11R6/bin`
+		dict replaced-by:`/usr/share/dict`
+		doc replaced-by:`/usr/share/doc`
+		etc d:"Site-wide configuration files to be shared between several machines may be stored in this directory.  However, commands should always reference those files using the /etc directory.  Links from files in /etc should point to the appropriate files in /usr/etc"
+		games d:"Binaries for games and educational programs" optional:<t>
+		include d:"C and C++ API header files of system libraries"
+			asm d:"Include files which declare some assembler functions" ususally-links-to:
+			bsd d:"BSD compatibility include files" optional:<t>
+			g++ d:"Include files to use with the GNU C++ compiler"
+			linux d:"This contains information which may change from system release to system release" rem:"Note that one should have include files there that work correctly with the current libc and in user space. However, Linux kernel source is not designed to be used with user programs and does not know anything about the libc you are using.  It is very likely that things will break if you let /usr/include/asm and /usr/include/linux point at a random kernel tree.  Debian systems don't do this and use headers from a known good kernel version, provided in the libc*-dev package" links-to:`/usr/src/linux/include/linux`
+			X11 d:"Include files for the C compiler and the X-Window system." usually-links-to:`/usr/X11R6/include/X11`
+		lib d:" Object libraries, including dynamic libraries, plus some executables which usually are not invoked directly.  More complicated programs may have whole subdirectories there"
+			gcc-lib d:"contains executables and include files for the GNU C compiler" see:`man 1 gcc`
+			groff d:"Files for the GNU groff document formatting system"
+			uucp see:`man 1 uucp`
+			X11 d:"The usual place for data files associated with X programs, and configuration files for the X system itself" usually-links-to:`/usr/X11R6/lib/X11`
+			<arch-id> d:"Location for placing dynamic libraries into, also called $libdir. The architecture identifier to use is defined on Multiarch Architecture Specifiers (Tuples)[6] list. Legacy locations of $libdir are /usr/lib/, /usr/lib64/. This directory should not be used for package-specific data, unless this data is architecture-dependent, too"
+		libexec d:"Directory contains binaries for internal use only and they are not meant to be executed directly by users shell or scripts"
+		local d:"This is where programs which are local to the site typically go"
+			bin d:"Binaries for programs local to the site"
+			doc d:"Local documentation"
+			etc d:"Configuration files associated with locally installed programs"
+			games d:"Binaries for locally installed games"
+			lib d:"Files associated with locally installed programs"
+			include d:"Header files for the local C compiler"
+			info d:"Info pages associated with locally installed programs"
+			man d:"Man pages associated with locally installed programs"
+			sbin d:"Locally installed programs for system administration"
+			share d:"Local application data that can be shared among different architectures of the same OS"
+			src d:"Source code for locally installed software"
+		man replaced-by:`/usr/share/man`
+		sbin d:"This directory contains program binaries for system administration which are not essential for the boot process, for mounting /usr, or for system repair"
+		share d:"This directory contains subdirectories with specific application data, that can be shared among different architectures of the same OS. Often one finds stuff here that used to live in /usr/doc or /usr/lib or /usr/man"
+			color d:"Contains color management information, like International Color Consortium (ICC) Color profiles" optional:<t>
+			dict d:"Contains the word lists used by spell checkers " optional:<t>
+				words d:"List of English words" optional:<t>
+			doc d:"Documentation about installed programs" optional:<t>
+			factory
+				etc d:"Repository for vendor-supplied default configuration files. This directory should be populated with pristine vendor versions of all configuration files that may be placed in /etc/. This is useful to compare the local configuration of a system with vendor defaults and to populate the local configuration with defaults"
+				var d:"Similar to /usr/share/factory/etc/, but for vendor versions of files in the variable, persistent data directory /var/"
+			games "Static data files for games in /usr/games" optional:<t>
+			info "Info pages" optional:<t>
+			locale "Locale information" optional:<t>
+			man d:"Manual pages go here in subdirectories according to the man page sections"
+			misc d:"Miscellaneous data that can be shared among different architectures of the same OS"
+			nls d:"The message catalogs for native language support go here" optional:<t>
+			sgml optional:<t>
+				docbook
+				tei
+				html
+				mathml
+			terminfo d:"he database for terminfo" optional:<t>
+			tmac d:"Troff macros that are not distributed with groff" optional:<t>
+			xml d:"Files for XML" optional:<t>
+				docbook
+				mathml
+				xhtml
+			zoneinfo d:"Files for timezone information" optional:<t>
+		src d:"Source files for different parts of the system, included with some packages for reference purposes.  Don't work here with your own projects, as files below /usr should be read-only except when installing software" optional:<t>
+			linux d:"This was the traditional place for the kernel source. Some distributions put here the source for the default kernel they ship.  You should probably use another directory when building your own kernel"
+		tmp d:"This should be a link to /var/tmp. This link is present only for compatibility reasons and shouldn't be used" should-link-to:`/var/tmp` obsolete:<t>
+	var d:"This directory contains files which may change in size, such as spool and log files"
+		account d:"Process accounting logs" optional:<t>
+		adm superseded-by:`/var/log` should-link-to:`/var/log`
+		backups d:"Reserved for historical reasons" obsolete:<t>
+		cache d:"Data cached for programs"
+			fonts d:"Locally generated fonts" optional:<t>
+			man d:"Locally formatted man pages" optional:<t>
+			www d:"WWW proxy or cache data" optional:<t>
+			<package> d:"Package specific cache data" optional:<t>
+		catman
+			cat[1-9] d:"These directories contain preformatted manual pages according to their man page section" deprecated:<t>
+		crash d:"System crash dumps" optional:<t>
+		cron d:"Reserved for historical reasons"
+		games d:"Variable game data" optional:<t>
+		lib d:"Variable state information for programs"
+			color d:"Variable files containing color management information" optional:<t>
+			hwclock d:"State directory for hwclock (optional)"
+			misc d:"Miscellaneous state data"
+			xdm d:"X display manager variable data (optional)"
+			<editor> d:"Editor backup files and state (optional)"
+			<name> d:"These directories must be used for all distribution packaging support"
+			<package> d:"State data for packages and subsystems (optional)"
+			<pkgtool> d:"Packaging support files (optional)"
+		local d:"Variable data for /usr/local"
+		lock d:"Lock files are placed in this directory.  The naming convention for device lock files is LCK..<device> where <device> is the device's name in the filesystem.  The format used is that of HDU UUCP lock files, that is, lock files contain a PID as a 10-byte ASCII decimal number, followed by a newline character"
+		log d:"Persistent system logs. System components may place private logs in this directory though it is recommended to do most logging via the syslog(3) and sd_journal_print(3) calls"
+		opt d:"Variable data for /opt"
+		mail d:"Users' mailboxes.  Replaces /var/spool/mail"
+		msgs d:"Reserved for historical reasons"
+		preserve d:"Reserved for historical reasons"
+		run d:"Run-time variable files, like files holding process identifiers (PIDs) and logged user information (utmp). Files in this directory are usually cleared when the system boots"
+		spool d:"Spooled (or queued) files for various programs"
+			at d:"Spooled jobs for at(1)"
+			cron d:"Spooled jobs for cron(8)"
+			lpd d:"Spooled files for printing (optional"
+				printer d:"Spools for a specific printer (optional)"
+			mail replaced-by:`/var/mail`
+			mqueue d:"Queued outgoing mail (optional)"
+			news d:"Spool directory for news (optional)"
+			rwho d:"Spooled files for rwhod(8) (optional)"
+			smail d:"Spooled files for the smail(1) mail delivery program"
+			uucp d:"pooled files for uucp(1) (optional)"
+		tmp d:"The place for larger and persistent temporary files. In contrast to /tmp/, this directory is usually mounted from a persistent physical file system and can thus accept larger files. (Use /tmp/ for small ephemeral files.) This directory is generally not flushed at boot-up, but time-based cleanup of files that have not been accessed for a certain time is applied."
+		yp d:"Database files for NIS, formerly known as the Sun Yellow Pages (YP)"
+		X11R6 d:"The X-Window system, version 11 release 6" present:FHS_2.3 removed:FHS_3.0
+			bin d:"Binaries which belong to the X-Window system; often, there is a symbolic link from the more traditional /usr/bin/X11 to here"
+			lib d:"Data files associated with the X-Window system"
+				X11 d:"These contains miscellaneous files needed to run X. Often there is a symbolic link from /usr/include/X11 to this directory"
+			include
+				X11 d:"Contains include files needed for compiling programs using the X11 window system.  Often, there is a symbolic link from /usr/include/X11 to this directory"
+		
+			

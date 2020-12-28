@@ -33,10 +33,30 @@ slackbook
 			Y d:"BSD Console games"
 		gpt_partitioning
 			List_existing_partitions cmd:`gdisk -l /dev/sda`
-			Make_partitions cmd:`gdisk /dev/sda`
+			Make_partitions cmd-start:`gdisk /dev/sda` cmd-end:`w`
 				EFI_partition cmd:`n 1 <Enter> +100M ef00`
 				Swap_partition cmd:`n 2 <Enter> +2G 8200`
 				Root_partition cmd:`n 3 <Enter> <Enter> 8300`
+		setup
+			Keymap skip:<t>
+			Addswap eq-cmd:`mkswap /dev/sda2; swapon /dev/sda2`
+			Target select:"/dev/sda3"
+			Source select:"Install from USB stick"?
+			Select select:A,AP,D,E,F,K,L,N,T,TCL,X,XAP,Y
+			Install select:"menu"
+			Configure
+				Kernel_selection select:"skip"
+				Make_a_boot_disk select:"continue"
+				Modem select:"no modem"
+				Timezone select:"Europe/Moscow"
+				Mouse select:"usb"
+				Hardware_clock select:"NO"
+				Font select:`Cancel`
+				LILO select:"expert" 
+					Define_location install:MBR
+				Network
+				XWindow_Manager select:"xfce"
+			
 			
 			
 			
