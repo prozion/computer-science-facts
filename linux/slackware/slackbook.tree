@@ -56,6 +56,27 @@ slackbook
 					Define_location install:MBR
 				Network
 				XWindow_Manager select:"xfce"
+		init
+			Init t:program cfg:`/etc/inittab` run:`/etc/rc.d/rc.S`
+				Enable_virtual_memory
+				Mount_filesystems
+				Clean_logs
+				Initialize_Plug_and_Play
+				Load_kernel_modules run:`/etc/rc.d/rc.modules`
+				Configure_PCMCIA_devices run:`/etc/rc.d/rc.pcmcia`
+				Setup_serial_ports run:`/etc/rc.d/rc.serial`
+				Run_System_V_ini_scripts run:`/etc/rc.d/rc.sysvinit`
+			Runlevels
+				rc.0 d:"Halt the system (runlevel 0)" link-to:rc.8
+				rc.4 d:"Multiuser startup"
+				rc.6 d"Reboot the system"
+				rc.X d:"Startup in single user mode"
+				rc.M d:"Multiuser mode with text-based login"
+				rc.inet1 d:"Created by netconfig, this file is responsible for configuring the actual network interface"
+				rc.inet2 d:"Runs after rc.inet1 and starts up basic network services"
+				rc.atalk d:"Start up AppleTalk services"
+				rc.httpd d:"Starts up the Apache web server"
+				rc.news d:"Starts up the news server"
 			
 			
 			

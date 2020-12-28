@@ -6,6 +6,7 @@
 		shm d:"Place for POSIX shared memory segments, as created via shm_open(3). This directory is flushed on boot, and is a 'tmpfs' file system. Since all users have write access to this directory, special care should be taken to avoid name clashes and vulnerabilities. For normal users, shared memory segments in this directory are usually deleted when the user logs out. Usually, it is a better idea to use memory mapped files in /run/ (for system programs) or $XDG_RUNTIME_DIR (for user programs) instead of POSIX shared memory segments, since these directories are not world-writable and hence not vulnerable to security-sensitive name clashes"
 	etc d:"Contains configuration files which are local to the machine. Some larger software packages, like X11, can have their own subdirectories below /etc. Site-wide configuration files may be placed here or in /usr/etc. Nevertheless, programs should always look for these files in /etc and you may have links for these files to /usr/etc"
 		opt d:"Host-specific configuration files for add-on applications installed in /opt"
+		rc.d d:"System initialization files"
 		sqml
 		skel d:"When a new user account is created, files from this directory are usually copied into the user's home directory"
 		X11 d:"Configuration files for the X11 window system" optional:<t>
