@@ -4,16 +4,16 @@ arch_installation
 	make_partitions
 		list_partitions cmd:`fdisk -l`,`lsblk`
 		edit_partitions cmd:`fdisk` d:"make gpt partitions with g command"
-			make_boot_partition-full type:efi/fat32 size:512M add-option:bootable
-			make_swap_partition-full type:linux/swap size:~1G
-			make_root_partition-full type:ext4
+			make_boot_partition type:efi/fat32 size:512M add-option:bootable
+			make_swap_partition type:linux/swap size:~1G
+			make_root_partition type:ext4
 		format_partitions
-			format_boot_partition-full cmd:`mkfs.vfat /dev/sda1`
-			format_swap_partition-full cmd:`mkswap /dev/sda2`
-			format_root_partition-full cmd:`mkfs.ext4 /dev/sda1`
+			format_boot_partition cmd:`mkfs.vfat /dev/sda1`
+			format_swap_partition cmd:`mkswap /dev/sda2`
+			format_root_partition cmd:`mkfs.ext4 /dev/sda1`
 	mount_partitions
 		create_mounting_point cmd:`mkdir /mnt/boot`
-		mount_bootable_partition-full cmd:`mount /dev/sda1 /mnt/boot/`
+		mount_bootable_partition cmd:`mount /dev/sda1 /mnt/boot/`
 		make_fstab cmd:`genfstab -U /mnt >> /mnt/etc/fstab`
 	install_linux
 		download_kernel cmd:`pacstrap /mnt linux`

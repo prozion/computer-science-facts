@@ -1,0 +1,4 @@
+standards
+	FHS deabbr:"Filesystem Hierarchy Standard"
+	LSB deabbr:"Linux Standard Base"
+	POSIX dabbr:"The Portable Operating System Interface"

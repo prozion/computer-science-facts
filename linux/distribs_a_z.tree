@@ -1,0 +1,40 @@
+distribs
+	Наулинукс from:Scientific_Linux
+	Alt_Linux from:Mandrake_Linux start:2000 
+	AntiX from:Debian
+	Arch_Linux start:2002 
+	Astra_Linux from:Debian start:2009
+	CentOS from:Red_Hat_Enterprise_Linux start:2002
+	CrunchBangPlusPlus from:Debian
+	Crux
+	Ctlos_Linux from:Arch_Linux
+	DamnSmallLinux from:Knoppix
+	Debian start:1993
+	Deepin from:Debian
+	Devuan from:Debian
+	FeatherLinux from:Knoppix
+	Fedora from:Red_Hat_Linux start:2002
+	Gentoo start:1999
+	GNewSense from:Ubuntu,Debian
+	GoboLinux fhs:<f>
+	Hikarunix from:Knoppix
+	Kali_Linux from:Ubuntu
+	Knoppix from:Debian start:2000
+	LFS
+	Manjaro from:Arch_Linux start:2013
+	Mandriva_Linux before:Mandrake_Linux from:Red_Hat_Linux start:1998
+	MX_Linux from:AntiX
+	OpenSUSE from:Slackware start:2005
+	Oracle_Linux from:Red_Hat_Enterprise_Linu start:2006
+	Parsix from:Ubuntu
+	Raspbian from:Debian
+	Red_Hat_Enterprise_Linux from:Red_Hat_Linux start:1995
+	Red_Hat_Linux start:1995
+	Red_Flag_Linux from:Red_Hat_Linux start:2000
+	Scientific_Linux from:Red_Hat_Linux start:2004
+	Slackware start:1993 developer:Patrick_Volkerding
+	Solus start:2012
+	SteamOS from:Debian
+	Ubuntu from:Debian start:2004
+	Zenwalk from:Slackware
+	

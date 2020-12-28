@@ -1,0 +1,10 @@
+desktop_environments
+	Gnome_1
+		Gnome_2
+			Gnome_3
+				Cinnamon
+			MATE
+	KDE
+	XFCE
+graphical_shell
+	Unity de:Gnome_3

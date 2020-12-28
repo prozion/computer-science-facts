@@ -1,39 +1,45 @@
 distribs
-	Наулинукс from:Scientific_Linux
-	Alt_Linux from:Mandrake_Linux start:2000 
-	AntiX from:Debian
-	Arch_Linux start:2002 
-	Astra_Linux from:Debian start:2009
-	CentOS from:Red_Hat_Enterprise_Linux start:2002
-	CrunchBangPlusPlus from:Debian
+	Alpine_Linux start:2005 inits:OpenRC
+	Arch_Linux start:2002 pkg:pacman inits:systemd
+		Ctlos_Linux
+		Manjaro start:2013
 	Crux
-	Ctlos_Linux from:Arch_Linux
-	DamnSmallLinux from:Knoppix
-	Debian start:1993
-	Deepin from:Debian
-	Devuan from:Debian
-	FeatherLinux from:Knoppix
-	Fedora from:Red_Hat_Linux start:2002
+	Debian start:1993 pkg:dpkg
+		AntiX
+			MX_Linux
+		Astra_Linux start:2009
+		CrunchBangPlusPlus
+		Debian_GNU/Hurd kernel:GNU_Mach
+		Deepin
+		Devuan
+		Knoppix start:2000
+			DamnSmallLinux
+			FeatherLinux
+			Hikarunix
+		Raspbian
+		SteamOS
+		Ubuntu start:2004 pkg:apt-get
+			DNALinux start:2000 tarea:bioinformatics
+			GNewSense
+			Kali_Linux
+			Linux_Mint start:2006
+			Parsix
 	Gentoo start:1999
-	GNewSense from:Ubuntu,Debian
-	Hikarunix from:Knoppix
-	Kali_Linux from:Ubuntu
-	Knoppix from:Debian start:2000
+		Calculate_Linux start:2007 inits:OpenRC
+	GoboLinux fhs:<f>
 	LFS
-	Manjaro from:Arch_Linux start:2013
-	Mandriva_Linux before:Mandrake_Linux from:Red_Hat_Linux start:1998
-	MX_Linux from:AntiX
-	OpenSUSE from:Slackware start:2005
-	Oracle_Linux from:Red_Hat_Enterprise_Linu start:2006
-	Parsix from:Ubuntu
-	Raspbian from:Debian
-	Red_Hat_Enterprise_Linux from:Red_Hat_Linux start:1995
-	Red_Hat_Linux start:1995
-	Red_Flag_Linux from:Red_Hat_Linux start:2000
-	Scientific_Linux from:Red_Hat_Linux start:2004
+	Red_Hat_Linux start:1995 pkg:rpm
+		Fedora start:2002
+		Mandriva_Linux before:Mandrake_Linux start:1998
+			Alt_Linux start:2000 
+		Red_Flag_Linux start:2000
+		Red_Hat_Enterprise_Linux start:1995
+			CentOS start:2002
+			Oracle_Linux start:2006
+		Scientific_Linux start:2004
+			Наулинукс
 	Slackware start:1993 developer:Patrick_Volkerding
+		OpenSUSE start:2005
+		Zenwalk
 	Solus start:2012
-	SteamOS from:Debian
-	Ubuntu from:Debian start:2004
-	Zenwalk from:Slackware
 	

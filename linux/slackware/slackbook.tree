@@ -1,0 +1,42 @@
+slackbook
+	help
+		Man
+		Source_documentation dir:/usr/doc file-format:"<program>-<version>"
+		HOWTOs howtos-dir:/usr/doc/Linux-HOWTOs mini-howtos-dir:/usr/doc/Linux-mini-HOWTOs
+		FAQs dir:/usr/doc/Linux-FAQs
+		online_help
+			Userlocal url-old:www.userlocal.com/phorum
+			Home url:slackware.com
+			Official_forum url:linuxquestions.org
+		mailing_lists
+			Majordomo subscription-email:majordomo@slackware.com format:"subscribe [option]" options:slackware-announce,slackware-security
+		usenet 
+			Google_Groups url:groups.google.com usenet-url:groups.google.com/g/alt.os.linux.slackware usenet:alt.os.linux.slackware
+			Userlocal url-old:userlocal.com
+	installation
+		software_series
+			A d:"the base system"
+			AP d:"various apps that don't require X Window System"
+			D d:"program development tools"
+			E d:"GNU Emacs"
+			F d:"FAQs, HOWTOs"
+			GNOME
+			K d:"Linux kernel source code"
+			KDE
+			KDEI d:"internationalization packages for KDE"
+			L d:".so libraries"
+			N d:"networking programs"
+			T d:"teTeX doc formatting system"
+			TCL d:"Tool Command Language"
+			X d:"base X Window System"
+			XAP d:"X apps that are not part of major desktop environment (e.g. Netscape)"
+			Y d:"BSD Console games"
+		gpt_partitioning
+			List_existing_partitions cmd:`gdisk -l /dev/sda`
+			Make_partitions cmd:`gdisk /dev/sda`
+				EFI_partition cmd:`n 1 <Enter> +100M ef00`
+				Swap_partition cmd:`n 2 <Enter> +2G 8200`
+				Root_partition cmd:`n 3 <Enter> <Enter> 8300`
+			
+			
+			
