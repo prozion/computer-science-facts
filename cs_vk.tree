@@ -333,6 +333,7 @@
 			FPrg vk:vk.com/funcprogramming u:20
 			FProgSpb vk:vk.com/fprog_spb u:208
 			LambdaNSK vk:vk.com/lambdansk u:349
+			Lambda vk:vk.com/lambdasoft u:52
 			Nemerle vk:vk.com/nemerle u:83
 			OCaml vk:vk.com/vk_ocaml u:42
 			elixir
@@ -361,9 +362,11 @@
 				SICP_2 vk:vk.com/club1605190 u:18
 				Common_Lisp vk:vk.com/club46076221 u:59
 				Lisp_Scheme_Racket vk:vk.com/lispclub u:5490
-				Clojure vk:vk.com/clojure u:165
-				Clojure_язык_программирования vk:vk.com/myclojure u:226
-				Clojure_Development_Club vk:vk.com/clojuredev_club u:67
 				Scheme vk:vk.com/club411354 u:326
 				PicoLisp vk:vk.com/picolisp u:7
+				clojure
+					Clojure vk:vk.com/clojure u:165
+					Clojure_язык_программирования vk:vk.com/myclojure u:226
+					Clojure_Development_Club vk:vk.com/clojuredev_club u:67
+					ClojureScript vk:vk.com/clojurescript u:6
 				

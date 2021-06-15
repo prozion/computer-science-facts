@@ -17,7 +17,7 @@ it-company
 			Ateji hq:Paris start:2005
 			MLstate hq:Paris start:2007
 			Infogrames_Entertainment hq:Paris renamed-to:Atari start:1983
-			Atari hq:Paris start:2009			
+			Atari hq:Paris start:2009
 		germany
 			SAP name:"SAP SE" deabbr:"Systems, Applications & Products in Data Processing" hq:Walldorf start:1972
 			Omix_Visualization hq:Lennestadt
@@ -105,7 +105,7 @@ it-company
 			Skype_Technologies start:2003 hq:Luxembourg,Palo_Alto purchased-by:Microsoft:2011
 			Speakeasy_Computing_Corporation
 			Sperry_Corporation hq:Lake_Success start:1910 end:1986 merged-to:Unisys
-			SRI_International start:1946 hq:Menlo_Park url:sri.com
+			SRI alt:Stanford_Research_Institute start:1946 hq:Menlo_Park url:sri.com
 			Stack_Overflow office:New_York,London,Denver hq:New_York founder:Jeff_Atwood,Joel_Spolsky start:2008
 			State_Software start:2001
 			Sun_Microsystems nasdaq:SUNW,JAVA hq:Menlo_Park start:1982 end:2010 purchased-by:Oracle

@@ -1,0 +1,472 @@
+files_structure
+	extensions n:333
+	includes n:2241
+		actions n:42
+			hook n:16
+			pagers n:1
+		api n:177
+		auth n:37
+		block n:16
+		cache n:36
+		changes n:29
+		changetags n:14
+		clientpool n:2
+		collation n:11
+		compat n:1
+		composer n:5
+		config n:11
+		content n:34
+		context n:8
+		dao n:3
+		db n:3
+		debug n:23
+		deferred n:28
+		diff n:40
+		edit n:1
+		editpage n:4
+		exception n:21
+		export n:24
+		externalstore n:9
+		filebackend n:5
+		filerepo n:25
+		gallery n:8
+		historyblob n:5
+		hook n:111
+		hookcontainer n:7
+		htmlform n:46
+		http n:7
+		import n:18
+		installer n:34
+		interwiki n:6
+		jobqueue n:40
+		json n:1
+		language n:26
+		libs n:221
+		linkeddata n:1
+		linker n:7
+		logging n:30
+		mail n:13
+		media n:38
+		message n:3
+		navigation n:1
+		objectcache n:2
+		page n:55
+		pager n:6
+		paramvalidator n:3
+		parser n:66
+		password n:15
+		permissions n:12
+		poolcounter n:6
+		preferences n:11
+		profiler n:12
+		rcfeed n:12
+		registration n:7
+		resourceloader n:41
+		rest n:58
+		revision n:27
+		revisiondelete n:16
+		revisinlist n:4
+		search n:64
+		session n:19
+		shell n:8
+		site n:11
+		skins n:37
+		sparql n:2
+		specialpage n:28
+		specials n:238
+		storage n:25
+		templates n:8
+		tidy n:5
+		title n:16
+		upload n:24
+		user n:60
+		utils n:16
+		watcheditem n:8
+		widget n:18
+		xml n:3
+		_root n:84
+			ActorMigration.php
+			AjaxDispatcher.php
+			AjaxResponse.php
+			AutoLoader.php
+			Autopromote.php
+			BadFileLookup.php
+			CategoriesRdf.php
+			Category.php
+			CategoryFinder.php
+			CategoryViewer.php
+			CommentStore.php
+			CommentStoreComment.php
+			ConfiguredReadOnlyMode.php
+			ContentSecurityPolicy.php
+			DefaultSettings.php
+			Defines.php
+			DeprecatedGlobal.php
+			DerivativeRequest.php
+			DevelopmentSettings.php
+			DummyLinker.php
+			EditPage.php
+			EventRelayerGroup.php
+			ExtensionInfo.php
+			FauxRequest.php
+			FauxResponse.php
+			FeedUtils.php
+			FileDeleteForm.php
+			ForeignResourceManager.php
+			ForkController.php
+			FormOptions.php
+			GitInfo.php
+			GlobalFunctions.php
+			HeaderCallback.php
+			Hooks.php
+			Html.php
+			Linker.php
+			LinkFilter.php
+			ListToggle.php
+			MagicWord.php
+			MagicWordArray.php
+			MagicWordFactory.php
+			MediaWiki.php
+			MediaWikiServices.php
+			MediaWikiVersionFetcher.php
+			MergeHistory.php
+			MovePage.php
+			MWGrants.php
+			MWNamespace.php
+			MWTimestamp.php
+			NoLocalSettings.php
+			OrderedStreamingForkController.php
+			OutputHandler.php
+			OutputPage.php
+			PageProps.php
+			PathRouter.php
+			PHPVersionCheck.php
+			Pingback.php
+			ProtectionForm.php
+			ProxyLookup.php
+			RawMessage.php
+			ReadOnlyMode.php
+			Revision.php
+			ServiceWiring.php
+			Setup.php uses:includes/debug/logger/LoggerFactory,MediaWiki\MediaWikiServices,Psr\Log\LoggerInterface,Wikimedia\Rdbms\ChronologyProtector,Wikimedia\Rdbms\LBFactory d:"The setup for all MediaWiki processes"
+			SiteConfiguration.php
+			SiteStats.php
+			SiteStatsInit.php
+			Status.php
+			StreamFile.php
+			StubObject.php
+			StubUserLang.php
+			TemplateParser.php
+			TemplatesOnThisPageFormatter.php
+			Title.php
+			TitleArray.php
+			TitleArrayFromResult.php
+			TitleFactory.php
+			TrackingCategories.php
+			WebRequest.php
+			WebRequestUpload.php
+			WebResponse.php
+			WebStart.php calls:includes/Setup.php d:"The set up for all MediaWiki web requests"
+			WikiMap.php
+			WikiReference.php
+	languages n:408
+		classes n:35
+		data n:4
+			messages n:369 d:"various languages dictionaries"
+				MessagesRu.php
+			CrhExceptions.php
+			Names.php
+			Normalize-ar.php
+			Normalize-ml.php
+			ZhConversion.php
+		Language.php
+		LanguageConverter.php
+		LanguageConverterSpecific.php
+	maintenance n:248
+		archives n:0 d:"sql patches"
+		benchmarks n:16
+		dev d:"shell scripts for quick setup of the wiki for dev purposes"
+			includes
+				Router.php
+		includes n:10
+			BackupDumper.php
+			Benchmarker.php
+			DeleteLocalPasswords.php
+			FakeMaintenance.php
+			LoggedUpdateMaintenance.php
+			Maintenmance.php
+			MigrateActors.php
+			MWDoxygenFilter.php
+			SevenZipStream.php
+			TextPassDumper.php
+		language n:12
+		mediawiki.title n:1
+			GeneratePhpCharToUpperMappings.php
+		storage n:10
+		term n:1
+			MWTerm.php
+		_root n:208
+			AddChangeTag.php
+			AddRFCandPMIDInterwiki.php
+			AddSite.php
+			AttachLatest.php
+			BlockUsers.php
+			CategoryChangesAsRdf.php
+			ChangePassword.php
+			CheckBadRedirects.php
+			CheckComposerLockUpToDate.php
+			CheckDependencies.php
+			CheckImages.php
+			CheckLess.php
+			CheckUsernames.php
+			CleanupAncientTables.php
+			CleanupBlocks.php
+			CleanupCaps.php
+			CleanupEmptyCategories.php
+			CleanupImages.php
+			CleanupInvalidDbKeys.php
+			CleanupPreferences.php
+			CleanupRemovedModules.php
+			CleanupRevActorPage.php
+			CleanupSpam.php
+			CleanupTitles.php
+			CleanupUploadStash.php
+			CleanupUsersWithNoId.php
+			CleanupWatchlist.php
+			ClearInterwikiCache.php
+			CompareParserCache.php
+			CompareParsers.php
+			ConvertExtensionToRegistration.php
+			ConvertLinks.php
+			ConvertUserOptions.php
+			CopyFileBackend.php
+			CopyJobQueue.php
+			CreateAndPromote.php
+			CreateBotPassword.php
+			DeduplicateArchiveRevId.php
+			DeleteArchivedFiles.php
+			DeleteArchivedRevisions.php
+			DeleteAutoPatrolLogs.php
+			DeleteBatch.php
+			DeleteDefaultMessages.php
+			DeleteEqualMessages.php
+			DeleteLocalPasswords.php
+			DeleteOldRevisions.php
+			DeleteOrphanedRevisions.php
+			DeleteSelfExternals.php
+			DeleteTag.php
+			DoMaintenance.php
+			DumpBackup.php
+			DumpCategoriesAsRdf.php
+			DumpIterator.php
+			DumpLinks.php
+			DumpTextPass.php
+			DumpUploads.php
+			Edit.php
+			EmptyUserGroup.php
+			EraseArchivedFile.php
+			Eval.php
+			ExportSites.php
+			FetchText.php
+			FileOpPerfTest.php
+			FindBadBlobs.php
+			FindDeprecated.php
+			FindMissingActors.php
+			FindMissingFiles.php
+			FindOrphanedFiles.php
+			FixDefaultJsonContentPages.php
+			FixDoubleRedirects.php
+			FixExtLinksProtocolRelative.php
+			FixTimestamps.php
+			FixUserRegistration.php
+			FormatInstallDoc.php
+			GenerateJsonI18n.php
+			GenerateLocalAutoload.php
+			GenerateSchemaSql.php
+			GenerateSitemap.php
+			GetConfiguration.php
+			GetLagTimes.php
+			GetReplicaServer.php
+			GetText.php
+			ImportDump.php
+			ImportImages.php
+			ImportSites.php
+			ImportSiteScripts.php
+			ImportTextFiles.php
+			InitEditCount.php
+			InitSiteStats.php
+			InitUserPreference.php
+			Install.php
+			InvalidateUserSessions.php
+			Jsparse.php
+			Lag.php
+			Maintenance.php
+			MakeTestEdits.php
+			ManageForeignResources.php
+			ManageJobs.php
+			Mcc.php
+			Mctest.php
+			MergeMessageFileList.php
+			MigrateActors.php
+			MigrateArchiveText.php
+			MigrateComments.php
+			MigrateFileRepoLayout.php
+			MigrateImageCommentTemp.php
+			MigrateUserGroup.php
+			Minify.php
+			MoveBatch.php
+			Mwdoc-filter.php
+			Mwdocgen.php
+			Mysql.php
+			NamespaceDupes.php
+			NukeNS.php
+			NukePage.php
+			Orphans.php
+			PageExists.php
+			Parse.php
+			PatchSql.php
+			PopulateArchiveRevId.php
+			PopulateBacklinkNamespace.php
+			PopulateCategory.php
+			PopulateChangeTagDef.php
+			PopulateContentTables.php
+			PopulateExternallinksIndex60.php
+			PopulateFilearchiveSha1.php
+			PopulateImageSha1.php
+			PopulateInterwiki.php
+			PopulateIpChanges.php
+			PopulateLogSearch.php
+			PopulateLogUsertext.php
+			PopulateParentId.php
+			PopulatePPSortKey.php
+			PopulateRecentChangesSource.php
+			PopulateRevisionLength.php
+			PopulateRevisionSha1.php
+			PreprocessDump.php
+			PreprocessorFuzzTest.php
+			Protect.php
+			PruneFileCache.php
+			PurgeChangedFiles.php
+			PurgeChangedPages.php
+			PurgeExpiredBlocks.php
+			PurgeExpiredUserrights.php
+			PurgeExpiredWatchlistItems.php
+			PurgeList.php
+			PurgeModuleDeps.php
+			PurgeOldText.php
+			PurgePage.php
+			PurgeParserCache.php
+			ReassignEdits.php
+			Rebuildall.php
+			RebuildFileCache.php
+			RebuildImages.php
+			RebuildLocalisationCache.php
+			Rebuildmessages.php
+			Rebuildrecentchanges.php
+			Rebuildtextindex.php
+			RecountCategories.php
+			RefreshExternallinksIndex.php
+			RefreshFileHeaders.php
+			RefreshImageMetadata.php
+			RefreshLinks.php
+			RemoveInvalidEmails.php
+			RemoveUnusedAccounts.php
+			RenameDbPrefix.php
+			RenameRestrictions.php
+			RenderDump.php
+			ResetAuthenticationThrottle.php
+			ResetPageRandom.php
+			ResetUserEmail.php
+			ResetUserTokens.php
+			RollbackEdits.php
+			RunBatchedQuery.php
+			RunJobs.php
+			RunScript.php
+			Shell.php
+			ShowJobs.php
+			ShowSiteStats.php
+			Sql.php
+			Sqlite.php
+			SyncFileBackend.php
+			TidyUpT39714.php
+			Undelete.php
+			Update.php
+			UpdateArticleCount.php
+			UpdateCollation.php
+			UpdateCredits.php
+			UpdateDoubleWidthSearch.php
+			UpdateExtensionJsonSchema.php
+			UpdateRestrictions.php
+			UpdateSearchIndex.php
+			UpdateSpecialPages.php
+			UppercaseTitlesForUnicodeTransition.php
+			UserOptions.php
+			ValidateRegistrationFile.php
+			View.php
+			WrapOldPasswords.php
+	mw-config n:1
+		Index.php
+	resources n:1
+		Resources.php
+	skins n:22
+	tests n:961
+	vendor n:783
+		christian-riesen n:1
+			base32
+				src
+					Base32.php
+		composer n:16
+		cssjanus n:3
+		guzzlehttp n:86
+			guzzle n:38 d:"PHP HTTP client"
+			promises n:18 d:"implementation that handles promise chaining and resolution iteratively"
+			psr7 n:30 d:"PSR-7 message implementation"
+		jakobo n:3
+			hot-php n:3 d:"HOTP is a class that simplifies One Time Password systems for PHP Authentication"
+		liuggio n:21
+		oojs n:55
+		pear n:21
+		pleonasm n:3
+		psr n:21
+		ralouphie n:1
+		symfony n:2
+		wikimedia n:534
+			assert n:9
+			at-ease n:2
+			base-convert n:1
+			cdb n:9
+			cldr-plural-rule-parser n:7
+			common-passwords n:2
+			composer-merge-plugin n:7
+			html-formatter n:1
+			ip-set n:1
+			ip-utils n:1
+			less.php n:61 d:"Wikimedia fork of a PHP port of the official LESS processor"
+			object-factory n:1
+			parsoid n:300 d:"bidirectional parser between wikitext and HTML5"
+			php-session-serializer n:1
+			purtle n:11
+			relpath n:2
+			remex-html n:77 d:"parser for HTML 5"
+			running-stat n:4
+			scoped-callback n:1
+			services n:9
+			timestamp n:3
+			utfnormal n:6
+			wait-condition-loop n:1
+			wikipeg n:8
+			wrappedstring n:2
+			xmp-reader n:3
+			zest-css n:3
+		zordius n:14
+		Autoload.php
+	Api.php calls:includes/WebStart.php
+	Autoload.php loaded-classes-n:1887
+	Img_auth.php calls:includes/WebStart.php
+	Index.php calls:PHPVersionCheck.php,includes/WebStart.php
+	Load.php calls:includes/WebStart.php
+	LocalSettings.php
+	Opensearch_desc.php calls:includes/WebStart.php
+	Rest.php calls:includes/WebStart.php
+	Thumb.php
+	Thumb_handler.php calls:Thumb.php

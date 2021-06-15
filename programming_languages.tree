@@ -348,7 +348,7 @@ programming_language
 	Mercury year:1995 designer:Zoltan_Somogyi uni:UMelbourne from:Prolog,Hope,Haskell
 	PHP year:1995 designer:Rasmus_Lerdorf from:Perl
 	Ruby year:1995 designer:Yukihiro_Matsumoto from:Smalltalk,Perl
-	JavaScript year:1995 designer:Brendan_Eich company:Netscape from:LiveScript abbr:js
+	JavaScript year:1995 designer:Brendan_Eich company:Netscape from:LiveScript,HyperTalk abbr:js
 	Racket year:1995 designer:Matthew_Flatt uni:URice from:Scheme,Lisp
 	Curl year:1996 designer:David_Kranz,Steve_Ward,Chris_Terman uni:MIT from:Lisp,C++,Tcl,TeX,HTML
 	Lasso year:1996 company:Blue_World_Communications from:Dylan,Smalltalk

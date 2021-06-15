@@ -1,0 +1,22 @@
+postgresql
+	PGDATA pgdoc-path:/var/lib/pgsql/data archwiki-path:/var/lib/postgres/data
+	Configuration file:PGDATA/postgresql.conf,PGDATA/pg_hba.conf,PGDATA/pg_ident.conf
+	Run_directory path:/run/postgresql
+	structure_of_PGDATA
+		base d:"Subdirectory containing per-database subdirectories"
+		global d:"Subdirectory containing cluster-wide tables, such as pg_database"
+		pg_clog
+		pg_multixact
+		pg_notify
+		pg_serial
+		pg_stat_tmp
+		pg_subtrans
+		pg_tblspc d:"Subdirectory containing symbolic links to tablespaces"
+		pg_twophase
+		pg_xlog
+		PG_VERSION d:"A file containing the major version number of PostgreSQL"
+		Pg_hba.conf
+		Pg_ident.conf
+		Postgresql.conf
+		Postmaster.opts d:"A file recording the command-line options the server was last started with"
+		Postmaster.pid d:"A lock file recording the current postmaster process ID (PID), cluster data directory path, postmaster start timestamp, port number, Unix-domain socket directory path (empty on Windows), first valid listen_address (IP address or *, or empty if not listening on TCP), and shared memory segment ID (this file is not present after server shutdown)"

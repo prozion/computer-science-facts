@@ -1,0 +1,23 @@
+books
+	Современный_учебник_Javascript format:epub,pdf year:2021
+	Composing_software format:epub,pdf author:Eric_Elliott year:2020
+	Eloquent_Javascript author:Marijn_Haverbekedives year:2018
+	Secrets_of_the_Javascript_ninja author:John_Resiq year:2016
+	You_dont_know_JS author:Kyle_Simpson year:2016
+	Javascript_для_профессиональных_разработчиков author:Николас_Закас year:2015
+	Beginning_Javascript author:Jeremy_McPeak year:2015
+	Javascript_for_kids author:Nick_Morgan year:2015
+	A_smarter_way_to_learn_Javascript author:Mark_Mayers year:2014
+	Speaking_Javascript author:Axel_Rauschmayer year:2014
+	The_principles_of_object_oriented_Javascript author:Nicholas_Zakas year:2014
+	Javascript_and_JQuery_interactive_frontend_web_development author:Jon_Ducket year:2014
+	Head_first_Javascript_programming author:Elizabeth_Robinson year:2014
+	Learn_javascript_visually author:Ivelin_Demirov year:2014
+	Programming_Javascript_applications author:Eric_Elliott year:2014
+	High_perfomance_browser_networking author:Ilya_Grigorik year:2013
+	Javascript_allonge author:Reg_Braithwaite year:2013
+	Javascript_for_beginners author:Mark_Lassoff year:2013
+	Effective_Javascript author:David_Herman year:2012
+	Professional_Javascript_for_web_developers author:Nicholas_Zakas year:2012
+	Javascript_the_definitive_guide author:David_Flanagan year:2011
+	Javascript_the_good_parts author:Douglas_Crockford year:2008

@@ -1,3 +1,4 @@
+; version dependencies are to be like that: treecompiler dep:gettext/8.10-9.2.11,imagemagick/14.0-,gcc+/4.2-4.9
 packages
 	lsb_core
 		lsb_core_lfs
