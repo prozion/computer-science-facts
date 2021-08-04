@@ -1,2 +1,3 @@
 libraries
+	JQuery start:2006 author:John_Resig
 	Lodash from:Underscore.js start:2009 url:lodash.com

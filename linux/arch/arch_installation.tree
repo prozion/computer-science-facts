@@ -41,8 +41,12 @@ arch_installation
 		check_groups cmd:`less /etc/group`
 		add_group cmd:`groupadd`
 		add_user cmd:`useradd -g {groupname} {username}`
+		add_group_to_user cmd:`usermod -a -G {groupname} {username}`
+		add_sudo_rights cmd:`usermod -a -G sudo {username}`
 		add_user_password cmd:`passwd {user}`
-		edit_sudoers file:etc/sudoers cmd:`visudo` code:`%{groupname} ALL=(ALL) ALL`
+		change_default_shell file:/etc/passwd edit:`/bin/bash`
+	security
+		restrict_ssh_root_login file:/etc/ssh/sshd_config edit:`PermitRootLogin no` cmd:`systemctl restart sshd`
 	handy_things
 		bashrc file:`{home}/.bashrc` code:`alias vi=vim`
 	;;;;;;;;;;;;;;;;; X ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -54,6 +58,25 @@ arch_installation
 		run_x_server cmd:`xinit`
 	setup_x_window_manager
 		xfce
+	;;;;;;;;;;;;;;;;;; tools ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	racket
+		add_repository cmd:`sudo add-apt-repository ppa:plt/racket` probably-before:`sudo mkdir /etc/apt/sources.list.d`
+		update_repositories cmd:`sudo apt-get update`
+		install_racket cmd:`sudo apt install racket`
+		install_packages cmd:`raco pkg install sha sxml odysseus tabtree`
+		install_external_libraries
+			install_cairo cmd:`sudo apt-get install libcairo2-dev`
+			install_pango cmd:`sudo apt-get install libpango-1.0`
+			install_pango_cairo cmd:`sudo apt-get install libpangocairo-1.0`
+			install_jpeg cmd:`sudo apt-get install libjpeg-dev`
+	git
+		install_git cmd:`sudo apt install git`
+		public_key_login
+			make_public_key cmd:`ssh-keygen -o` default-file:~/.ssh/id_rsa.pub
+			copy_public_key_to_remote_repo gitlab-path:`Profile/Edit Profile/SSH Keys`
+		repositories
+			clone_repository
+			set_push_without_pwd cmd:`git remote set-url origin git@gitlab.com:ddenniss/<repository_name>.git`
 			
 	
 		

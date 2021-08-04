@@ -1,0 +1,64 @@
+dom_class_diagram
+	AbortController
+	AbortSignal
+	AbstractRange
+		StaticRange
+	ByteString
+	CDATASection
+	CSSValue deprecated:<t>
+		CSSPrimitiveValue
+		CSSValueList
+	CustomEvent
+	DOMError deprecated:<t>
+	DOMException
+	DOMImplementation
+	DOMObject deprecated:<t> moved-to:Object
+	DOMParser
+	DOMPoint
+	DOMPointInit
+	DOMPointReadOnly
+	DOMRectReadOnly
+		DOMRect
+	DOMString
+	DOMTimeStamp
+	DOMTokenList
+	Event
+		ErrorEvent
+		HashChangeEvent
+	EventTarget
+		Node
+			Attr
+			CharacterData
+				Comment
+				ProcessingInstruction
+				Text
+			Document
+				XMLDocument
+			DocumentFragment
+			DocumentType
+			Element
+				HTMLElement
+					HTMLAnchorElement
+					HTMLFormElement
+					HTMLInputElement
+					HTMLBodyElement
+				SVGElement
+		Window
+	HTMLCollection
+	MutationObserver
+	NodeFilter
+	NodeIterator
+	NodeList
+	Promise
+	Range
+	Selection experimental:<t>
+	TextDecoder
+	TextEncoder
+	TimeRanges
+	TreeWalker
+	URL
+	USVString
+	Worker
+	
+	
+	

@@ -1,3 +1,3 @@
 setup
 	Open_default_settings menu:`Fule,Preferences,Settings`
-	Edit_user_settings cmd:`Ctrl-Shift-P, 
+	Edit_user_settings cmd:`Ctrl-Shift-P,?`
