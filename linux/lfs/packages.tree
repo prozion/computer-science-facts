@@ -74,7 +74,7 @@ packages
 			GTK+3
 	lsb_graphics
 	lfs_rest
-		Acl d:"utilities to administer Access Cntrol Lists"
+		Acl d:"utilities to administer Access Control Lists"
 		Attr
 		Autoconf
 		Automake v:1.16.2
