@@ -116,7 +116,7 @@ programming_language
 	FORTRAN_66 year:1966 from:FORTRAN-IV
 	ISWIM year:1966 designer:Peter_Landin from:LISP
 	CORAL66 year:1966 company:RRE from:ALGOL_60
-	APL	year:1966 designer:Kenneth_Iverson from:APL_concept	
+	APL year:1966 designer:Kenneth_Iverson from:APL_concept	
 	EXEC year:1966 company:CMS_EXEC from-os:CTSS 
 	REFAL year:1966 alt-id:РЕФАЛ deabbr:"РЕкурсивных Функций АЛгоритмический" designer:Valentin_Turchin from:<unique>
 	BBN_LISP year:1966 company:BBN from:Lisp
