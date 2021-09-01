@@ -1,4 +1,15 @@
 javascript start:04.12.1995 designer:Brendan_Eich
 	people
-		Brendan_Eich bdate:1961 amater:UIllinois
+		Brendan_Eich bdate:1961 amater:UIllinois 
 		Douglas_Crockford bdate:1955 amater:SF_State
+	websites
+		references
+			MDN url:developer.mozilla.org
+			QtDocs url:doc.qt.io/qt-5/qtqml-javascript-functionlist.html
+			W3schools url:w3schools.com/jsref
+			library_references
+				Lodash url:lodash.com/docs
+	libraries
+		JQuery start:2006 author:John_Resig
+		Lodash from:Underscore.js start:2009 url:lodash.com
+					

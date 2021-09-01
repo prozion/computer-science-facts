@@ -1,0 +1,8 @@
+Fork cmd:`gh repo fork <account name>/<repository name>` ex:"Hexlet/hexlet-sicp"
+Create_and_switch_to_a_branch cmd:`git switch -c readme-update`
+Edit
+Push_changes cmd:`git push -u origin readme-update`
+Make_pull_request cmd:`gh pr create --title "<title description>" --body "<description>"` ex:"update README.md","Slightly updated Russian README"
+Code_review
+	Accepted
+	Declined

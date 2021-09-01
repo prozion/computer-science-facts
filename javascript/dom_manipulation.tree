@@ -1,0 +1,27 @@
+dom_manipulation
+	document
+		createElement arg:TagName
+		selectorQuery arg:CSSQuery
+	EventTarget
+		addEventListener type:String listener:Function capture:Boolean
+		removeEventListener type:String listener:Function
+	Node
+		appendChild child:Node
+		insertBefore newNode:Node referenceNode:Node
+		removeChild child:Node
+		replaceChild newChild:Node oldChild:Node
+	Element
+		append element:[Node]
+		prepend element:[Node]
+		before element:[Node]
+		after element:[Node]
+		replaceChildren element:[Node]
+		setAttribute name:String value:String
+		insertAdjacentElement element:Element position:"beforebegin","afterbegin","beforeend","afterend"
+		Element.classList
+			add arg:[ClassName]
+			remove arg:[ClassName]
+			toggle arg:[ClassName]
+			replace arg:[ClassName]
+	HTMLElement
+		HTMLElement.dataset

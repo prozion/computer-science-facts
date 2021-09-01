@@ -1,0 +1,14 @@
+css_properties.
+	Flex 
+		display:flex 
+		flex-direction:row,row-reverse,column,column-reverse
+		justify-content:center,flex-start,flex-end,space-between,space-around,space-evenly ; main
+		align-content:center,flex-start,flex-end,space-between,space-around,space-evenly ; cross
+		align-items:stretch,flex-start,center,flex-end,baseline
+		flex-grow:<PositiveInteger>
+		flex-shrink:<PositiveInteger>
+		flex-basis:<Width>
+		flex-wrap:wrap,nowrap,wrap-reverse
+		order:<Integer>
+		align-self:center,flex-start,flex-end,baseline
+	<.>

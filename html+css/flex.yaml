@@ -1,0 +1,33 @@
+# Flex css properties:
+flex:
+  order:
+    = flex-grow
+    - flex-shrink
+    - flex-basis
+  display:
+    - flex
+  flex-direction:
+    - row
+    - row-reverse
+    - column
+    - column-reverse
+  justify-content: # main
+    - center
+    - flex-start
+    - flex-end
+    - space-between
+    - space-around
+    - space-evenly
+  align-content: # cross
+    - center
+    - flex-start
+    - flex-end
+    - space-between
+    - space-around
+    - space-evenly
+  align-items:
+    - stretch
+    - flex-start
+    - center
+    - flex-end
+    - baseline

@@ -279,7 +279,7 @@ programming_language
 	Mathematica year:1987 company:Wolfram_Research from:<unique>
 	Turbo_Basic year:1987 designer:Robert_Zale from:BASIC/Z
 	Clean year:1987 uni:UNijmegen from:Lean,Miranda,Haskell
-	XLISP year:1987 desigmer:David_Betz from:Lisp
+	XLISP year:1987 desigmer:David_Betz from:Scheme
 	RPG/400 year:1988 company:IBM from:FARGO,RPG,RPG-II,RPG-III
 	Octave year:1988 designer:John_Eaton from:MATLAB
 	Tcl year:1988 designer:John_Ousterhout from:AWK,LISP
@@ -301,7 +301,6 @@ programming_language
 	rc year:1989 designer:Tom_Duff company:Bell_Labs from:Bourne_Shell
 	IgorPRO year:1989 company:WaveMetrics
 	Coq year:1989 company:Coq_development_team
-	XLISP year:198x designer:David_Betz from:Scheme
 	FALSE year:198x designer:Wouter_van_Oortmerssen from:Forth,TECO_language
 	; 1990s
 	AMOS_BASIC year:1990 designer:Francois_Lionet,Constantin_Sotiropoulos from:STOS_BASIC
