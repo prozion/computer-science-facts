@@ -18,6 +18,7 @@ dom_manipulation
 		replaceChildren element:[Node]
 		setAttribute name:String value:String
 		insertAdjacentElement element:Element position:"beforebegin","afterbegin","beforeend","afterend"
+		Element.children
 		Element.classList
 			add arg:[ClassName]
 			remove arg:[ClassName]
