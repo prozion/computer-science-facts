@@ -1,0 +1,4 @@
+classes
+	java.lang
+		Object
+		System extends:Object
