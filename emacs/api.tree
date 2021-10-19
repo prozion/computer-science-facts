@@ -1,0 +1,30 @@
+api
+	definitions	
+		defcustom
+		defun
+		defvar
+		set
+		setq
+	control_structures	
+		cond
+		if
+		iterators	
+			while
+			dolist
+			unless
+	context	
+		let
+		progn
+	io	
+		message
+		prompt
+	invocations	
+		funcall
+	structuring	
+		list
+		cons
+	buffers	
+		current-buffer
+	other	
+		interactive
+	

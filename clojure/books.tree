@@ -1,0 +1,19 @@
+books
+	paper
+		Web_Development_with_Clojure author:Dmitri_Sotnikov year:2021
+		Deep_Learning_for_Programmers author:Dragan_Djuric year:2021
+		Numerical_Linear_Algebra_for_Programmers author:Dragan_Djuric year:2021
+		The_Clojure_Workshop author:Joseph_Fahey year:2020
+		Reactive_Programming_with_Clojure author:Konrad_Szydlo year:2019
+		Elements_of_Clojure author:Zachary_Tellman year:2018
+		Clojure_Polymorphism author:Paul_Stadig year:2019
+		Clojure_Extended_Java_Interop author:Ivan_Grishaev year:2018
+		Getting_Clojure author:Russ_Olsen year:2018
+		Clojure_Cookbook author:Ryan_Neufeld year:2014
+		Functional_Programming_Patterns_in_Scala_and_Clojure author: Michael_Bevilacqua-Linn year:2013
+		ClojureScript_Up_and_Running author:Stuart_Sierra,Luke_VanderHart year:2012
+		Clojure_Programming author:Chas_Emerick year:2012
+		Clojure author:Stephan_Kamphausen year:2010
+		Practical_Clojure author:Luke_VanderHart year:2010
+	online
+		Babashka_book url:book.babashka.org
