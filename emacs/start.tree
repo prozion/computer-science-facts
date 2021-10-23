@@ -1,4 +1,7 @@
 start
-	file
-		save-file cmd:`C-x C-f` ergo:`C-s`
+	history
+		editors
+			TECO start:1962 author:Dan_Murphy platform:PDP-x
+			Multics_Emacs start:1978 from:TECO config-language:Maclisp
+			Emacs start:1976 author:Richard_Stallman config-language:ELisp
 	

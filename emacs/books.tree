@@ -1,0 +1,15 @@
+books
+	An_Introduction_to_Programming_in_Emacs_Lisp author:Robert_Chassell year:2021
+	Guide_to_Markdown_Mode_for_Emacs author:Jason_Blevins year:2017
+	Emacs_Field_Guide author:Harley_Hahn year:2016
+	Emacs_Lisp_an_Introduction author:Robert_Chassell year:2015
+	Программирование_Emacs_для_редактирования_и_рефакторинга_кода author:Алекс_Отт,Дмитрий_Бушенко src-url:github.com/alexott/emacs-guide-ru year:2011
+	The_Org_Mode_7_Reference author:Carsten_Dominik year:2010
+	Learning_GNU_Emacs author:Debra_Cameron,James_Elliott,Marc_Loy,Eric_Raymond year:2004
+	Programming_in_Emacs_Lisp author:? ru-url:elisp-intro/emacs-lisp-intro_1.html#SEC1 year:?
+	GNU_Emacs_Manual author:Richard_Stallman year:1999
+	GNU_Emacs_Reference_Guide author:Bill_Lewis year:1998
+	Writing_GNU_Emacs_Extensions author:Bob_Glickstein year:1997
+	Mastering_Emacs author:Mickey_Petersen url:masteringemacs.org year:?
+tutorials
+	Elisp_Guide url:github.com/chrisdone/elisp-guide

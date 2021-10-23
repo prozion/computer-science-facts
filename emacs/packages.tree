@@ -1,3 +1,5 @@
 packages
-	ergoemacs author:Xah_Lee
-	dired
+	elpa
+		ergoemacs author:Xah_Lee
+		dired
+		projectile

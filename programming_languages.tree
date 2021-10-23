@@ -256,7 +256,7 @@ programming_language
 	PARADOX year:1985 company:Borland from:dBase
 	QuickBASIC year:1985 company:Microsoft from:BASIC
 	COBOL-85 year:1985 from:COBOL-74		
-	Emacs_Lisp year:1985 designer:Richard_Stallman,Guy_Steele from:Common_Lisp,Maclisp	
+	Emacs_Lisp alt:Elisp year:1985 designer:Richard_Stallman,Guy_Steele from:Common_Lisp,Maclisp	
 	Rapira year:198x name:"Рапира" deabbr:"Расширенный Адаптированный Поплан-Интерпретатор, Редактор, Архив" from:ALGOL_58		
 	Flavors year:198x designer:Howard_Cannon uni:MIT from:Lisp	
 	Clarion year:1986 designer:Bruce_Barrington 

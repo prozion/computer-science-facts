@@ -1,0 +1,17 @@
+commands
+	buffers
+		list-buffers kb:C-x-C-b
+		mark-whole-buffer kb:C-x-h
+		save-buffer kb:C-x-C-s ergo:C-s
+		switch-to-buffer cmd:C-x-b
+	edit
+		comment-line kb:C-x-C-<semicolon>
+		quoted-insert kb:C-q
+		transpose-words kb:M-t
+	files
+		find-file kb:C-x-C-f
+	reference
+		where-is kb:C-h-w,F1-w
+	navigation
+		forward-char kb:C-f
+		backward-char kb:C-b
