@@ -1,4 +1,7 @@
 keystrokes +scope:global-map
+	mouse-1 cmd:mouse-set-point
+	mouse-2 cmd:mouse-yank-primary
+	mouse-3 cmd:mouse-save-then-kill
 	Esc-- eq:M-
 		Esc-C-end cmd:end-of-defun
 	F1 eq:C-h
@@ -96,10 +99,11 @@ keystrokes +scope:global-map
 			C-h-v cmd:describe-variable
 			C-h-b cmd:describe-bindings
 			C-h-n cmd:view-emacs-news
-			C-h-m
-			C-h-,
-			C-h-.
-			C-h-/
+			C-h-m cmd:describe-mode
+			C-h-, cmd:<undefined>
+			C-h-. cmd:display-local-help
+			C-h-/ cmd:<undefined>
+			C-h-? cmd:help-for-help
 		C-j cmd:electric-newline-and-maybe-indent
 		C-k cmd:kill-line
 		C-l cmd:recenter-top-bottom
@@ -193,18 +197,18 @@ keystrokes +scope:global-map
 				C-x-r-x cmd:copy-to-register
 				C-x-r-y cmd:yank-rectangle
 				C-x-r-C-Spc cmd:point-to-register
-			C-x-t-
-				C-x-t-C-f cmd:find-file-other-tab
-				C-x-t-Ret cmd:tab-bar-select-tab-by-name
-				C-x-t-0 cmd:tab-close
-				C-x-t-1 cmd:tab-close-other
-				C-x-t-2 cmd:tab-new
-				C-x-t-b cmd:switch-to-buffer-other-tab
-				C-x-t-d cmd:dired-other-tab
-				C-x-t-f cmd:find-file-other-tab
-				C-x-t-m cmd:tab-move
-				C-x-t-o cmd:tab-next
-				C-x-t-r cmd:tab-rename
+			C-x-t cmd:<undefined>
+				; C-x-t-C-f cmd:find-file-other-tab
+				; C-x-t-Ret cmd:tab-bar-select-tab-by-name
+				; C-x-t-0 cmd:tab-close
+				; C-x-t-1 cmd:tab-close-other
+				; C-x-t-2 cmd:tab-new
+				; C-x-t-b cmd:switch-to-buffer-other-tab
+				; C-x-t-d cmd:dired-other-tab
+				; C-x-t-f cmd:find-file-other-tab
+				; C-x-t-m cmd:tab-move
+				; C-x-t-o cmd:tab-next
+				; C-x-t-r cmd:tab-rename
 			C-x-y cmd:<undefined>
 			C-x-u cmd:undo
 			C-x-i cmd:insert-file
@@ -294,6 +298,10 @@ keystrokes +scope:global-map
 				C-x-C-h cmd:<undefined>
 				C-x-C-j cmd:<undefined>
 				C-x-C-k-
+					C-x-C-k-C-a cmd:kmacro-add-counter
+					C-x-C-k-C-c cmd:kmacro-set-counter
+					C-x-C-k-C-d cmd:kmacro-delete-ring-head
+					; TODO: proceed
 				C-x-C-l cmd:downcase-region
 				C-x-C-<semicolon> cmd:comment-line
 				C-x-C-' cmd:<undefined>
@@ -307,6 +315,14 @@ keystrokes +scope:global-map
 				C-x-C-, cmd:<undefined>
 				C-x-C-. cmd:<undefined>
 				C-x-C-/ cmd:<undefined>
+				C-x-C-Left cmd:previous-buffer
+				C-x-C-Up cmd:<undefined>
+				C-x-c-Down
+				C-x-C-Right cmd:next-buffer
+			C-x-Left cmd:previous-buffer
+			C-x-Up cmd:<undefined>
+			C-x-c-Down
+			C-x-Right cmd:next-buffer
 		C-c-
 			C-c-Tab cmd:<undefined>
 			C-c-q cmd:<undefined>
@@ -365,13 +381,46 @@ keystrokes +scope:global-map
 			C-M-y cmd:<undefined>
 			C-M-u cmd:backward-up-list
 			C-M-i cmd:backward-button
-			C-M-o cmd:<undefined>
+			C-M-o cmd:split-line
 			C-M-p xfce:ShowDisplaySettingsFrame
 			C-M-[ cmd:<undefined>
+			C-M-{ cmd:<undefined>
 			C-M-] cmd:<undefined>
-			C-M-i cmd:completion-at-point
-			C-M-o cmd:split-line
+			C-M-} cmd:<undefined>
+			C-M-Caps cmd:<ignored>
+			C-M-a cmd:beginning-of-defun
+			C-M-s cmd:isearch-forward-regexp
+			C-M-d gnome:MinimizeWindows
+			C-M-f cmd:forward-sexp
+			C-M-g cmd:<undefined>
+			C-M-h cmd:mark-defun
+			C-M-j cmd:indent-new-comment-line
+			C-M-k cmd:kill-sexp
+			C-M-l cmd:reposition-window
+			C-M-<semicolon> cmd:<undefined>
+			C-M-: cmd:<undefined>
+			C-M-' cmd:<undefined>
+			C-M-" cmd:<undefined>
+			C-M-z cmd:<undefined>
+			C-M-x cmd:<undefined>
+			C-M-c cmd:exit-recursive-edit
+			C-M-v cmd:scroll-other-window
+			C-M-b cmd:backward-sexp
+			C-M-n cmd:forward-list
+			C-M-m cmd:<undefined>
+			C-M-, cmd:<undefined>
+			C-M-< cmd:<undefined>
+			C-M-. cmd:xref-find-apropos
+			C-M-> cmd:<undefined>
+			C-M-/ cmd:dabbrev-completion
+			C-M-? cmd:<undefined>
+			C-M-\ cmd:<ignored>
+			C-M-| cmd:<ignored>
 		C-Space cmd:set-mark-command
+		C-Left cmd:left-word
+		C-Up cmd:backward-paragraph
+		C-Down cmd:forward-paragraph
+		C-Right cmd:right-word
 	M-
 		M-Esc-Esc cmd:keyboard-escape-quit
 		M-<n> cmd:digit-argument
@@ -393,9 +442,20 @@ keystrokes +scope:global-map
 			M-o-l cmd:facemenu-set-bold-italic
 		M-p cmd:<undefined>
 		M-[ cmd:<undefined>
+		M-{ cmd:backward-paragraph
 		M-] cmd:<undefined>
+		M-} cmd:forward-paragraph
 		M-a cmd:backward-sentence
 		M-s-
+			M-s-h-
+				M-s-h-. cmd:highlight-symbol-at-point
+				M-s-h-f cmd:hi-lock-find-patterns
+				M-s-h-l cmd:highlight-lines-matching-regexp
+				M-s-h-p cmd:highlight-phrase
+				M-s-h-r cmd:highlight-regexp
+				M-s-h-u cmd:unhighlight-regexp
+				M-s-h-w cmd:hi-lock-write-interactive-patterns
+			M-s-M-w cmd:eww-search-words
 		M-d cmd:kill-word xfce:minimize-all-windows^?
 		M-f cmd:forward-word
 		M-g-
@@ -416,7 +476,7 @@ keystrokes +scope:global-map
 		M-. cmd:xref-find-definitions
 		M-/ cmd:dabbrev-expend
 		M-Space xfce:FrameOptions
-		M-LeftArrow cmd:left-word
-		M-UpArrow cmd:<undefined>
-		M-DownArrow cmd:<undefined>
-		M-RightArrow cmd:right-word
+		M-Left cmd:left-word
+		M-Up cmd:<undefined>
+		M-Down cmd:<undefined>
+		M-Right cmd:right-word
