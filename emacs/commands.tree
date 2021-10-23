@@ -13,5 +13,8 @@ commands
 	reference
 		where-is kb:C-h-w,F1-w
 	navigation
-		forward-char kb:C-f
+		previous-line kb:C-p
 		backward-char kb:C-b
+		next-line kb:C-n
+		forward-char kb:C-f
+		recenter-top-bottom kb:C-l
