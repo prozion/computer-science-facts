@@ -26,6 +26,7 @@ keystrokes +scope:global-map
 	End cmd:move-end-of-line
 	PageDown cmd:scroll-up-command
 	Tab cmd:forward-button
+	Caps-x- eq:C-x-
 	C-` cmd:<undefined>
 		C-<n> cmd:digit-argument
 		C-- cmd:negative-argument
