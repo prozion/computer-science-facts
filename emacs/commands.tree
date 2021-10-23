@@ -4,6 +4,7 @@ commands
 		mark-whole-buffer kb:C-x-h
 		save-buffer kb:C-x-C-s ergo:C-s
 		switch-to-buffer cmd:C-x-b
+		other-window kb:C-x-o
 	edit
 		comment-line kb:C-x-C-<semicolon>
 		quoted-insert kb:C-q
