@@ -5,7 +5,11 @@ keystrokes +scope:global-map
 	Esc-- eq:M-
 		Esc-C-end cmd:end-of-defun
 	F1 eq:C-h
-	F2- 
+	F2-
+		F2-F2 cmd:2C-two-columns
+		F2-2 cmd:2C-two-columns
+		F2-s cmd:2C-split
+		F2-b cmd:2C-associate-buffer
 	F3 cmd:kmacro-start-macro-or-insert-counter
 	F4 cmd:kmacro-end-or-call-macro
 	F5 cmd:<undefined>
@@ -172,7 +176,7 @@ keystrokes +scope:global-map
 			C-x-w cmd:<undefined>
 			C-x-e cmd:kmacro-end-and-call-macro
 			C-x-r-
-				C-x-r-Esc-
+				C-x-r-Esc-w eq:C-x-r-M-w
 				C-x-r-C-@ cmd:point-to-register
 				C-x-r-Spc cmd:point-to-register
 				C-x-r-+ cmd:increment-register
@@ -197,6 +201,7 @@ keystrokes +scope:global-map
 				C-x-r-x cmd:copy-to-register
 				C-x-r-y cmd:yank-rectangle
 				C-x-r-C-Spc cmd:point-to-register
+				C-x-r-M-w cmd:copy-rectangle-as-kill
 			C-x-t cmd:<undefined>
 				; C-x-t-C-f cmd:find-file-other-tab
 				; C-x-t-Ret cmd:tab-bar-select-tab-by-name
@@ -217,9 +222,7 @@ keystrokes +scope:global-map
 			C-x-[ cmd:backward-page
 			C-x-] cmd:forward-page
 			C-x-a-
-			C-x-a-
-			C-x-a-
-			C-x-a-
+				C-x-a-
 				C-x-a-C-a cmd:add-mode-abbrev
 				C-x-a-' cmd:expand-abbrev
 				C-x-a-+ cmd:add-mode-abbrev
@@ -227,6 +230,8 @@ keystrokes +scope:global-map
 				C-x-a-e cmd:expand-abbrev
 				C-x-a-g cmd:add-mode-abbrev
 				C-x-a-i-
+					C-x-a-i-g cmd:inverse-add-global-abbrev
+					C-x-a-i-l cmd:inverse-add-mode-abbrev
 				C-x-a-l cmd:add-mode-abbrev
 				C-x-a-n cmd:expand-jump-to-next-slot
 				C-x-a-p cmd:expand-jump-to-previous-slot
@@ -251,6 +256,8 @@ keystrokes +scope:global-map
 				C-x-v-I cmd:vc-log-incoming
 				C-x-v-L cmd:vc-print-root-log
 				C-x-v-M-
+					C-x-v-M-D cmd:vc-diff-mergebase
+					C-x-v-M-L cmd:vc-log-mergebase
 				C-x-v-O cmd:vc-log-outgoing
 				C-x-v-P cmd:vc-push
 				C-x-v-a cmd:vc-update-change-log
@@ -459,6 +466,14 @@ keystrokes +scope:global-map
 		M-d cmd:kill-word xfce:minimize-all-windows^?
 		M-f cmd:forward-word
 		M-g-
+			M-g-Tab cmd:move-to-column
+			M-g-c cmd:goto-char
+			M-g-g cmd:goto-line
+			M-g-n cmd:next-error
+			M-g-p cmd:previous-error
+			M-g-M-g cmd:goto-line
+			M-g-M-n cmd:next-error
+			M-g-M-p cmd:previous-error
 		M-h cmd:mark-paragraph
 		M-j cmd:default-indent-new-line
 		M-k cmd:kill-sentence

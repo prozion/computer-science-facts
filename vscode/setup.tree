@@ -1,0 +1,6 @@
+setup
+	Open_default_settings menu:`File,Preferences,Settings`
+	Edit_user_settings cmd:`Ctrl-Shift-P,?`
+files
+	keybindings path:~/.config/Code_-_OSS/User/keybindings.json
+	settings path:~/.config/Code_-_OSS/User/settings.json

@@ -1,0 +1,18 @@
+linux
+	clojure
+		atom
+			install_repl ref:install_chlorine_package rem:"protoREPL, based on nREPL server, is no longer maintained"
+	clojurescript
+		simple_repl_workflow
+			build_and_launch_repl bash:`clj -M -m cljs.main -c ttracker.client.core -r` ; `clj -M --main cljs.main --compile ttracker.client.core --repl`
+			rebuild repl:`(require '[hello-world.core :as hello] :reload)`
+		lumo_workflow
+			npm bash:`sudo apt install npm`
+			lumo bash:`sudo npm install -g lumo-cljs`
+			start_socket_repl bash:`lumo -n 3322`
+			connect_to_repl_from_ide
+				atom
+					install_chlorine_package cmd:`apm install chlorine`
+					connect_atom_to_repl atom-cmd:`chlorine:connect_socket_repl` kb:`ctrl-; y` server:127.0.0.1 port:3322
+					rebuild kb?:`ctrl-; f`
+			start_figwheel bash:`cd <project_root> && clj -A:fig:build`
