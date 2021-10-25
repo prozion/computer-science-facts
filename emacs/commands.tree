@@ -1,5 +1,6 @@
 commands
 	buffers
+		delete-other-windows kb:C-x-1
 		list-buffers kb:C-x-C-b
 		mark-whole-buffer kb:C-x-h
 		save-buffer kb:C-x-C-s ergo:C-s
@@ -9,6 +10,11 @@ commands
 		comment-line kb:C-x-C-<semicolon>
 		quoted-insert kb:C-q
 		transpose-words kb:M-t
+	exit
+		save-buffers-kill-terminal kb:C-x-C-c
+	eval
+		eval-buffer
+		eval-last-sexp kb:C-x-C-e
 	files
 		find-file kb:C-x-C-f
 	reference

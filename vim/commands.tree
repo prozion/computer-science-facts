@@ -1,0 +1,3 @@
+vim_commands
+    gg emacs:beginning-of-buffer vi:goto-line
+    G emacs:end-of-buffer
