@@ -34,6 +34,7 @@ keystrokes +scope:global-map
 	PageDown cmd:scroll-up-command
 	Tab cmd:forward-button
 	Caps-x- eq:C-x-
+	. cmd:self-insert-command
 	C-` cmd:<undefined>
 		C-<n> cmd:digit-argument
 		C-- cmd:negative-argument

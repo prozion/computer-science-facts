@@ -1,3 +1,10 @@
-vim_commands
-    gg emacs:beginning-of-buffer vi:goto-line
-    G emacs:end-of-buffer
+commands
+	normal_mode
+		q
+		w
+		e
+		r
+		t
+		y
+	insert_mode
+	visual_mode
