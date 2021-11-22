@@ -304,7 +304,7 @@ keystrokes +scope:global-map
 				C-x-C-f cmd:find-file
 				C-x-C-g cmd:<undefined>
 				C-x-C-h cmd:<undefined>
-				C-x-C-j cmd:<undefined>
+				C-x-C-j cmd:dired-jump
 				C-x-C-k-
 					C-x-C-k-C-a cmd:kmacro-add-counter
 					C-x-C-k-C-c cmd:kmacro-set-counter
