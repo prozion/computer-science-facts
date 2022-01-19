@@ -1,0 +1,20 @@
+org_mode
+	keybindings
+		C-c-C-d cmd:org-deadline
+		C-c-/-d cmd:org-check-deadlines
+		C-c-C-s cmd:org-schedule
+		C-c-/-b cmd:org-check-before-data
+		C-c-/-a cmd:org-check-after-data
+		M-Ret cmd:org-meta-return d:"insert a new heading, item or row"
+		C-Ret cmd:org-insert-heading-respect-content d:"insert a new heading at the end of the current subtree"
+		C-x-n-s cmd:org-narrow-to-subtree
+		C-x-n-w cmd:widen
+		C-c-* cmd:org-toggle-heading
+	formatting
+		*{1-?} d:"Headers and subheaders"
+		bold code:*bold*
+		underlined code:_underlined_
+		code code:~code~
+		verbatim code:=verbatim=
+		italic code:/italic/ rem:"doesn't work in my case"
+		strike-through code:+strike-through+

@@ -1,7 +1,7 @@
 # Flex css properties:
 flex:
   order:
-    = flex-grow
+    - flex-grow
     - flex-shrink
     - flex-basis
   display:
