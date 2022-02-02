@@ -38,7 +38,7 @@ languages
 	SPARQL standard-url:w3.org/TR/2013/REC-sparql11-query-20130321,w3.org/TR/2013/REC-sparql11-protocol-20130321
 	SPARQL_Update
 	SPIN deabbr:"SPARQL Inference Notation" spec:w3.org/Submission/spin-overview
-	SWRL deabbr:"Semantic Web Rule Language" syntax:Datalog_RuleML
+	SWRL deabbr:"Semantic Web Rule Language" syntax:Datalog_RuleML spec:w3.org/Submission/SWRL
 	XCL d:"XML-based notation for CL" based-on:XML part-of:CL
 	XODL
 	UPML
@@ -54,5 +54,8 @@ syntaxes
 	RDFa_Lite subset-of:RDFa
 	RDF/XML
 	Turtle spec:w3.org/TR/turtle file-ext:"ttl" subset-of:Notation3 validator-url:librdf.org/parse,rdfabout.com/demo/validator
+formats
+	HDT deabbr:"Header, Dictionary, Triples" url:rdfhdt.org
+	JSON-LD deabbr:"JSON for Linking Data"
 	
 	

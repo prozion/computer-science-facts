@@ -1,5 +1,0 @@
-aliases
-	expressions
-		install predicate:cmd object-prefix:`pacman -Sy `
-	variables
-		pc_arc value:"x86_64" options-list:`/usr/lib/grub`

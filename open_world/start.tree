@@ -1,0 +1,5 @@
+open_world
+	open_source
+	open_infrastructure
+		Open_Science_W3C_community_group url:w3.org/community/opensci
+		Solid url:inrupt.com/solid developer:Inrupt spec-url:github.com/solid/specification
