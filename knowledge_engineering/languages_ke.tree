@@ -6,16 +6,23 @@ languages
 	CycL
 	DAML deabbr:"DARPA Agent Markup Language" developer:DARPA syntax:RDF-XML,XML
 	Datalog
+	DOGMA
 	FLogic alt-id:F-Logic
+	Gellish
+	IDEF5
 	KIF deabbr:"Knowledge Interchange Format" from:PostScript
 	KL-ONE developer:Ronald_Brachman start:1985? type:frame_language
 	LBase
 	LEGO deabbr:"Logical Extension of GO" extension-of:GO
 	LOOM from:KL-ONE
+	MOF
 	MQL deabbr:"Metaweb Query Language"
+	OBO
 	OCML deabbr:"Operational Conceptual Modelling Language"
 	OIL deabbr:"Ontology Inference Layer"
 	OKBC deabbr:"Open Knowledge Base Connectivity"
+	Olog
+	OntoUML
 	OpenGraph developer:Facebook
 	OWL deabbr:"Web Ontology Language" from:KL-ONE syntax:OWL/XML,Functional_Syntax,Manchester_Syntax schema-url:w3.org/2002/07/owl
 	OWL1 is-a:OWL
@@ -33,12 +40,15 @@ languages
 	RIF deabbr:"Rule Interchange Format"
 	RIF_BLD deabbr:"RIF Basic Logic Dialect" dialect-of:RIF
 	RIF_PRD deabbr:"RIF Production Rule Dialect" dialect-of:RIF
+	SADL deabbr:"Semantic Application Design Language"
+	SBVR deabbr:"Semantics of Business Vocabularies and Rules"
 	SERQL deabbr:"Second Generation RDF Query Language"
 	SHOE deabbr:"Simple HTML Ontology Extensions"
 	SPARQL standard-url:w3.org/TR/2013/REC-sparql11-query-20130321,w3.org/TR/2013/REC-sparql11-protocol-20130321
 	SPARQL_Update
 	SPIN deabbr:"SPARQL Inference Notation" spec:w3.org/Submission/spin-overview
 	SWRL deabbr:"Semantic Web Rule Language" syntax:Datalog_RuleML spec:w3.org/Submission/SWRL
+	TOVE_Project
 	XCL d:"XML-based notation for CL" based-on:XML part-of:CL
 	XODL
 	UPML
@@ -53,6 +63,7 @@ syntaxes
 	RDFa spec:w3.org/TR/rdfa-core approach:Microformat
 	RDFa_Lite subset-of:RDFa
 	RDF/XML
+	RDF* syn:RDF-star url:w3c.github.io/rdf-star/cg-spec/2021-07-01.html
 	Turtle spec:w3.org/TR/turtle file-ext:"ttl" subset-of:Notation3 validator-url:librdf.org/parse,rdfabout.com/demo/validator
 formats
 	HDT deabbr:"Header, Dictionary, Triples" url:rdfhdt.org
