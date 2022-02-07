@@ -1,0 +1,10 @@
+other_libraries
+	setuptools url:setuptools.pypa.io d:"library designed to facilitate packaging Python projects" extends:distutils
+standard_libraries
+	argparse d:"Command-line option and argument parsing library."
+	array d:"Space efficient arrays of uniformly typed numeric values."
+	distutils d:"Support for building and installing Python modules into an existing Python installation."
+	importlib
+		import_module arg:name,package=None d:"import a module"
+		reload arg:module d:"reload the module and return it"
+	os
