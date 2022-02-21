@@ -1,0 +1,57 @@
+fediverse
+	abbreviations
+		NSFW deabbr:"Not safe for work"
+	applications
+		Diaspora start:2010 founder:Илья_Житомирский framework:cs/RoR protocol:DFP
+		Frendica start:2010 protocol:OStatus,ActivityPub,DFP publishes-to:Facebook,LinkedIn,Twitter,LiveJournal,Tumblr
+		Funkwhale
+		GNU_Social start:2010 stable-release:2014 protocol:OStatus,XMPP
+		Hubzilla before:RedMatrix protocol:DFP,ActivityPub,OStatus,Zot hubs-list-url:start.hubzilla.org/register
+		Identi.ca start:2008 end:2013 url:identi.ca protocol:OStatus founder:Evan_Prodromou
+		Librem_Social forked-from:Mastodon
+		Lemmy like:Reddit
+		Mastodon start:2016 docs-url:docs.joinmastodon.org
+		Misskey
+		Otter
+		PixelFed start:2012 like:Instagram
+		Pleroma
+		Plume
+		Pump.io derived-from:Identi.ca url:pump.io
+		SocialHome protocol:DFP
+		WriteFreely
+		Write.as commercial:<t>
+	formats
+		ActivityStream based-on:cs/JSON
+	instances
+	mobile_apps
+		android
+			Fedi connects-to:Mastodon
+			Gakki
+			Nomad connects-to:Hubzilla
+			NStatus connects-to:GNU_Social,Pump.io type:mobileapp
+			PeerTube
+			PixelDroid connects-to:PixelFed
+			PixelCat
+			Subway_Tooter
+			Tusky connects-to:Mastodon
+			Twidere_X connects-to:Mastodon
+			Husky forked-from:Tusky
+	network_navigation
+		Fediverse.party
+	people
+		Evan_Prodromou bdate:14.10.1968 a-mater:uni/UCalifornia
+		Илья_Житомирский bdate:12.10.1989 ddate:12.11.2011
+	protocols
+		ActivityPub start:2018
+		DFP deabbr:"Diaspora Federation Protocol" url:diaspora.github.io/diaspora_federation
+		Jabber
+		OStatus
+		XMPP eq:Jabber
+		SSB 
+	p2p_sn
+		Twister url:twister.net.co
+		Pandora url:github.com.com/Novator/Pandora
+		Briar url:briarproject.org
+		Manyverse
+		ZeroNET
+		Movim protocol:XMPP
