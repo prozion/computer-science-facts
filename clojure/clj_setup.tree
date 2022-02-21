@@ -1,3 +1,6 @@
+windows
+	with_leiningen download-url:https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein.bat cmd:`lein self-install`
+	run_clojure_repl cmd:`lein repl`
 linux
 	clojure
 		atom

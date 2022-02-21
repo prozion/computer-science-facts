@@ -1,0 +1,26 @@
+java_tools_for_rdf url:jena.apache.org/documentation/javadoc/arq/org/apache/jena/riot/package-summary.html
+	Jena
+packages
+	org.apache.jena
+		JsonLDReadContext extends:Context
+		JsonLDWriteContext extends:Context
+	org.apache.jena.riot
+		IO_Jena
+		Lang
+		LangBuilder
+		RDFDataMgr
+		RDFFormat
+		RDFFormatVariant
+		RDFFormat.JSONLDVariant
+		RDFParser
+		RDFWriter
+	org.apache.jena.sparql.util
+		Context
+	oaj.jena.rdf.model d:"The Jena core. Creating and manipulating RDF graphs."
+	oaj.riot d:"Reading and Writing RDF."
+	oaj.jena.datatypes d:"Provides the core interfaces through which datatypes are described to Jena. 	Typed literals"
+	oaj.jena.ontology d:"Abstractions and convenience classes for accessing and manipulating ontologies represented in RDF. 	Ontology API"
+	oaj.jena.rdf.listeners d:"Listening for changes to the statements in a model"
+	oaj.jena.reasoner d:"The reasoner subsystem is supports a range of inference engines which derive additional information from an RDF model 	Reasoner how-to"
+	oaj.jena.shared d:"Common utility classes"
+	oaj.jena.vocabulary d:"A package containing constant classes with predefined constant objects for classes and properties defined in well known vocabularies"

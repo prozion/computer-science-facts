@@ -12,6 +12,8 @@ libs
 		cronj d:"A library for creating cron-like scheduling tasks"
 		digest d:"Digest algorithms (md5, sha1 …​) for Clojure"
 		environ d:"allows to create different application configuration in different environments"
+		etaoin d:"testing framework, that uses webdriver interface"
+		expectations/clojure.test
 		glimt d:"HTTP FSM for re-frame"
 		hiccup d:"A fast library for rendering HTML in Clojure"
 		kee-frame d:"re-frame with batteries included"

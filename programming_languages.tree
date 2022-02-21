@@ -421,7 +421,7 @@ programming_language
 	Vala year:2006 organization:GNOME from:Scala,ML,Haskell
 	Ada_2005 year:2007 organization:ACAA from:Ada_95
 	Agda year:2007 designer:Ulf_Norell from:Coq,Epigram,Haskell
-	Clojure year:2007 designer:Rich_Hickey from:Lisp,ML,Haskell,Erlang
+	Clojure year:2007 designer:Rich_Hickey first-commit:24.03.2006 public-release:16.10.2007 from:Lisp,ML,Haskell,Erlang
 	LOLCODE year:2007 designer:Adam_Lindsay from:<unique>
 	Oberon-07 year:2007 designer:Niklaus_Wirth from:Oberon
 	Nim year:2008 designer:Andreas_Rumpf from:Python,Lisp,Object Pascal
