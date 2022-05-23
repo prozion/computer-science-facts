@@ -6,10 +6,14 @@ commands
 		save-buffer kb:C-x-C-s ergo:C-s
 		switch-to-buffer cmd:C-x-b
 		other-window kb:C-x-o
+	commands
+		keyboard-quit kb:C-g
 	edit
 		comment-line kb:C-x-C-<semicolon>
+		evil-undo kb:u
 		quoted-insert kb:C-q
 		transpose-words kb:M-t
+		undo-tree-visualize kb:C-x-u
 	exit
 		save-buffers-kill-terminal kb:C-x-C-c
 	eval
@@ -18,10 +22,14 @@ commands
 	files
 		find-file kb:C-x-C-f
 	reference
+		describe-function kb:C-h-f
+		describe-key kb:C-h-k
 		where-is kb:C-h-w,F1-w
-	navigation
+	navigation_file
 		previous-line kb:C-p
 		backward-char kb:C-b
 		next-line kb:C-n
 		forward-char kb:C-f
 		recenter-top-bottom kb:C-l
+	navigation_project
+		projectile-dired kb:C-c-C-p-D d:"switch to project"
