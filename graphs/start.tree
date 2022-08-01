@@ -1,0 +1,27 @@
+apps
+	Cytoscape url:cytoscape.org
+	Gephi url:gephi.org
+	Graphviz url:graphviz.org start:1991 company:AT&T_Labs_Research online:Webgraphviz
+	SocNetV d:"Social network visualizer"
+	yEd online:yEd_Live
+online_apps
+	GraphvizOnline url:dreampuf.github.io/GraphvizOnline engine:circo,dot,fdp,neato,osage,twopi output-format:svg,png,json,xdot,plain,ps
+	Webgraphviz url:webgraphviz.com input-format:dot
+	yEd_Live url:www.yworks.com/yed-live
+graph_languages
+	Adjacency
+	DOT url:graphviz.org/doc/info/lang.html native-app:Graphviz file-ext:gv,dot media-type:"text/vnd.graphviz"
+	EdgeList
+	GML start:2010  deabbr:"Graph Modelling Language" designer:Michael_Himsolt uni:UPassau
+	GraphML organization:Graph_Drawing native-app:Graphlet
+	GraphViz
+	Pajek
+	TabTree start:2018 designer:Denis_Shirshov from:Racket,YAML,Emacs_Org_Mode
+	TGF deabbr:"Trivial Graph Format"
+	UCINET
+graph_query_languages
+	Cypher start:2011 open-up:OpenCypher
+	GQL deabbr:"Graph Query Language"
+	Gremlin d:"Graph traversal language"
+	
+	

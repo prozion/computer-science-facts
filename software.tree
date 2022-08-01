@@ -43,9 +43,7 @@ applications
 		Midnight_Commander start:1994 designer:Miguel_de_Icaza
 		Far_Manager start:1996 deabbr:"File and archive manager" designer:Eugene_Roshal
 		Total_Commander start:1993 designer:Christian_Ghisler previous-name:Windows_Commander
-	graph_editors
-		Graphviz start:1991 company:AT&T_Labs_Research
-		SocNetV
+	graph_editors ref:graphs/apps.tree
 	ide
 		Microsoft_Visual_Studio start:1997 company:Microsoft
 		NetBeans start:1996 company:Apache_Software_Foundation,Oracle_Corporation

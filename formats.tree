@@ -20,14 +20,3 @@ data_serialization
 geography
 	GeoJSON year:2007 from:JSON
 	KML deabbr:"Keyhole Markup Language"
-graph_description
-	GraphML organization:Graph_Drawing native-app:Graphlet
-	GraphViz
-	Adjacency
-	EdgeList
-	Pajek
-	UCINET
-	GML year:2010  deabbr:"Graph Modelling Language" designer:Michael_Himsolt uni:UPassau
-	TGF deabbr:"Trivial Graph Format"
-	DOT native-app:Graphviz
-	TabTree year:2018 designer:Denis_Shirshov from:Racket,YAML,Emacs_Org_Mode
