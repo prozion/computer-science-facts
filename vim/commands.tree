@@ -1,10 +1,55 @@
-commands
-	normal_mode
-		q
-		w
-		e
-		r
-		t
-		y
-	insert_mode
-	visual_mode
+commands rem:"in the command name, when the object (like line, char or word) is current, 'current' considered as default state and ommited for brevity, other kinds of objects (like next, previous) are denoted explicitly"
+	code-find-matching-parenthesis kb:%
+	command-undo-last kb:u
+	command-undo-line-changes kb:U
+	command-undo-undo kb:C-r
+	cursor-move-char-left vim:cursor-left kb:h 
+	cursor-move-char-right vim:cursor-right kb:l 
+	cursor-move-line-down vim:cursor-down kb:j 
+	cursor-move-line-up vim:cursor-up kb:k 
+	cursor-move-next-word-start a:Motion kb:w
+	cursor-move-page-up vim:shift-cursor-down kb:C-b d:"Scroll window pages backward"
+	cursor-move-page-down vim:shift-cursor-up kb:C-f d:"Scroll window pages forward"
+	cursor-move-previous-word-start a:Motion kb:b
+	cursor-move-first-line kb:gg
+	cursor-move-last-line kb:G ckb:$
+	cursor-move-to-line ckb:`\d+` kb:`\d+`G
+	cursor-move-line-end a:Motion kb:$
+	cursor-move-line-first-char a:Motion kb:^
+	cursor-move-line-start a:Motion kb:0
+	cursor-move-word-end a:Motion kb:e
+	editor-change-current-directory ckb:cd
+	editor-exit ckb:q
+	editor-exit-discarding-changes ckb:q!
+	editor-open cmd:`vim`
+	editor-suspend kb:C-z
+	editor-help-open cmd:`vimtutor`
+	file-save ckb:w
+	file-show-location kb:C-g
+	file-write ckb:w
+	shell-execute-command ckb:!
+	text-change a:Operator kb:c
+	text-change-line kb:cc
+	text-char-delete-under-cursor kb:x
+	text-char-delete-before-cursor kb:X ikb:<backspace>
+	text-char-replace-under-cursor kb:r
+	text-copy a:Operator kb:y
+	text-copy-line kb:yy
+	text-delete a:Operator kb:d
+	text-delete-line kb:dd
+	text-delete-to-the-line-end kb:D
+	text-insert-after-cursor nkb:a
+	text-insert-at-line-end nkb:A
+	text-insert-at-line-beginning nkb:I
+	text-insert-before-cursor nkb:i
+	text-insert-after-line nkb:o
+	text-insert-before-line nkb:O
+	text-paste-after-line kb:p
+	text-paste-before-line kb:P
+	text-replace ckb:`<interval>?s/<original>/<substitute>/<modifier>` interval:%,`<startline>,<endline>` modifier:g,c
+	text-search-backward kb:?
+	text-search-forward kb:/
+	text-find-next kb:n,C-i
+	text-find-next-current-word kb:*
+	text-find-previous kb:N,C-o
+	

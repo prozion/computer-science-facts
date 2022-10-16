@@ -1,4 +1,4 @@
-bash_commands sources:`https://ss64.com/bash/<command-name>.html`
+bash_commands source:`https://ss64.com/bash/<command-name>.html`
 	alias d:"Create an alias."
 	apropos d:"Search the manual page names and descriptions, whatis database."
 	bc d:"Arbitrary precision calculator language"

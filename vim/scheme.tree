@@ -1,0 +1,32 @@
+vim-scheme a:owl/Ontology
+	classes
+		Register
+			UnnamedRegister one-of:`""`
+			NumberedRegister one-of:`"[0-9]/i`
+			SmallDeleteRegister one-of:`"-`
+			NamedRegister one-of:`"[a-z]/i`
+			ReadOnlyRegister one-of:`":`,`".`,`"%`
+			AlternateBufferRegister one-of:`"#`
+			ExpressionRegister one-of:`"=`
+			SelectionAndDropRegister one-of:`"*`,`"+`,`"-`
+			BlackHoleRegister one-of:`"_`
+			LastSearchPatternRegister one-of:`"/`
+		Command
+			BashCommand
+			AbstractCommand d:"A command of an abstract code editor"
+				VimCommand
+		KeyCombo
+			NormalModeKeyCombo
+			InsertModeKeyCombo
+			CommandModeKeyCombo
+			ReplaceModeKeyCombo
+		Operator
+		Motion
+	properties +a:rdf/Property
+		cmd domain:AbstractCommand range:BashCommand
+		kb domain:AbstractCommand range:KeyCombo d:"Defines keystrokes sequence that triggers editor's command"
+			nkb domain:VimCommand range:NormalModeKeyCombo
+			ikb domain:VimCommand range:InsertModeKeyCombo
+			ckb domain:VimCommand range:CommandModeKeyCombo
+			rkb domain:VimCommand range:ReplaceModeKeyCombo
+	individuals

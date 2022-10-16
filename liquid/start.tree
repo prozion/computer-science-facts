@@ -1,4 +1,4 @@
-start
+start d:"code editor, written in Clojure"
 	launch cmd1:`clojure -Sdeps '{:deps {mogenslund/liquid {:mvn/version "2.1.1"}}}' -m liq.core` cmd2:`java -jar ~/bin/liquid/liq.jar`
 	setup file:~/.liq
 actions

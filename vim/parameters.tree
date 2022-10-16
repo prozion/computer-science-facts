@@ -1,0 +1,9 @@
+parameters
+	options d:"defined by set, set <option>? - displays option's value, set <option>! - toggles boolean option value"
+		boolean_options
+			number d:"Print the line number in front of each line"
+			ruler
+		valued_options
+			syntax def:"Syntax highlighting" values-example:"help","python"
+	variables d:"defined by let"
+		mapleader
