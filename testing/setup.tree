@@ -1,9 +1,0 @@
-setup_testing_environment
-	install_clojure
-		install_java_jdk
-		download_and_run_leiningen ref:clojure/cli_setup/windows.with_leiningen
-	install_browser_driver
-		install_chrome_driver browser:Chrome download-page-url:github.com/mozilla/geckodriver/releases copy-to:`c:/usr/local/sbin` 
-		install_geckodriver browser:Firefox
-		install_phantomjs cmd:`npm install -g phantomjs`
-		

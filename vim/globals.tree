@@ -1,0 +1,3 @@
+globals
+	MYVIMRC default:`~/.vimrc`
+	VIMRUNTIME default:`/usr/share/vim/vim82`

@@ -1,0 +1,78 @@
+start
+	annotation_editors
+		Amaya based-on:Annotea uses:redland last:01.2012 url:w3.org/Amaya
+	sources
+		AGI_Russia url:agirussia.org/ontology
+	databases
+		DBpedia url:dbpedia.org
+		Open_Data_Directory url:dir.w3.org active:<f>
+		Wikidata url:wikidata.org
+	database_engines
+		AnzoGraph
+		GraphDB
+	languages ref:languages.tree
+	merging_ontologies
+		Kazakov_Ponomaryov_2021 title:"On the Complexity of Semantic Integration of OWL Ontologies"
+		Ontology_Matching url:ontologymatching.org
+	ontology_browsers
+		OLSVis url:ols.wordvis.com d:"visual browser for EBI's OLS"
+	exercises
+		Ontology_Design_Patterns_Training url:ontologydesignpatterns.org/wiki/Training:Main
+	ontology_registries
+		crawler_aggregations
+			Ontaria url:w3.org/2004/ontaria end:2004 based-on:Semwalker
+		ontology_lists
+			prefixes_lists
+				Ontology_archiver url:github.com/linkeddata/ontology-archiver/blob/master/all.ttl prefixes:2206
+			Protege_Ontology_Library url:protegewiki.stanford.edu/wiki/Protege_Ontology_Library
+			Vocab.org url:vocab.org
+		ontology_databases
+			Linked_Open_Vocabularies url:lov.linkeddata.es/dataset/lov
+		ontology_repositories
+			github_ontology_repositories
+				Omnlib url:github.com/w3c/omn/tree/master/omnlib/import ontologies:38
+			BioPortal url:bioportal.bioontology.org topic:biology ontlogies:963 d:"repository of biomedical ontologies"
+			COLORE deabbr:"Common Logic Ontology Repositor" url:colore.oor.net lang:CL
+			Cupboard url:cupboard.open.ac.uk:8081/cupboard-search inactive:<t>
+			DAML_Ontology_Library lang:DAML url:www.daml.org/ontologies/
+			OntoBee url:ontobee.org topic:biology ontologies:246 source:RDF
+			OntoSelect url:olp.dfki.de/ontoselect active:<f>
+			Prefix.cc url:prefix.cc
+			ROMULUS last:2012 url:www.thezfiles.co.za/ROMULUS
+			SchemaWeb url:web.archive.org/web/20110222001252/http://schemaweb.info
+	ontology_projects
+		Schema.org url:schema.org community:Schema.org_group
+		Wikidata url:wikidata.org
+	ontology_sparql_endpoints
+		DBpedia url:dbpedia.org/sparql
+	organizations
+		companies
+			Inrupt cto:Tim_Berners-Lee
+		The_ART_Research_Group url:art.uniroma2.it uni:uni/URome
+		W3C url:w3c.org
+	permanent_URI
+		Purl url:purl.org
+		W3id url:w3id.org
+	platforms
+		Semantic_Turkey url:semanticturkey.uniroma2.it uses:RDF4J,CODA framework:OSGi,Spring
+	projects
+		Annotea url:w3.org/2001/Annotea last-activity:01.2003 d:"Annotea enhances collaboration via shared metadata based Web annotations, bookmarks, and their combinations"
+		OpenEngiadina url:codeberg.org/openengiadina related-to:Fediverse
+		Solid author:Tim_Berners-Lee url:solid.mit.edu
+	search_engines
+		Falcons url:iws.seu.edu.cn/services/falcons active:<f> pub-url:archive.thewebconf.org/www2008/papers/pdf/p1101-cheng.pdf
+		Ontology_Lookup_Service url:www.ebi.ac.uk/ols/index topic:biology
+		Sindice url:sindice.com method:API
+		Swoogle url:swoogle.umbc.edu active:<f>
+		Watson_Search_Engine url:kmi-web05.open.ac.uk/WatsonWUI active:<f> pub-url:semantic-web-journal.net/sites/default/files/swj96_1.pdf
+	sparql_endpoints
+		BNF url:data.bnf.fr/sparql
+		DBpedia_Sparql url:dbpedia.org/sparql/
+		Virtuoso_SPARQL_Query_Editor url:orpha.net/sparql accepts:graph_IRI
+		Yasgui url:yasgui.triply.cc
+	triplestores
+		Apache_Jena_Fuseki platform:Java
+		RDFDB url:home.hccnet.nl/th.v.d.gronde/dev/rdfdb type:serverapp last:07.2004
+	wikis
+		Энциклопедия_менеджмента_знаний url:kmwiki.ru
+		Protege_Wiki url:protegewiki.stanford.edu/wiki

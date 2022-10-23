@@ -1,0 +1,26 @@
+settings +vim-t:Option
+	autocomplete t:Bool
+	bracket.autoclose t:Bool
+	cursor.show-position t:Bool vim:ruler
+	font.family t:String atom:"Consolas, DejaVu Sans Mono, monospace"
+	font.size t:Int atom:15
+	indent.c-languages t:Bool vim:cindent
+	indent.guide.show t:Bool
+	invisibles.show t:Bool
+	keyboard.leader-key t:KeyCombo vim-t:Variable vim:mapleader 
+	line.height t:Float atom:1.4
+	line.number.show t:Bool vim:number
+	line.number.margin t:Int vim:numberwidth
+	line.preferred-length t:Int atom:100
+	paren.match t:Bool vim:showmatch
+	paren.match.delay t:Int vim:matchtime
+	search.ignore-case t:Bool vim:ignorecase
+	search.incremental t:Bool vim:incsearch
+	search.matches.highlight t:Bool vim:hlsearch
+	softwrap t:Bool atom:<t>
+	softwrap.hanging-indent t:Int
+	syntax.highlight t:Bool vim:syntax
+	syntax.language t:String vim:syntax
+	tab.shift.width t:Int vim:shiftwidth atom:2
+	tab.width t:Int vim:tabstop atom:2
+	

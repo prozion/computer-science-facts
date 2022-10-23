@@ -1,32 +1,72 @@
 commands rem:"in the command name, when the object (like line, char or word) is current, 'current' considered as default state and ommited for brevity, other kinds of objects (like next, previous) are denoted explicitly"
+	buffer-delete ckb:bd
+	buffer-display ckb:b
+	buffer-display-all ckb:ball
+	buffer-display-first ckb:bfirst
+	buffer-display-last ckb:bl,blast
+	buffer-display-next ckb:bn,bnext
+	buffer-display-previous ckb:bprevious
+	buffer-list ckb:ls,files,buffers
 	code-find-matching-parenthesis kb:%
+	code-goto-link ckb:C-]
+	code-ungoto-link ckb:C-t
+	commandline-autocomplete ckb:Tab
+	commandline-show-completion-list ckb:C-d
+	command-finish-recording kb:q
+	command-start-recording kb:q`[a-z]`
 	command-undo-last kb:u
 	command-undo-line-changes kb:U
 	command-undo-undo kb:C-r
+	; comments: https://github.com/preservim/nerdcommenter
+	comment-line kb:`<leader>cc` plugin:nerdcommenter
+	comment-line-toggle kb:`<leader>ci` plugin:nerdcommenter
 	cursor-move-char-left vim:cursor-left kb:h 
-	cursor-move-char-right vim:cursor-right kb:l 
+	cursor-move-char-right vim:cursor-right kb:l,` `
+	cursor-move-first-line kb:gg
+	cursor-move-last-line kb:G ckb:$
 	cursor-move-line-down vim:cursor-down kb:j 
 	cursor-move-line-up vim:cursor-up kb:k 
+	cursor-move-next-word-end a:Motion kb:e
 	cursor-move-next-word-start a:Motion kb:w
+	cursor-move-next-word-start-no-specials a:Motion kb:W
 	cursor-move-page-up vim:shift-cursor-down kb:C-b d:"Scroll window pages backward"
 	cursor-move-page-down vim:shift-cursor-up kb:C-f d:"Scroll window pages forward"
 	cursor-move-previous-word-start a:Motion kb:b
-	cursor-move-first-line kb:gg
-	cursor-move-last-line kb:G ckb:$
+	cursor-move-till-char a:Motion kb:t
 	cursor-move-to-line ckb:`\d+` kb:`\d+`G
 	cursor-move-line-end a:Motion kb:$
-	cursor-move-line-first-char a:Motion kb:^
+	cursor-move-line-first-char a:Motion kb:^,_
+	cursor-move-line-last-non-blank-char kb:g_
 	cursor-move-line-start a:Motion kb:0
-	cursor-move-word-end a:Motion kb:e
 	editor-change-current-directory ckb:cd
-	editor-exit ckb:q
-	editor-exit-discarding-changes ckb:q!
 	editor-open cmd:`vim`
+	editor-open-file ckb:e
 	editor-suspend kb:C-z
-	editor-help-open cmd:`vimtutor`
+	editor-open-tutorial cmd:`vimtutor`
+	file-open ckb:e
 	file-save ckb:w
-	file-show-location kb:C-g
+	file-show-location kb:C-g 
+	file-source ckb:so
 	file-write ckb:w
+	folding-close kb:zc
+	folding-close-all kb:zM
+	folding-open kb:h,l,zo
+	folding-open-all kb:zR
+	folding-toggle kb:za
+	help-open ckb:help ; arg examples: w, c_CTRL-D, insert-index
+	help-open-manual ckb:`help user-manual`
+	help-keyword-under-cursor kb:K
+	keycombo-unmap-normal-mode ckb:nunmap
+	keycombo-map-normal-mode ckb:nmap
+	keycombo-map-normal-mode-nonrecursive ckb:nnoremap
+	mark-goto kb:"`[a-z]"
+	mark-set kb:m`[a-z]`
+	mode-switch-to-normal-mode ikb:Esc,C-c,C-[
+	mode-switch-to-command-mode ckb:`:`
+	mode-switch-to-visual-mode ckb:v
+	mode-switch-to-visual-block-mode ckb:C-v
+    mode-switch-to-visual-line-mode kb:S-v
+	screen-scroll-line-downwards ckb:C-y
 	shell-execute-command ckb:!
 	text-change a:Operator kb:c
 	text-change-line kb:cc
@@ -38,18 +78,35 @@ commands rem:"in the command name, when the object (like line, char or word) is 
 	text-delete a:Operator kb:d
 	text-delete-line kb:dd
 	text-delete-to-the-line-end kb:D
+	text-find-next kb:n,C-i
+	text-find-previous kb:N,C-o
 	text-insert-after-cursor nkb:a
+	text-insert-after-line nkb:o
 	text-insert-at-line-end nkb:A
 	text-insert-at-line-beginning nkb:I
 	text-insert-before-cursor nkb:i
-	text-insert-after-line nkb:o
 	text-insert-before-line nkb:O
-	text-paste-after-line kb:p
-	text-paste-before-line kb:P
+	text-insert-previously-inserted ikb:C-@
+	text-paste-after-cursor kb:p
+	text-paste-before-cursor kb:P
+	text-paste-from-file ckb:r
 	text-replace ckb:`<interval>?s/<original>/<substitute>/<modifier>` interval:%,`<startline>,<endline>` modifier:g,c
+	text-replace-mode kb:R
 	text-search-backward kb:?
+	text-search-current-word-backward kb:#
+	text-search-current-word-forward kb:*
 	text-search-forward kb:/
-	text-find-next kb:n,C-i
-	text-find-next-current-word kb:*
-	text-find-previous kb:N,C-o
+	text-surrounder-replace kb:cs`.``.` plugin:surround
+	text-swap-case vkb:~
+	text-swap-char-case kb:~
+	text-uppercase kb:U
+	text-visual-block-mode kb:C-v
+	text-visual-mode kb:v
+	window-close-current ckb:q
+	window-exit ckb:q
+	window-exit-all ckb:qa
+	window-exit-discarding-changes ckb:q!
+	window-jump-to-another kb:C-w-C-w
+	window-maximize-current kb:C-w-T
+	window-resize-all-equal kb:C-w-=
 	

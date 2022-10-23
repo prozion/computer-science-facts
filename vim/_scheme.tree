@@ -18,15 +18,26 @@ vim-scheme a:owl/Ontology
 		KeyCombo
 			NormalModeKeyCombo
 			InsertModeKeyCombo
-			CommandModeKeyCombo
+			CommandlineModeKeyCombo
 			ReplaceModeKeyCombo
+			VisualModeKeyCombo
 		Operator
+		Mode
 		Motion
 	properties +a:rdf/Property
 		cmd domain:AbstractCommand range:BashCommand
+		modes +a:Mode
+			Normal_mode
+			Visual_mode
+			Visual_block_mode
+			Select_mode
+			Operator_pending_mode
+			Insert_mode
+			Command_line_mode
 		kb domain:AbstractCommand range:KeyCombo d:"Defines keystrokes sequence that triggers editor's command"
 			nkb domain:VimCommand range:NormalModeKeyCombo
 			ikb domain:VimCommand range:InsertModeKeyCombo
-			ckb domain:VimCommand range:CommandModeKeyCombo
+			ckb domain:VimCommand range:CommandlineModeKeyCombo
 			rkb domain:VimCommand range:ReplaceModeKeyCombo
+			vkb domain:VimCommand range:VisualModeKeyCombo
 	individuals

@@ -259,6 +259,7 @@ programming_language
 	Emacs_Lisp alt:Elisp year:1985 designer:Richard_Stallman,Guy_Steele from:Common_Lisp,Maclisp	
 	Rapira year:198x name:"Рапира" deabbr:"Расширенный Адаптированный Поплан-Интерпретатор, Редактор, Архив" from:ALGOL_58		
 	Flavors year:198x designer:Howard_Cannon uni:MIT from:Lisp	
+    Newsqueak year:198x designer:Rob_Pike company:Bell_Labs from:C
 	Clarion year:1986 designer:Bruce_Barrington 
 	CorVision year:1986 company:Cortex from:INFORM
 	Eiffel year:1986 designer:Bertrand_Meyer from:Simula_67,Ada
@@ -378,6 +379,7 @@ programming_language
 	Game_Maker_Language year:1999 designer:Mark_Overmars from:Game_Maker
 	Harbour year:1999 designer:Antonio_Linares from:dBase
 	ALF deabbr:"Another logical framework" year:199x uni:Chalmers
+	VimL alt:Vim_script year:199x from:ex_script
 	; 2000s
 	Join_Java year:2000 designer:Stewart_von_Itzstein from:Java
 	C# year:2000 designer:Anders_Hejlsberg organization:ECMA company:Microsoft from:C,C++,Java,Delphi,Modula-2
@@ -424,7 +426,7 @@ programming_language
 	Clojure year:2007 designer:Rich_Hickey first-commit:24.03.2006 public-release:16.10.2007 from:Lisp,ML,Haskell,Erlang
 	LOLCODE year:2007 designer:Adam_Lindsay from:<unique>
 	Oberon-07 year:2007 designer:Niklaus_Wirth from:Oberon
-	Nim year:2008 designer:Andreas_Rumpf from:Python,Lisp,Object Pascal
+	Nim year:2008 designer:Andreas_Rumpf from:Python,Lisp,Object_Pascal
 	Genie year:2008 designer:Jamie_McCracken from:Python,Boo,D,Object Pascal
 	Pure year:2008 designer:Albert_Graf from:Q
 	LFE year:2008 designer:Robert_Virding from:Erlang,Common_Lisp,Maclisp,Scheme,Elixir,Clojure,Hy
@@ -462,7 +464,9 @@ programming_language
 	C++14 year:2014 organization:ISO from:C++,Standard_C,C
 	Solidity year:2014 designer:Christian_Reitwiessner,Alex_Beregszaszi from:JavaScript,C++,Python
 	Wyvern year:2014 designer:Jonathan_Aldrich,Alex_Potanin uni:UWellington
+    Jai year:2014 developer:Jonathan_Blow
 	Pyret year:2015 designer:Ben_Lerner,Joe_Politz uni:UBrown
 	Perl_6 year:2015 organization:The_Rakudo_Team from:Perl,Haskell,Python,Ruby
 	Ring year:2016 designer:Mahmoud_Fayed from:Lua,Python,Ruby,C,C#,BASIC,QML,xBase,Supernova
 	C++17 year:2017 organization:ISO from:C++,Standard_C,C
+    Odin year:2018 designer:Bill_Ginger from:Pascal,C,Go,Oberon-2,Newsqueak,Jai

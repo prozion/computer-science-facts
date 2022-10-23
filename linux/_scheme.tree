@@ -1,12 +1,14 @@
-scheme
-	desktop_environments
-		de deabbr:"desktop environment"
-	distribs d:"Linux distributions"
-		before d:"names, that described distribution had got before"
-		inits deabbr:"init system"
-		pkg deabbr:"package manager"
-		start d:"year of the first release"
-		tarea deabbr:"targeted area"
-	linux_vk
-		u d:"number of users in the vk group"
-		vk d:"vk group URL"
+linux a:owl/Ontology
+	classes
+	properties +a:rdf/Property
+		desktop_environments
+			de deabbr:"desktop environment"
+		distribs d:"Linux distributions"
+			before d:"names, that described distribution had got before"
+			inits deabbr:"init system"
+			pkg deabbr:"package manager"
+			start d:"year of the first release"
+			tarea deabbr:"targeted area"
+		linux_vk
+			u d:"number of users in the vk group"
+			vk d:"vk group URL"
