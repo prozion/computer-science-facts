@@ -1,0 +1,32 @@
+terminal
+	terminal-autocomplete-command cmd:T-T,A-/
+	terminal-autocomplete-envvar cmd:$<part>-T-T
+	terminal-case-lowercase-to-the-end cmd:A-l
+	terminal-case-uppercase-to-the-end cmd:A-u
+	terminal-clear-screen cmd:C-l
+	terminal-delete-to-the-end cmd:C-k
+	terminal-delete-to-the-start cmd:C-u,C-w
+	terminal-edit-line-in-the-editor cmd:C-x-C-e
+	terminal-goto-line-end cmd:C-e
+	terminal-goto-line-start cmd:C-a
+	terminal-goto-char-forward cmd:C-f
+	terminal-goto-char-backward cmd:C-b
+	terminal-list-current-directory cmd:=-T-T
+	terminal-paste-last-command-argument cmd:A-.
+	terminal-search-commands-history cmd:C-r
+	terminal-search-stop-and-edit cmd:C-j
+	terminal-send-sigint cmd:C-c
+	terminal-send-sigkill cmd:C-d
+	terminal-show-all-users cmd:~-T-T
+	terminal-show-subdirectories cmd:<dir>-T-T
+	terminal-show-subdirectories-wo-hidden cmd:*-T-T
+	terminal-suspend-current-task cmd:C-z
+	terminal-swap-char cmd:C-t
+	tmux-goto-window cmd:C-b-<n>
+	tmux-goto-next-window cmd:C-b-n
+	tmux-goto-previous-window cmd:C-b-p`
+	tmux-list-keybindings cmd:C-b-?
+	tmux-rotate-panes-forward cmd:C-b-C-o
+	tmux-split-horizontally cmd:C-b-"
+	tmux-split-vertically cmd:C-b-%
+		

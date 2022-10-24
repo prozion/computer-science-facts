@@ -31,10 +31,12 @@ distribs
 	Red_Hat_Enterprise_Linux from:Red_Hat_Linux start:1995
 	Red_Hat_Linux start:1995
 	Red_Flag_Linux from:Red_Hat_Linux start:2000
+	Red_Linux
 	Scientific_Linux from:Red_Hat_Linux start:2004
 	Slackware start:1993 developer:Patrick_Volkerding
 	Solus start:2012
 	SteamOS from:Debian
 	Ubuntu from:Debian start:2004
 	Zenwalk from:Slackware
+	Гослинукс
 	

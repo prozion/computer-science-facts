@@ -38,6 +38,9 @@ fediverse
 			Husky forked-from:Tusky
 	network_navigation
 		Fediverse.party
+	open_infrastructure
+		Open_Science_W3C_community_group url:w3.org/community/opensci
+		Solid url:inrupt.com/solid developer:Inrupt spec-url:github.com/solid/specification
 	people
 		Evan_Prodromou bdate:14.10.1968 a-mater:uni/UCalifornia
 		Илья_Житомирский bdate:12.10.1989 ddate:12.11.2011
