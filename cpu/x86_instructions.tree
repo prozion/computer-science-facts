@@ -1,0 +1,12 @@
+x86_instructions url:ccfit.nsu.ru/~kireev/lab2/lab2com.htm,en.wikipedia.org/wiki/X86_instruction_listings
+	AAA d:"ASCII adjust AL after addition" op:0x37
+	AAD d:"ASCII adjust AX before division" op:0xd5
+	AAM d:"ASCII adjust AX after multiplication" op:0xd4
+	AAS d:"ASCII adjust AL after subtraction" op:0x3f
+	ADC d:"Add with carry" op:0x10-0x15
+	ADD d:"Add" op:0x00-0x05
+	AND d:"Logical AND" op:0x20-0x25
+	CALL d:"Call procedure" op:0x9a,0xe8
+	CBW d:"Convert byte to word" op:0x98
+	CLC d:"Clear carry flag" op:0xf8
+	

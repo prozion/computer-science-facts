@@ -1,0 +1,31 @@
+x86_registers url:https://en.wikipedia.org/wiki/X86#/media/File:Table_of_x86_Registers_svg.svg
+	AX
+	BX
+	CX
+	CS
+	DI
+	DP
+	DS
+	DX
+	ES
+	FLAGS url:https://en.wikipedia.org/wiki/FLAGS_register
+		CF d:"Carry flag"
+		_ val:1
+		PF d:"Parity flag"
+		_
+		AF d:"Adjust flag"
+		_
+		ZF d:"Zero flag"
+		SF d:"Sign flag"
+		TF d:"Trap flag"
+		IF d:"Interrupt enable flag"
+		DF d:"Direction flag"
+		OF d:"Overflow flag"
+		IOPL d:"I/O privelege level" arc:286+
+		IOPL
+		NT d:"Nested task flag"
+		_ val:1
+	IP
+	SI
+	SP
+	SS

@@ -20,7 +20,19 @@ hardware
 		IBM_1401 year:1959 lang:COBOL,RPG,Fortran company:IBM
 		Honeywell_200 year:1960? lang:COBOL company:Honeywell
 		Honeywell_800 year:1960 lang:COBOL,Fortran company:Honeywell
+		CDC-1604 year:1960 company:CDC chief-designer:Seymour_Cray
+		AN/USQ-20 year:1961 part-of:NTDS ; US Navy
+		CDC-6600 year:1963 company:CDC 
+		CDC-7600 year:1969 company:CDC
+		CDC-8600 end:1972 company:CDC
+		STAR-100 company:CDC designer:Jim_Thornton
 		; CCCР
+		Стрела city:Москва plant:САМ year:1953 machines-n:8
+		Урал-1 city:Пенза plant:САМ year:1957
+		Урал-2 city:Пенза plant:САМ year:1959
+		Урал-3 city:Пенза plant:САМ year:1964
+		БЭСМ-6 city:Москва plant:САМ year:1967 machines-n:355
+		Эльбрус-КБ city:Москва plant:САМ
 		EC-1840 city:Минск
 		ДВК version:ДВК-3,ДВК-4 plant:Квант company:НИИ_Научный_Центр
 		УК-НЦ plant:Квант company:НИИ_Научный_Центр

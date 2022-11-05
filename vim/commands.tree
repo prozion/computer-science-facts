@@ -11,9 +11,8 @@ commands rem:"in the command name, when the object (like line, char or word) is 
 	code-goto-link ckb:C-]
 	code-ungoto-link ckb:C-t
 	commandline-autocomplete ckb:Tab
+	commandline-delete-to-start ckb:C-u
 	commandline-show-completion-list ckb:C-d
-	command-finish-recording kb:q
-	command-start-recording kb:q`[a-z]`
 	command-undo-last kb:u
 	command-undo-line-changes kb:U
 	command-undo-undo kb:C-r
@@ -26,19 +25,25 @@ commands rem:"in the command name, when the object (like line, char or word) is 
 	cursor-move-last-line kb:G ckb:$
 	cursor-move-line-down vim:cursor-down kb:j 
 	cursor-move-line-up vim:cursor-up kb:k 
+	cursor-move-next-char kb:f`<char>`
+	cursor-move-next-section kb:]]
+	cursor-move-next-sentence kb:)
 	cursor-move-next-word-end a:Motion kb:e
 	cursor-move-next-word-start a:Motion kb:w
 	cursor-move-next-word-start-no-specials a:Motion kb:W
-	cursor-move-page-up vim:shift-cursor-down kb:C-b d:"Scroll window pages backward"
-	cursor-move-page-down vim:shift-cursor-up kb:C-f d:"Scroll window pages forward"
+	cursor-move-previous-char kb:F`<char>`
+	cursor-move-previous-section kb:[[
+	cursor-move-previous-sentence kb:(
 	cursor-move-previous-word-start a:Motion kb:b
-	cursor-move-till-char a:Motion kb:t
+	cursor-move-to-char a:Motion kb:t`<char>`
 	cursor-move-to-line ckb:`\d+` kb:`\d+`G
 	cursor-move-line-end a:Motion kb:$
 	cursor-move-line-first-char a:Motion kb:^,_
 	cursor-move-line-last-non-blank-char kb:g_
 	cursor-move-line-start a:Motion kb:0
-	editor-change-current-directory ckb:cd
+	cursor-move-paragraph-after kb:}
+	cursor-move-paragraph-before kb:{
+	editor-change-current-directory kb:cd
 	editor-open cmd:`vim`
 	editor-open-file ckb:e
 	editor-suspend kb:C-z
@@ -56,18 +61,37 @@ commands rem:"in the command name, when the object (like line, char or word) is 
 	help-open ckb:help ; arg examples: w, c_CTRL-D, insert-index
 	help-open-manual ckb:`help user-manual`
 	help-keyword-under-cursor kb:K
+	highlight-list-current ckb:highlight
 	keycombo-unmap-normal-mode ckb:nunmap
 	keycombo-map-normal-mode ckb:nmap
 	keycombo-map-normal-mode-nonrecursive ckb:nnoremap
+	macro-finish-recording kb:q
+	macro-start-recording kb:q`[a-z]`
 	mark-goto kb:"`[a-z]"
 	mark-set kb:m`[a-z]`
+	mode-exit-ex-mode ekb:visual
+	mode-switch-to-ex-mode kb:Q
 	mode-switch-to-normal-mode ikb:Esc,C-c,C-[
 	mode-switch-to-command-mode ckb:`:`
 	mode-switch-to-visual-mode ckb:v
 	mode-switch-to-visual-block-mode ckb:C-v
-    mode-switch-to-visual-line-mode kb:S-v
-	screen-scroll-line-downwards ckb:C-y
+	mode-switch-to-visual-line-mode kb:S-v
+	nerdtree-panel-toggle kb:C-t plugin:nerdtree
+	nerdtree-panel-focus kb:`<leader>n`
+	nerdtree-panel-open-at-cwd kb:C-n
+	nerdtree-menu-show kb:m
+	nerdtree-menu-close kb:Esc-Esc
+	quickfix-close ckb:cclose short:ccl
+	quickfix-open ckb:copen short:cope
+	screen-scroll-upwards-by-half-page ckb:C-u
+	screen-scroll-upwards-by-line ckb:C-y
+	screen-scroll-upwards-by-page kb:C-b,S-up
+	screen-scroll-downwards-by-half-page ckb:C-d
+	screen-scroll-downwards-by-line ckb:C-e
+	screen-scroll-downwards-by-page kb:C-f,S-down
 	shell-execute-command ckb:!
+	tabs-goto-next-tab ckb:tabn
+	tabs-goto-previous-tab ckb:tabp
 	text-change a:Operator kb:c
 	text-change-line kb:cc
 	text-char-delete-under-cursor kb:x
@@ -75,6 +99,7 @@ commands rem:"in the command name, when the object (like line, char or word) is 
 	text-char-replace-under-cursor kb:r
 	text-copy a:Operator kb:y
 	text-copy-line kb:yy
+	text-copy-to-register kb:`"[a-z]y<motion>`
 	text-delete a:Operator kb:d
 	text-delete-line kb:dd
 	text-delete-to-the-line-end kb:D
@@ -87,9 +112,11 @@ commands rem:"in the command name, when the object (like line, char or word) is 
 	text-insert-before-cursor nkb:i
 	text-insert-before-line nkb:O
 	text-insert-previously-inserted ikb:C-@
+	text-lowercase vkb:u
 	text-paste-after-cursor kb:p
 	text-paste-before-cursor kb:P
 	text-paste-from-file ckb:r
+	text-paste-from-register kb:`"<register>p`
 	text-replace ckb:`<interval>?s/<original>/<substitute>/<modifier>` interval:%,`<startline>,<endline>` modifier:g,c
 	text-replace-mode kb:R
 	text-search-backward kb:?
@@ -99,11 +126,11 @@ commands rem:"in the command name, when the object (like line, char or word) is 
 	text-surrounder-replace kb:cs`.``.` plugin:surround
 	text-swap-case vkb:~
 	text-swap-char-case kb:~
-	text-uppercase kb:U
+	text-uppercase vkb:U
 	text-visual-block-mode kb:C-v
 	text-visual-mode kb:v
 	window-close-current ckb:q
-	window-exit ckb:q
+	window-exit ckb:q.exit
 	window-exit-all ckb:qa
 	window-exit-discarding-changes ckb:q!
 	window-jump-to-another kb:C-w-C-w

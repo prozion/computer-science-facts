@@ -1,0 +1,4 @@
+config_files
+	login.defs path:/etc/login
+	sshd_config path:/etc/ssh
+	useradd path:/etc/default

@@ -1,0 +1,9 @@
+signals
+	SIGHUP d:"Hangup detected on controlling terminal","Закрытие терминала"@ru n:1
+	SIGINT d:"Interrupt from keyboard","Сигнал остановки процесса пользователя с терминала"@ru kb:C-c n:2 
+	SIGQUIT d:"Quit from keyboard","Сигнал остановки процесса пользователя с терминала с дампом памяти"@ru kb:C-\ n:3 
+	SIGKILL d:"Kill signal","Безусловное завершение процесса"@ru n:9
+	SIGTERM d:"Termination signal","Сигнал запроса завершения процесса"@ru n:15
+	SIGSTOP d:"Stop process","Принудительная приостановка выполнения процесса, но не завершение его работы"@ru n:17
+	SIGTSTP d:"Stop typed at terminal","Приостановка процеса с терминала но не завершение его работы"@ru kb:C-z n:18 
+	SIGCONT d:"Stop typed at terminal","Продолжение выполнения ранее остановленного процесса"@ru n:19
