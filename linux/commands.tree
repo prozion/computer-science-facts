@@ -2,6 +2,9 @@ bash_commands source:`https://ss64.com/bash/<command-name>.html`
 	alias d:"Create an alias. Show the list of aliases if called without arguments"
 	apropos d:"Search the manual page names and descriptions, whatis database"
 	apt d:"High-level commandline interface for the package management system" distr:debian,ubuntu
+	at d:"Executes commands at a specified time"
+	atq d:"Lists the user's pending jobs"
+	atrm d:"Deletes jobs, identified by their job number"
 	bc d:"Arbitrary precision calculator language"
 	bg d:"Put a process in the background"
 	cal d:"Display a calendar" pkg:bsdmainutils
@@ -19,9 +22,11 @@ bash_commands source:`https://ss64.com/bash/<command-name>.html`
 	dc d:"Desk Calculator"
 	df d:"Report file system disk space usage"
 	declare d:"Declare variables and give them attributes"
+	diff d:"Compare files line by line"
 	dig d:"DNS lookup utility" +trace:"Tracing of the delegation path from the root name servers for the name being looked up"
 	disown d:"Remove jobs from current shell"
 	dmidecode d:"DMI (Desktop Management Interface) table decoder"
+	dpkg d:"Package manager for Debian"
 	du d:"Estimate file space usage" example:`du -hs`
 	echo d:"Display message on screen"
 	egrep d:"Search file(s) for lines that match an extended expression"
@@ -50,6 +55,7 @@ bash_commands source:`https://ss64.com/bash/<command-name>.html`
 	gzip alt:gunzip,zcat d:"Compress or expand files"
 	halt d:"Halt the machine"
 	head d:"Output the first part of file(s)"
+	help d:"Display information about shell builtin commands"
 	hostname d:"Print or set system host name"
 	htop d:"Interactive process viewer" pkg:htop
 	id d:"Print real and effective user and group IDs"
@@ -104,6 +110,7 @@ bash_commands source:`https://ss64.com/bash/<command-name>.html`
 	runuser d:"Run a command with substitute user and group ID"
 	scp d:"OpenSSH secure file copy"
 	sed d:"Stream Editor - Find and Replace text within file(s)"
+	seq d:"Print a sequence of numbers"
 	shift d:"Shift positional parameters"
 	split d:"Split a file into fixed-size pieces"
 	ss d:"Dump socket statistics"
@@ -117,11 +124,15 @@ bash_commands source:`https://ss64.com/bash/<command-name>.html`
 	tee d:"Redirect output to multiple files" related:echo,head,less,more
 	telinit d:"Change SysV runlevel"
 	test d:"Check file types and compare values"
+	time d:"Run programs and summarize system resource usage"
 	top d:"List running processes on the system"
-	tr d:"Translate, squeeze, and/or delete characters" example:`tr ';' '\n'`
+	tr d:"Translate, squeeze, and/or delete characters" example:`| tr ';' '\n'`
+	trap d:"Trap signals and other events"
 	touch d:"Change file timestamps"
+	type d:"Display a command's type"
 	umount d:"Unmount filesystems"
 	uname d:"Print system information"
+	uniq d:"Report or omit repeated lines"
 	units d:"Convert units from one scale to another"
 	useradd d:"Create a new user or update default new user information"
 	userdel d:"Delete a user account and related files"

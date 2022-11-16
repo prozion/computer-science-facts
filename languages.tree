@@ -1,17 +1,3 @@
-ontology
-	developer
-		person
-		company
-		university
-	origin
-		; from programming-languages
-		from
-		; from editors.tree
-		from-editor
-		; from databases.tree
-		from-database
-		; from hardware.tree
-		from-hardware
 programming_language
 	Analytical_Engine_order_code year:<?>
 	;; 194s
@@ -379,10 +365,12 @@ programming_language
 	Game_Maker_Language year:1999 designer:Mark_Overmars from:Game_Maker
 	Harbour year:1999 designer:Antonio_Linares from:dBase
 	ALF deabbr:"Another logical framework" year:199x uni:Chalmers
-	VimL alt:Vim_script year:199x from:ex_script
+	Vim_script alt:VimL year:199x from:ex_script
+	Zeno year:199x from:Pascal,QuickBASIC^? designer:Stephen_Schmitt company:Abecedarical_Systems
 	; 2000s
 	Join_Java year:2000 designer:Stewart_von_Itzstein from:Java
 	C# year:2000 designer:Anders_Hejlsberg organization:ECMA company:Microsoft from:C,C++,Java,Delphi,Modula-2
+	Yoix year:2000 designer:Rich_Drechsler,John_Mocenigo from:C,Java,PostScript
 	Joy year:2001 designer:Manfred_von_Thun from:FP,Forth
 	AspectJ year:2001 designer:Gregor_Kiczales company:Xerox_PARC from:Java,Common_Lisp
 	D year:2001 designer:Walter_Bright company:Digital_Mars from:C,C++,C#,Java
@@ -426,8 +414,8 @@ programming_language
 	Clojure year:2007 designer:Rich_Hickey first-commit:24.03.2006 public-release:16.10.2007 from:Lisp,ML,Haskell,Erlang
 	LOLCODE year:2007 designer:Adam_Lindsay from:<unique>
 	Oberon-07 year:2007 designer:Niklaus_Wirth from:Oberon
-	Nim year:2008 designer:Andreas_Rumpf from:Python,Lisp,Object_Pascal
-	Genie year:2008 designer:Jamie_McCracken from:Python,Boo,D,Object Pascal
+	Nim year:2008 designer:Andreas_Rumpf from:Python,Lisp,C,Object_Pascal
+	Genie year:2008 designer:Jamie_McCracken from:Python,Boo,D,Object_Pascal
 	Pure year:2008 designer:Albert_Graf from:Q
 	LFE year:2008 designer:Robert_Virding from:Erlang,Common_Lisp,Maclisp,Scheme,Elixir,Clojure,Hy
 	Chapel year:2009 designer:Brad_Chamberlain company:Cray_Inc from:HPF,ZPL
@@ -464,9 +452,10 @@ programming_language
 	C++14 year:2014 organization:ISO from:C++,Standard_C,C
 	Solidity year:2014 designer:Christian_Reitwiessner,Alex_Beregszaszi from:JavaScript,C++,Python
 	Wyvern year:2014 designer:Jonathan_Aldrich,Alex_Potanin uni:UWellington
-    Jai year:2014 developer:Jonathan_Blow
+	Jai year:2014 developer:Jonathan_Blow
 	Pyret year:2015 designer:Ben_Lerner,Joe_Politz uni:UBrown
 	Perl_6 year:2015 organization:The_Rakudo_Team from:Perl,Haskell,Python,Ruby
+	Wren year:2015 from:SmallTalk,C++ url:wren.io designer:Bob_Nystrom
 	Ring year:2016 designer:Mahmoud_Fayed from:Lua,Python,Ruby,C,C#,BASIC,QML,xBase,Supernova
 	C++17 year:2017 organization:ISO from:C++,Standard_C,C
-    Odin year:2018 designer:Bill_Ginger from:Pascal,C,Go,Oberon-2,Newsqueak,Jai
+	Odin year:2018 designer:Bill_Ginger from:Pascal,C,Go,Oberon-2,Newsqueak,Jai
