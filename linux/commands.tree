@@ -81,6 +81,7 @@ bash_commands source:`https://ss64.com/bash/<command-name>.html`
 	lshw d:"List hardware"
 	lsscsi d:"List SCSI devices (or hosts), list NVMe devices"
 	man d:"Format and display help pages" syn:info,help
+	mesg d:"Display (or do not display) messages from other users"
 	more d:"Display output one screen at a time"
 	most d:"Browse or page through a text file"
 	mount d:"Mount a filesystem"
@@ -142,7 +143,9 @@ bash_commands source:`https://ss64.com/bash/<command-name>.html`
 	wc d:"Print byte, word, and line counts, count the number of bytes, whitespace-separated words, and newlines in each given FILE, or standard input"
 	wget d:"The non-interactive network downloader"
 	whereis d:"Search the user's $path, man pages and source files for a program"
+	who d:"Show who is logged on"
 	whoami d:"Print effective userid"
+	write d:"Send a message to another user"
 	xev d:"Print contents of X events"
 	xmodmap d:"Utility for modifying keymaps and pointer button mappings in X"
 	yes d:"Output a string repeatedly until killed"
