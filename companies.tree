@@ -1,4 +1,4 @@
-it-company
+it-company +a:Company
 	europe
 		czech_republic
 			JetBrains hq:Prague start:2000		
@@ -6,7 +6,7 @@ it-company
 			Acorn_Computers hq:Cambridge start:1978	
 			GlaxoSmithKline city:Brentford
 			INMOS hq:Bristol start:1978 end:1989 acquired-by:SGS-Thomson
-			RRE name:"Royal Radar Establishment" type:"research center" hq:Malvern start:1953
+			RRE name:"Royal Radar Establishment" a:ResearchCenter hq:Malvern start:1953
 		estonia
 			3D_Technologies_R&D hq:Tartu start:2006
 			Toggl_OU hq:Tallinn
@@ -50,7 +50,7 @@ it-company
 			BBN name:"BBN Technologies" deabbr:"Bolt, Beranek and Newman" hq:Cambridge_MA start:1948
 			Bell_Labs hq:Murray_Hill start:1925
 			Blizzard_Entertainment alt-id:Blizzard hq:Irvine start:1991 
-			Blue_World_Communications hq:Fort_Lauderdale formar-hq:Bellevue
+			Blue_World_Communications hq:Fort_Lauderdale former-hq:Bellevue
 			Borland name:"Borland Software Corporation" hq:Austin start:1983 end:2009
 			Compaq hq:Harris_County start:1982 acquired-by:Hewlett-Packard:2013
 			Cortex

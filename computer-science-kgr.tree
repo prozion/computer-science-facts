@@ -1,0 +1,122 @@
+computer-science-kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some humble knowledge graph for Computer Science"
+	namespaces
+		rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
+		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
+		owl ns:http://www.w3.org/2002/07/owl#
+		dc ns:http://purl.org/dc/elements/1.1/
+		skos ns:http://www.w3.org/2004/02/skos/core#
+	classes +a:owl/Class +hi-inv-rel:subclass-of
+		Artifact subclass-of:Nameable
+			Application
+				CodeEditor
+			Computer
+			Database
+			Language
+				ProgrammingLanguage
+					EsotericProgrammingLanguage
+				MarkupLanguage
+				DataFormat
+			OperatingSystem
+				OperatingSystemRelease subclass-of:_1 
+					_1 a:owl/Restriction owl/onProperty:release-of owl/someValuesFrom:OperatingSystem
+		Contact subclass-of:rdfs/Literal
+			Email
+			Phone
+			SNOutlet
+				Facebook
+				Twitter
+				Vkontakte
+		GeographicalUnit
+			Country
+			Place
+				City
+		HumbleAbstraction
+			Contactable
+			Countable
+			Datable
+			Nameable
+			Locatable
+			Structurable
+		Integer subclass-of:rdfs/Literal
+		NasdaqIndex subclass-of:rdfs/Literal
+		Organization subclass-of:Locatable,Structurable,Contactable,Nameable
+			Company
+			GroupOfPeople
+				WorkingGroup
+			ResearchCenter
+			University
+		Person subclass-of:Locatable,Contactable,Nameable
+		Plant subclass-of:Locatable,Structurable
+		Project
+		Publication
+			Article
+				PeerReviewedArticle
+			Book
+			Website
+		TimeInterval subclass-of:rdfs/Literal
+		TimePoint subclass-of:rdfs/Literal
+			Date
+				Year
+	properties +a:rdf/Property +hi-inv-rel:subproperty-of
+		acquired-by domain:Company range:Company
+		alma-mater domain:Person range:University
+		bdate domain:Person range:Date d:"when a person was born"
+		book domain:Person range:Book
+		city domain:Locatable range:City
+		company domain:Artifact range:Company
+		contact domain:Contactable range:Contact
+			email range:Email
+			twitter range:Twitter
+			vk range:Vkontakte
+		country domain:Organization range:Country
+		ddate domain:Person range:Date d:"when a person died"
+		degree domain:Person range:University
+			ba 
+			ma
+		designer domain:Artifact range:Person
+			chief-designer
+		end domain:Datable range:Date
+		founder domain:Organization range:Person
+		from domain:Language range:Language
+		from-database domain:Language range:Database
+		from-editor domain:Language range:CodeEditor
+		from-hardware domain:Language range:Computer
+		from-os domain:Language range:OperatingSystem
+		group domain:Artifact range:WorkingGroup
+		homepage domain:Person range:Website
+		hometown domain:Person range:City
+		hq d:"headquarters" domain:Locatable range:Place
+			current-hq
+			former-hq
+		implementation domain:Language range:Artifact
+		job domain:Person range:Organization
+		lang domain:Computer range:Language
+			system-lang domain:OperatingSystem
+		member domain:Person,Organization range:Organization
+		merged-to domain:Company range:Company
+		name domain:Nameable range:rdfs/Literal
+		nasdaq domain:Company range:NasdaqIndex
+		nick domain:Nameable range:rdfs/Literal
+		office domain:Organization range:City
+		part-of domain:Structurable
+		plant domain:Computer range:Plant
+		product-n domain:Countable range:Integer
+			machines-n domain:Computer
+		release-of domain:Artifact range:Artifact
+		renamed-to domain:Organization range:Organization
+		research-center domain:Artifact range:ResearchCenter
+		start domain:Datable range:Date
+		time-interval range:TimeInterval
+		town domain:Person range:City
+		production-time-interval domain:Datable range:TimeInterval
+		project range:Project
+		released domain:Artifact range:Date
+		uni domain:Artifact range:University
+		year domain:Datable range:Year
+	individuals
+		[companies.tree]
+		[hardware.tree]
+		[languages.tree]
+		[operating-systems.tree]
+		[people.tree]
+		[various-kgr//universities.tree]

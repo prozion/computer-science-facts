@@ -1,4 +1,5 @@
 ; formats or descriptive languages
+formats +a:DataFormat
 graphics
 	SVG year:2001 group:W3C deabbr:"Scalable Vector Graphics" from:XML
 	Canvas

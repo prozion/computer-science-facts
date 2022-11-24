@@ -1,5 +1,5 @@
 hardware
-	computers
+	computer +a:Computer
 		Analytical_Engine year:1910 designer:Henry_Babbage
 		Z3 year:1941 designer:Konrad_Zuse
 		Z4 year:1942 designer:Konrad_Zuse
@@ -36,5 +36,5 @@ hardware
 		EC-1840 city:Минск
 		ДВК version:ДВК-3,ДВК-4 plant:Квант company:НИИ_Научный_Центр
 		УК-НЦ plant:Квант company:НИИ_Научный_Центр
-		БК-0010 plant:Квант company:НИИ_Научный_Центр production:1983-1993
+		БК-0010 plant:Квант company:НИИ_Научный_Центр production-time-interval:1983-1993
 		Искра-1030 city:Курск

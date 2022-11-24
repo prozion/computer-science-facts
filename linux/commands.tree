@@ -33,6 +33,7 @@ bash_commands source:`https://ss64.com/bash/<command-name>.html`
 	env d:"Display, set, or remove environment variables"
 	exec d:"Replace the shell with the given command"
 	exit d:"Cause normal process termination" rem:"Use for logout after su"
+	expect d:"Programmed dialogue with interactive programs" pkg:expect pkg-dep:tcl-expect,tk
 	export d:"set an environment variable"
 	expr d:"Evaluate expressions"
 	factor d:"Print prime factors"

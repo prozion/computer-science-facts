@@ -1,5 +1,5 @@
-operating_system
-	Android
+operating_system +a:OperatingSystem
+	Android +hi-inv-rel:release-of
 		Android_1.0 released:09.2008
 		Android_1.1 alt-id:Petit_Four released:02.2009
 		Android_1.5 alt-id:Cupcake released:04.2009
@@ -18,7 +18,7 @@ operating_system
 		Android_9.0 alt-id:Pie released:08.2018
 	iOS
 	CTSS year:1961 uni:MIT
-	Fuchsia company:Google release:2016 system-language:Dart
+	Fuchsia company:Google release:2016 system-lang:Dart
 	Windows
 		Windows_95
 		Windows_98

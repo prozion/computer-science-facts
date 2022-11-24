@@ -1,4 +1,4 @@
-people ; keys-order:name,bdate,ddate,alma-mater,bsc,msc,ma,phd,job,hometown,town,book,homepage,email,twitter
+people +a:Person ; keys-order:name,bdate,ddate,alma-mater,bsc,msc,ma,phd,job,hometown,town,book,homepage,email,twitter
 	Adam_Lindsay
 	Adriaan_van_Wijngaarden
 	Alan_Turing bdate:23.06.1912 ddate:07.06.1954 job:GCHQ	
@@ -23,7 +23,7 @@ people ; keys-order:name,bdate,ddate,alma-mater,bsc,msc,ma,phd,job,hometown,town
 	Corrado_Bohm bdate:17.01.1923 ddate:23.10.2017 job:ETH_Zurich,URome	
 	David_Stern job:UColorado
 	Diarmuid_Pigott job:UMurdoch
-	Eirik_Vullum town:Oslo twitter:"eiriklv"
+	Eirik_Vullum town:Oslo twitter:eiriklv
 	Eugene_Roshal bdate:10.03.1972 hometown:Chelyabinsk alma-mater:SUSU
 	Fritz_Bauer name:"Friedrich Ludwig Bauer" bdate:10.06.1924 ddate:26.03.2015 job:TUMunich
 	Gennadiy_Zvenigorodskiy bdate:09.08.1952 ddate:11.10.1984 job:NAkademgorodok

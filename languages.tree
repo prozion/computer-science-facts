@@ -1,4 +1,4 @@
-programming_language
+programming_language +a:ProgrammingLanguage
 	Analytical_Engine_order_code year:<?>
 	;; 194s
 	Plankalkul year:1943 name:"Plankalkül" designer:Konrad_Zuse from:<unique>
@@ -116,7 +116,7 @@ programming_language
 	SPL year:1967 name:"Space Programming Language" company:SDC from:JOVIAL
 	ALGOL_68 year:1968 designer:Adriaan_van_Wijngaarden,Barry_Mailloux,John_Peck,Cornelis_Koster,<others> from:ALGOL_68_concept
 	POP-1 year:1968 designer:Rod_Burstall,Robin_Popplestone from:COWSEL
-	DIBOL-8 year:1968 deabbr:"Digital's Business Oriented Language " company:DEC from:BASIC,FORTRAN_66,COBOL_61
+	DIBOL-8 year:1968 deabbr:"Digital's Business Oriented Language" company:DEC from:BASIC,FORTRAN_66,COBOL_61
 	Forth_concept year:1968 designer:Charles_Moore hardware:Burroughs_large_systems from:LISP,APL
 	LOGO year:1968 alt-id:Logo designer:Wally_Feurzeig,Seymour_Papert,Cynthia_Solomon implementation:UCBLogo from:LISP
 	Analitik year:1968 name:"Аналитик" designer:Viktor_Glushkov research-center:ICYB from:Almir-65
@@ -309,7 +309,7 @@ programming_language
 	S-Lang year:1992 designer:John_Davis from:PostScript
 	Self year:1993 company:Sun_Microsystems from:Smalltalk
 	Amiga_E year:1993 designer:Wouter_van_Oortmerssen from-database:DEX from:C,Modula-2
-	Brainfuck year:1993 designer:Urban_Muller from:P''
+	Brainfuck year:1993 designer:Urban_Muller from:"P''"
 	LiveCode_Transcript year:1993 from:HyperTalk
 	AppleScript year:1993 company:Apple from:HyperTalk
 	K year:1993 designer:Arthur_Whitney from:A+,APL,Scheme
@@ -424,7 +424,7 @@ programming_language
 	Idris year:2009 designer:Edwin_Brady from:Haskell,Agda,Coq
 	Parasail year:2009 designer:Tucker_Taft from:Modula,Ada,Pascal,ML
 	Whiley year:2009 designer:David_Pearce from:Java,C,Python
-	Java2K year:200x designer:Gerson_Kurz type:esoteric
+	Java2K year:200x designer:Gerson_Kurz a:EsotericProgrammingLanguage
 	; 2010s
 	Rust year:2010 designer:Graydon_Hoare company:Mozilla from:Alef,C++,Camlp4,Erlang,Hermes,Limbo,Napier,Napier88,Newsqueak,NIL,Sather,Standard_ML
 	Snap! year:2011 designer:Brian_Harvey,Jens_Monig from:Scratch,Scheme,Logo,Smalltalk
@@ -443,7 +443,7 @@ programming_language
 	Ada_2012 year:2012 organization:Ada_Europe from:Ada_2005
 	Produire year:2013 name:"プロデル" designer:Yuuto from:Visual_Basic,TTSneo
 	Hy year:2013 designer:Paul_Tagliamonte from:Lisp
-	ArnoldC year:2013 designer:Lauri_Hartikka type:esoteric
+	ArnoldC year:2013 designer:Lauri_Hartikka a:EsotericProgrammingLanguage
 	Lean_Microsoft year:2013 company:Microsoft
 	PureScript year:2013 designer:Phil_Freeman from:Haskell,JavaScript
 	Crystal year:2014 designer:Ary_Borenszweig company:Manas_Technology_Solutions from:Ruby,C,Rust,Go,C#,Python
