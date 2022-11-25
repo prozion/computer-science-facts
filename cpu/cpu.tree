@@ -1,6 +1,10 @@
-cpu
+cpu +a:CPU
 	Intel_8080 company:Intel bus:8 year:1974
-	Intel_8086 syn:iAPX_86/10 company:Intel bus:16 codeset:x86-16 year:1978
+	Intel_8086 eq:iAPX_86/10 company:Intel bus:16 codeset:x86-16 year:1978
 	Intel_8088 company:Intel modification-of:Intel_8086 databus:8 year:1979
-	NEC_V20 company:NEC emul:Intel_8080 bus:16 year:1982
+	NEC_V20 company:NEC emulates:Intel_8080 bus:16 year:1982
 	NEC_V30 company:NEC compat:Intel_8086 databus:16 year:1982
+architectures +a:Architecture
+	x86-16
+	x86-32
+	x86-64

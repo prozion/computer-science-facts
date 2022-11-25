@@ -6,11 +6,17 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 		dc ns:http://purl.org/dc/elements/1.1/
 		skos ns:http://www.w3.org/2004/02/skos/core#
 	classes +a:owl/Class +hi-inv-rel:subclass-of
-		Artifact subclass-of:Nameable
+		Architecture
+		Artifact subclass-of:Nameable,Datable
 			Application
+				Browser
 				CodeEditor
+			Compiler
 			Computer
+				PersonalComputer
+			CPU
 			Database
+			Kernel
 			Language
 				ProgrammingLanguage
 					EsotericProgrammingLanguage
@@ -19,6 +25,13 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 			OperatingSystem
 				OperatingSystemRelease subclass-of:_1 
 					_1 a:owl/Restriction owl/onProperty:release-of owl/someValuesFrom:OperatingSystem
+			Package
+			VirtualMachine
+				BrowserEngine
+				RuntimeEnvironment
+		Command
+			BashCommand
+			CodeEditorCommand
 		Contact subclass-of:rdfs/Literal
 			Email
 			Phone
@@ -42,7 +55,9 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 		Organization subclass-of:Locatable,Structurable,Contactable,Nameable
 			Company
 			GroupOfPeople
+				UserGroup
 				WorkingGroup
+			PublicProject
 			ResearchCenter
 			University
 		Person subclass-of:Locatable,Contactable,Nameable
@@ -60,10 +75,16 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 	properties +a:rdf/Property +hi-inv-rel:subproperty-of
 		acquired-by domain:Company range:Company
 		alma-mater domain:Person range:University
+		author eq-property:designer
 		bdate domain:Person range:Date d:"when a person was born"
 		book domain:Person range:Book
+		bus domain:CPU range:Integer
+			databus
 		city domain:Locatable range:City
+		closed domain:Artifact range:Date
+		codeset domain:CPU range:Architecture
 		company domain:Artifact range:Company
+		compatible-with eq-property:compat domain:Artifact range:Artifact
 		contact domain:Contactable range:Contact
 			email range:Email
 			twitter range:Twitter
@@ -75,14 +96,21 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 			ma
 		designer domain:Artifact range:Person
 			chief-designer
+		emulates domain:CPU range:CPU
 		end domain:Datable range:Date
+			rend d:"last release" domain:Artifact
+		engine domain:Browser range:BrowserEngine
 		founder domain:Organization range:Person
-		from domain:Language range:Language
+		from domain:Artifact range:Artifact
+			code-from
+			modification-of
 		from-database domain:Language range:Database
 		from-editor domain:Language range:CodeEditor
 		from-hardware domain:Language range:Computer
 		from-os domain:Language range:OperatingSystem
+		gen d:"computer generation" domain:Computer range:Integer
 		group domain:Artifact range:WorkingGroup
+		hardware domain:OperatingSystem range:Computer,CPU,Architecture
 		homepage domain:Person range:Website
 		hometown domain:Person range:City
 		hq d:"headquarters" domain:Locatable range:Place
@@ -90,7 +118,8 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 			former-hq
 		implementation domain:Language range:Artifact
 		job domain:Person range:Organization
-		lang domain:Computer range:Language
+		kernel domain:OperatingSystem range:Kernel
+		lang domain:Artifact range:Language
 			system-lang domain:OperatingSystem
 		member domain:Person,Organization range:Organization
 		merged-to domain:Company range:Company
@@ -98,25 +127,36 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 		nasdaq domain:Company range:NasdaqIndex
 		nick domain:Nameable range:rdfs/Literal
 		office domain:Organization range:City
+		org range:Organization
+		os domain:Artifact range:OperatingSystem
 		part-of domain:Structurable
+		pkg domain:Artifact,Command range:Package
 		plant domain:Computer range:Plant
+		pred d:"predecessor" domain:Computer range:Computer
 		product-n domain:Countable range:Integer
 			machines-n domain:Computer
 		release-of domain:Artifact range:Artifact
+		released domain:Artifact range:Date
 		renamed-to domain:Organization range:Organization
 		research-center domain:Artifact range:ResearchCenter
 		start domain:Datable range:Date
+			dstart d:"start of development" domain:Artifact 
+			rstart d:"first release" domain:Artifact 
+		status domain:Artifact range:rdfs/Literal
 		time-interval range:TimeInterval
 		town domain:Person range:City
 		production-time-interval domain:Datable range:TimeInterval
 		project range:Project
 		released domain:Artifact range:Date
 		uni domain:Artifact range:University
+		written-in domain:Artifact range:ProgrammingLanguage
 		year domain:Datable range:Year
 	individuals
-		[companies.tree]
+		[organizations.tree]
 		[hardware.tree]
 		[languages.tree]
 		[operating-systems.tree]
 		[people.tree]
+		[web/browsers.tree]
+		[cpu/cpu.tree]
 		[various-kgr//universities.tree]

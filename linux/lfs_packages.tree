@@ -116,7 +116,7 @@ packages
 		Openssl
 		Patch
 		Pkg-config
-		Procps-NG
+		Procps-ng
 		Python3
 		Readline
 		Sed
@@ -126,6 +126,7 @@ packages
 		Tcl
 		Texinfo
 		Vim
+		Wheel
 		XML_Parser name:"XML::Parser"
 		XZ_Utils
 		Zstd

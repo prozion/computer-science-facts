@@ -8,8 +8,9 @@ hardware
 		EDSAC year:1950 uni:UCambridge
 		Whirlwind_I year:1951 uni:MIT
 		ERA_ATLAS year:1950 company:US_Navy 
-		UNIVAC_1101 year:1951 from:ERA_ATLAS designer:Seymour_Cray company:ERA
+		UNIVAC_1101 year:1951 pred:ERA_ATLAS designer:Seymour_Cray company:ERA
 		IBM_701 year:1952 designer:Nathaniel_Rochester lang:Speedcoding company:IBM
+		IBM_709 year:1958 gen:1 company:IBM
 		UNIVAC_I year:1951 designer:Presper_Eckert company:Remington_Rand
 		UNIVAC_1103 year:1953 designer:Seymour_Cray company:ERA
 		IBM_650 year:1953 company:IBM
@@ -18,14 +19,28 @@ hardware
 		IBM_7070 year:1958 company:IBM
 		IBM_1620 year:1959 company:IBM
 		IBM_1401 year:1959 lang:COBOL,RPG,Fortran company:IBM
+		IBM_7090 year:1959 gen:2 pred:IBM_709 company:IBM
+		PDP-1 year:1959 company:DEC
 		Honeywell_200 year:1960? lang:COBOL company:Honeywell
 		Honeywell_800 year:1960 lang:COBOL,Fortran company:Honeywell
 		CDC-1604 year:1960 company:CDC chief-designer:Seymour_Cray
 		AN/USQ-20 year:1961 part-of:NTDS ; US Navy
+		IBM_7094 year:1962 pred:IBM_7090 company:IBM
 		CDC-6600 year:1963 company:CDC 
+		GE_635 year:1963 company:General_Electric
+		System/360 year:1965 gen:3 company:IBM 
+		PDP-7 year:1965 company:DEC
 		CDC-7600 year:1969 company:CDC
+		GE_645 year:1965? pred:GE_635 company:General_Electric
+		System/370 year:1970 gen:3 pred:System/360 company:IBM
+		PDP-11 year:1970 company:DEC
 		CDC-8600 end:1972 company:CDC
 		STAR-100 company:CDC designer:Jim_Thornton
+		IBM_4300 year:1979 pred:System/360 company:IBM
+		IBM_308x year:1981 pred:System/360 company:IBM
+		Macintosh a:PersonalComputer year:1984 
+		IBM_3090 year:1985 pred:System/370 company:IBM
+		BeBox a:PersonalComputer year:1995 company:Be_Incorporated
 		; CCCР
 		Стрела city:Москва plant:САМ year:1953 machines-n:8
 		Урал-1 city:Пенза plant:САМ year:1957
@@ -37,4 +52,4 @@ hardware
 		ДВК version:ДВК-3,ДВК-4 plant:Квант company:НИИ_Научный_Центр
 		УК-НЦ plant:Квант company:НИИ_Научный_Центр
 		БК-0010 plant:Квант company:НИИ_Научный_Центр production-time-interval:1983-1993
-		Искра-1030 city:Курск
+		Искра-1030 city:Курск year:1989

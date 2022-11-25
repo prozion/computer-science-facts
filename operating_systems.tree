@@ -1,4 +1,4 @@
-operating_system +a:OperatingSystem
+operating_systems +a:OperatingSystem
 	Android +hi-inv-rel:release-of
 		Android_1.0 released:09.2008
 		Android_1.1 alt-id:Petit_Four released:02.2009
@@ -16,19 +16,111 @@ operating_system +a:OperatingSystem
 		Android_7.0 alt-id:Nougat released:08.2016
 		Android_8.0 alt-id:Oreo released:08.2017
 		Android_9.0 alt-id:Pie released:08.2018
-	iOS
+	A/UX rstart:1988 from:SVR2 hardware:Motorola_68000 company:Apple
+	BeOS rstart:1995 rend:2001 company:Be_Incorporated hardware:BeBox
+	CP/M year:1974 company:Digital_Research hardware:Intel_8080
 	CTSS year:1961 uni:MIT
+	FMS deabbr:"Fortran Monitor System" year:195x
 	Fuchsia company:Google release:2016 system-lang:Dart
-	Windows
-		Windows_95
-		Windows_98
-		Windows_Me
-		Windows_XP
-		Windows_Vista
-		Windows_7
-		Windows_8
-		Windows_10
-	Linux
-	Android
-	MacOS
+	GNU_Hurd
+	IBSYS year:1960 company:IBM hardware:IBM_709,IBM_7090,IBM_7094
+	IOCS deabbr:"Input/Output Control System" year:195x company:IBM
+	IRIX company:Silicon_Graphics
+	iOS
+	Linux year:1991 from:Minix designer:Linus_Thorvalds
+	Minix year:1987 designer:Andrew_Tanenbaum from:Unix
+		Minix_1.5 year:1991
+		Minix_2 year:1997
+		Minix_3 year:2005
+	MS-DOS year:1981
+		MS-DOS_1 year:1983
+		MS-DOS_2 year:1983
+		MS-DOS_3 year:1985
+		MS-DOS_4 year:1988
+		MS-DOS_5 year:199x
+		MS-DOS_6 year:199x
+		MS-DOS_7 year:1998
+		MS-DOS_8 year:199x
+	Mac_OS from:Rhapsody,NeXTSTEP company:Apple
+		Mac_OS_System_1 released:1984 hardware:Macintosh,M68K
+		Mac_OS_System_2 released:1985
+		Mac_OS_System_3 released:1986
+		Mac_OS_System_4 released:1987
+		Mac_OS_System_5 released:1987
+		Mac_OS_System_6 released:1988
+		Mac_OS_System_7 released:1991
+		Copland dstart:1994 end:1996 status:cancelled
+		Gershwin dstart:1994 end:1996 status:cancelled
+		Mac_OS_8 released:1997
+		Rhapsody released:1997 end:1998
+		Mac_OS_9 released:1999
+		Mac_OS_X_Server released:1999
+		Mac_OS_X_Public_Beta released:2000
+		Mac_OS_X_10.0 released:2001
+		Mac_OS_X_10.1 released:2001
+		Mac_OS_X_10.2 released:2002
+		Mac_OS_X_10.3 released:2003
+		Mac_OS_X_10.4 released:2005
+		Mac_OS_X_10.5 released:2007
+		Mac_OS_X_10.6 released:2009
+		Mac_OS_X_10.7 released:2011
+		OS_X_10.8 released:2012
+		OS_X_10.9 released:2013
+		OS_X_10.10 released:2014
+		OS_X_10.11 released:2015
+		macOS_10.12 released:2016
+		macOS_10.13 released:2017
+		macOS_10.14 released:2018
+		macOS_10.15 released:2019
+		macOS_11 released:2020
+		macOS_12 released:2021
+		macOS_13 released:2022
+	Multics year:1969 written-in:PL/I hardware:GE_645 uni:MIT company:General_Electric,Bell_Labs
+	NeXTSTEP year:1989 kernel:Mach,BSD written-in:C,Objective-C hardware:M68K,x86-32,SPARC,PA-RISC company:NeXT
+	OS/360 year:1966 company:IBM hardware:System/360 from:IBSYS,IOCS
+	PTS-DOS deabbr:"Физтех-ДОС" year:1993 company:Физтех-софт,Paragon compatible-with:MS-DOS_6,MS-DOS_7 hardware:x86-32 url:phystechsoft.ru/pts-dos
+	RT-11 year:1970 company:DEC hardware:PDP-11
 	Solaris
+	SOS year:1959 company:SHARE hardware:IBM_709,IBM_7090
+	Unix
+		BSD year:1978 designer:Bill_Joy org:CSRG uni:UC_Berkeley
+			FreeBSD rstart:1993
+			NetBSD
+			OpenBSD year:1995 from:NetBSD designer:Theo_de_Raadt
+		System_V company:AT&T
+			SVR1 year:1983
+			SVR2 year:1984
+			SVR3 year:1987
+			SVR4 year:1990
+		Xenix year:1980 company:Microsoft
+	Windows
+		Windows_1.0 year:1985
+		Windows_3.0 year:1990
+		Windows_3.1 year:1992
+		Windows_NT_3.1 name:"Windows NT 3.1 Advanced Server" year:1993
+		Windows_NT_3.5 name:"Windows NT Server 3.5" year:1994
+		Windows_95 year:1995
+		Windows_NT_4.0 name:"Windows NT 4.0 Server" year:1996
+		Windows_98 year:1998
+		Windows_2000_Server year:1999
+		Windows_2000 year:2000
+		Windows_Me year:2000
+		Windows_XP year:2001
+		Windows_Server_2003 year:2003
+		Windows_Server_2003_R2 year:2005
+		Windows_Vista pred:Windows_XP year:2007
+		Windows_Server_2008 year:2008
+		Windows_Server_2008_R2 year:2009
+		Windows_7 year:2009
+		Windows_8 year:2012
+		Windows_Server_2012 year:2012
+		Windows_8.1 year:2013
+		Windows_Server_2012_R2 year:2013
+		Windows_10 year:2015
+		Windows_Server_2016 year:2016
+		Windows_Server_2019 year:2018
+		Windows_Server_2022 year:2021
+		Windows_11 year:2021
+kernels +a:Kernel
+	Mach year:1985 designer:Richard_Rashid,Avie_Tevanian uni:UCarnegieMellon hardware:x86-32,x86-64,MiPS,ARM32,ARM64,Motorola_88000
+	XNU year:1996 company:Apple 

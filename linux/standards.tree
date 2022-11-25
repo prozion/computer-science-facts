@@ -1,0 +1,8 @@
+standards
+	SVID deabbr:"System V Interface Definition" year:1984 company:AT&T
+	POSIX deabbr:"Portable Operating System Interface" year:2009 org:IEEE
+	SUS deabbr:"Single UNIX Specification" org:AustinGroup,IEEE,TheOpenGroup
+		SUSv1
+		SUSv2 year:1997
+		SUSv3 year:2001
+		SUSv4

@@ -1,4 +1,4 @@
-programming_language +a:ProgrammingLanguage
+programming_languages +a:ProgrammingLanguage
 	Analytical_Engine_order_code year:<?>
 	;; 194s
 	Plankalkul year:1943 name:"Plankalkül" designer:Konrad_Zuse from:<unique>

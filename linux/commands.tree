@@ -1,155 +1,192 @@
-bash_commands source:`https://ss64.com/bash/<command-name>.html`
+bash_commands +a:BashCommand source:`https://ss64.com/bash/<command-name>.html`
+	addgroup d:"Add a group to the system" pkg:adduser
+	adduser d:"Add a user to the system" pkg:adduser
 	alias d:"Create an alias. Show the list of aliases if called without arguments"
-	apropos d:"Search the manual page names and descriptions, whatis database"
-	apt d:"High-level commandline interface for the package management system" distr:debian,ubuntu
-	at d:"Executes commands at a specified time"
-	atq d:"Lists the user's pending jobs"
-	atrm d:"Deletes jobs, identified by their job number"
-	bc d:"Arbitrary precision calculator language"
+	apropos d:"Search the manual page names and descriptions, whatis database" pkg:man-db
+	apt d:"High-level commandline interface for the package management system" distr:debian,ubuntu pkg:apt
+	arp d:"Linux ARP kernel module" pkg:net-tools
+	at d:"Executes commands at a specified time" pkg:at
+	atq d:"Lists the user's pending jobs" pkg:at
+	atrm d:"Deletes jobs, identified by their job number" pkg:at
+	bc d:"Arbitrary precision calculator language" pkg:bc
 	bg d:"Put a process in the background"
-	cal d:"Display a calendar" pkg:bsdmainutils
-	cat d:"Display the contents of a file" similar:less,more,echo,tee,most
+	cal d:"Display a calendar" pkg:ncal ; pkg:bsdmainutils
+	cat d:"Display the contents of a file" similar:less,more,echo,tee,most pkg:coreutils
 	cd d:"Change the shell working directory"
+	chfn d:"Change real user name and information" pkg:shadow-utils
 	chgrp d:"Change group ownership"
 	chmod d:"Change file mode bits"
 	chown d:"Change file owner and group"
-	clear d:"Clear the terminal screen"
+	chsh d:"Change login shell" pkg:shadow-utils
+	clear d:"Clear the terminal screen" pkg:ncurses-bin
+	comm d:"Compare two sorted files line by line" pkg:coreutils
 	cp d:"Copy files and directories"
-	crontab d:"Maintain crontab files for individual users"
-	csplit d:"Split a file into context-determined pieces"
-	curl d:"Transfer a URL"
-	cut d:"Divide a file into several parts"
-	dc d:"Desk Calculator"
+	crontab d:"Maintain crontab files for individual users" pkg:cron
+	csplit d:"Split a file into context-determined pieces" pkg:coreutils
+	curl d:"Transfer a URL" pkg:curl
+	cut d:"Divide a file into several parts" pkg:coreutils
+	date d:"Print or set the system date and time" pkg:coreutils
+	dc d:"Desk Calculator" pkg:dc
 	df d:"Report file system disk space usage"
 	declare d:"Declare variables and give them attributes"
-	diff d:"Compare files line by line"
-	dig d:"DNS lookup utility" +trace:"Tracing of the delegation path from the root name servers for the name being looked up"
+	diff d:"Compare files line by line" pkg:diffutils
+	dig d:"DNS lookup utility" +trace:"Tracing of the delegation path from the root name servers for the name being looked up" pkg:bind9-dnsutils
 	disown d:"Remove jobs from current shell"
-	dmidecode d:"DMI (Desktop Management Interface) table decoder"
-	dpkg d:"Package manager for Debian"
-	du d:"Estimate file space usage" example:`du -hs`
+	dmesg d:"Print or control the kernel ring buffer" pkg:util-linux
+	dmidecode d:"DMI (Desktop Management Interface) table decoder" pkg:dmidecode
+	dpkg d:"Package manager for Debian" pkg:dpkg
+	du d:"Estimate file space usage" example:`du -hs` pkg:coreutils
 	echo d:"Display message on screen"
+	e2fsck d:"Check a Linux ext2/ext3/ext4 file system" pkg:e2fsprogs
 	egrep d:"Search file(s) for lines that match an extended expression"
-	env d:"Display, set, or remove environment variables"
+	env d:"Display, set, or remove environment variables" pkg:coreutils
+	ethtool d:"Query or control network driver and hardware settings"
 	exec d:"Replace the shell with the given command"
 	exit d:"Cause normal process termination" rem:"Use for logout after su"
 	expect d:"Programmed dialogue with interactive programs" pkg:expect pkg-dep:tcl-expect,tk
 	export d:"set an environment variable"
-	expr d:"Evaluate expressions"
-	factor d:"Print prime factors"
+	expr d:"Evaluate expressions" pkg:coreutils
+	factor d:"Print prime factors" pkg:coreutils
+	false d:"Do nothing, unsuccessfully" pkg:coreutils
 	fdisk d:"Manipulate disk partition table" -l:"List partition tables"
 	fg d:"Send job to foreground"
 	fgrep d:"Search file(s) for lines that match a fixed string"
-	file d:"Determine file type"
-	find d:"Search for files that meet a desired criteria"
-	fmt d:"Reformat paragraph text"
-	fold d:"Wrap input lines to fit in specified width"
-	free d:"Display amount of free and used memory in the system"
+	file d:"Determine file type" pkg:file
+	find d:"Search for files that meet a desired criteria" pkg:findutils
+	fmt d:"Reformat paragraph text" pkg:coreutils
+	fold d:"Wrap input lines to fit in specified width" pkg:coreutils
+	free d:"Display amount of free and used memory in the system" pkg:procps
 	gawk d:"Find and Replace text within file(s)"
-	getconf d:"Query system configuration variables"
-	getent d:"Get entries from Name Service Switch libraries" database:group,hosts,services
-	gpasswd d:"Administer /etc/group and /etc/gshadow"
+	getconf d:"Query system configuration variables" pkg:libc-bin
+	getent d:"Get entries from Name Service Switch libraries" database:group,hosts,services pkg:libc-bin
+	gpasswd d:"Administer /etc/group and /etc/gshadow" pkg:shadow-utils
 	grep d:"Search file(s) for lines that match a given pattern" i:"ignore case" n:"show matched line numbers"
-	groupadd d:"Create a new group"
-	groupmod d:"Modify a group definition on the system"
-	groups d:"Print the groups a user is in"
+	groupadd d:"Create a new group" pkg:shadow-utils
+	groupmod d:"Modify a group definition on the system" pkg:shadow-utils
+	groups d:"Print the groups a user is in" pkg:coreutils
+	grub-install d:"Install GRUB to a device" pkg:grub2-common
 	gzip alt:gunzip,zcat d:"Compress or expand files"
 	halt d:"Halt the machine"
-	head d:"Output the first part of file(s)"
+	head d:"Output the first part of file(s)" pkg:coreutils
 	help d:"Display information about shell builtin commands"
+	host d:"DNS lookup utility" pkg:bind9-host
 	hostname d:"Print or set system host name"
 	htop d:"Interactive process viewer" pkg:htop
-	id d:"Print real and effective user and group IDs"
+	hwclock d:"Administration tool for the time clocks" pkg:util-linux
+	iconv d:"Convert text from one character encoding to another" pkg:libc-bin
+	id d:"Print real and effective user and group IDs" pkg:coreutils
+	ifconfig d:"Configure a network interface" pkg:net-tools
+	ip d:"Show/manipulate routing, network devices, interfaces and tunnels" pkg:iproute2
 	jobs d:"List your own processes (returns Job No.)" arg:l
-	join d:"Join lines on a common field"
+	join d:"Join lines on a common field" pkg:coreutils
+	journalctl d:"Query the systemd journal" pkg:systemd
 	kill d:"Stop a process from running"
-	killall d:"kill processes by name"
-	less d:"Display output one screen at a time" extends:more
-	link d:"Create a link to a file"
+	killall d:"kill processes by name" pkg:psmisc
+	ldd d:"Print shared object dependencies" pkg:libc-bin
+	less d:"Display output one screen at a time" extends:more pkg:less
+	link d:"Create a link to a file" pkg:coreutils
 	ln d:"Make links between files"
 	local d:"Create variables"
+	locale d:"Get locale-specific information" pkg:libc-bin
 	locate d:"Find files" related:find
 	losetup d:"Set up and control loop devices"
-	lpc d:"Line printer control program"
-	lpr d:"Print files. Send a print job to the default system queue"
+	lpc d:"Line printer control program" pkg:cups-bsd
+	lpr d:"Print files. Send a print job to the default system queue" pkg:cups-bsd
 	lprint d:"Print a file"
-	lprm d:"Remove jobs from the print queue"
+	lprm d:"Remove jobs from the print queue" pkg:cups-bsd
 	ls d:"List directory contents" args:A.a,d,F,h,l,r,S,t
-	lsof d:"List open files"
-	lsattr d:"List file attributes on a Linux second extended file system"
+	lsof d:"List open files" pkg:lsof
+	lsattr d:"List file attributes on a Linux second extended file system" pkg:e2fsprogs
 	lsblk d:"List block devices"
-	lscpu d:"Display information about the CPU architecture"
-	lshw d:"List hardware"
-	lsscsi d:"List SCSI devices (or hosts), list NVMe devices"
-	man d:"Format and display help pages" syn:info,help
-	mesg d:"Display (or do not display) messages from other users"
+	lscpu d:"Display information about the CPU architecture" pkg:util-linux
+	lshw d:"List hardware" pkg:lshw
+	lsscsi d:"List SCSI devices (or hosts), list NVMe devices" pkg:lsscsi
+	man d:"Format and display help pages" syn:info,help pkg:man-db
+	mesg d:"Display (or do not display) messages from other users" man:util-linux
+	mkinitramfs d:"Low-level tool for generating an initramfs image" pkg:initramfs-tools
 	more d:"Display output one screen at a time"
 	most d:"Browse or page through a text file"
 	mount d:"Mount a filesystem"
 	mv d:"Move (rename) files"
-	newgrp d:"Log in to a new group"
-	nohup d:"Run a command immune to hangups, with output to a non-tty"
+	netstat d:"Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships" pkg:net-tools
+	newgrp d:"Log in to a new group" pkg:login
+	nohup d:"Run a command immune to hangups, with output to a non-tty" pkg:coreutils
+	objdump d:"Display information from object files" pkg:binutils
 	parted d:"A partition manipulation program"
-	passwd d:"Change user password"
-	paste d:"Merge lines of files"
-	pgrep d:"Find signal processes by name"
-	ping d:"Send ICMP ECHO_REQUEST to network hosts"
-	pinky d:"Lightweight finger"
-	pkill d:"Kill processes by a full or partial name"
+	passwd d:"Change user password" pkg:paswd
+	paste d:"Merge lines of files" pkg:coreutils
+	pgrep d:"Find signal processes by name" pkg:procps
+	pkg-config d:"Return metainformation about installed libraries" pkg:pkg-config
+	ping d:"Send ICMP ECHO_REQUEST to network hosts" pkg:iputils
+	pinky d:"Lightweight finger" pkg:coreutils
+	pkill d:"Kill processes by a full or partial name" pkg:procps
 	poweroff d:"Power-off the machine"
-	pr d:"Prepare files for printing, printing and pagination filter for text files" related:cat,more
-	printenv d:"Print environment variables"
-	printf d:"Format and print data"
+	pr d:"Prepare files for printing, printing and pagination filter for text files" related:cat,more pkg:coreutils
+	printenv d:"Print environment variables" pkg:coreutils
+	printf d:"Format and print data" pkg:coreutils
 	ps d:"List running processes (returns PID)"
 	pwd d:"print name of current/working directory"
+	pidstat d:"Report statistics for Linux tasks" pkg:sysstat
 	read d:"Read one line from the standard input, (or from a file) and assign the word(s) to variable name(s)"
 	readonly d:"Mark variables/functions as readonly"
 	reboot d:"Rebbot the machine"
-	reset d:"terminal initialization"
+	renice d:"Alter priority of running processes" pkg:util-linux
+	reset d:"terminal initialization" pkg:ncurses-bin
 	rm d:"Remove files or directories"
 	rmdir d:"Remove empty directories" arg:ignore-fail-on-non-empty
+	route d:"Route traffic control filter" pkg:iproute2
 	runlevel d:"Print previous and current SysV runlevel"
 	runuser d:"Run a command with substitute user and group ID"
-	scp d:"OpenSSH secure file copy"
-	sed d:"Stream Editor - Find and Replace text within file(s)"
-	seq d:"Print a sequence of numbers"
+	scp d:"OpenSSH secure file copy" pkg:openssh-client
+	sed d:"Stream Editor - Find and Replace text within file(s)" pkg:sed
+	seq d:"Print a sequence of numbers" pkg:coreutils
+	setuid d:"Set user identity" pkg:super
 	shift d:"Shift positional parameters"
-	split d:"Split a file into fixed-size pieces"
+	shutdown d:"Halt, power-off or reboot the machine"
+	split d:"Split a file into fixed-size pieces" pkg:coreutils
 	ss d:"Dump socket statistics"
+	strace d:"Trace system calls and signals" pkg:strace
 	symlink d:"Make a new name for a file"
+	systemd-analyze d:"Analyze and debug system manager" pkg:systemd
 	systemctl d:"Control the systemd system and service manager"
 	su d:"Run a command with substitute user and group I"
-	sudo d:"Execute a command as another user"
+	sudo d:"Execute a command as another user" pkg:sudo
 	suspend d:"Suspend execution of this shell"
-	tail d:"Output the last part of files"
+	tail d:"Output the last part of files" pkg:coreutils
 	tar d:"An archiving utility"
-	tee d:"Redirect output to multiple files" related:echo,head,less,more
+	tee d:"Redirect output to multiple files" related:echo,head,less,more pkg:coreutils
 	telinit d:"Change SysV runlevel"
-	test d:"Check file types and compare values"
-	time d:"Run programs and summarize system resource usage"
-	top d:"List running processes on the system"
-	tr d:"Translate, squeeze, and/or delete characters" example:`| tr ';' '\n'`
+	test d:"Check file types and compare values" pkg:coreutils
+	time d:"Run programs and summarize system resource usage" pkg:time
+	top d:"List running processes on the system" pkg:procps
+	tr d:"Translate, squeeze, and/or delete characters" example:`| tr ';' '\n'` pkg:coreutils
 	trap d:"Trap signals and other events"
+	true d:"Do nothing, successfully" pkg:coreutils
 	touch d:"Change file timestamps"
 	type d:"Display a command's type"
+	tzselect d:"View timezones" pkg:libc-bin
 	umount d:"Unmount filesystems"
 	uname d:"Print system information"
-	uniq d:"Report or omit repeated lines"
+	uniq d:"Report or omit repeated lines" pkg:coreutils
 	units d:"Convert units from one scale to another"
-	useradd d:"Create a new user or update default new user information"
-	userdel d:"Delete a user account and related files"
-	usermod d:"Modify a user account"
-	w d:"Show who is logged on and what they are doing"
+	unmkinitramfs d:"Extract content from an initramfs image" pkg:initramfs-tools
+	useradd d:"Create a new user or update default new user information" pkg:shadow-utils
+	userdel d:"Delete a user account and related files" pkg:shadow-utils
+	usermod d:"Modify a user account" pkg:shadow-utils
+	vipr d:"Edit the group and shadow-group file" pkg:shadow-utils
+	vipw d:"Edit the password and shadow-password file" pkg:shadow-utils
+	vmstat d:"Report virtual memory statistics" pkg:procps
+	w d:"Show who is logged on and what they are doing" pkg:procps
 	wait d:"Wait for a process to complete"
-	wc d:"Print byte, word, and line counts, count the number of bytes, whitespace-separated words, and newlines in each given FILE, or standard input"
-	wget d:"The non-interactive network downloader"
-	whereis d:"Search the user's $path, man pages and source files for a program"
-	who d:"Show who is logged on"
-	whoami d:"Print effective userid"
-	write d:"Send a message to another user"
-	xev d:"Print contents of X events"
-	xmodmap d:"Utility for modifying keymaps and pointer button mappings in X"
-	yes d:"Output a string repeatedly until killed"
+	wc d:"Print byte, word, and line counts, count the number of bytes, whitespace-separated words, and newlines in each given FILE, or standard input" pkg:coreutils
+	wget d:"The non-interactive network downloader" pkg:wget
+	whereis d:"Search the user's $path, man pages and source files for a program" pkg:util-linux
+	who d:"Show who is logged on" pkg:coreutils
+	whoami d:"Print effective userid" pkg:coreutils
+	write d:"Send a message to another user" pkg:util-linux
+	xev d:"Print contents of X events" pkg:x11-utils author:Jim_Fulton
+	xmodmap d:"Utility for modifying keymaps and pointer button mappings in X" pkg:x11-xserver-utils
+	yes d:"Output a string repeatedly until killed" pkg:coreutils
 	
 
 	

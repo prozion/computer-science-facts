@@ -1,0 +1,14 @@
+compilers +a:Compiler
+	Clang rstart:2007 lang:C,C++,Objective-C org:LLVM_Developer_Group
+	GCC rstart:1987 lang:C org:GNU_Project
+	Ghc lang:Haskell
+		Ghc_6.8.2 rstart:2007
+		Ghc_6.10.1 rstart:11.2008
+		Ghc_6.12.3 rstart:06.2010
+		Ghc_7.0.1 rstart:11.2010
+		Ghc_7.10.3 rstart:12.2015
+		Ghc_8.0.1 rstart:05.2016
+		Ghc_8.4.1 rstart:03.2018 d:"last stable in Debian repo"
+		Ghc_8.10.1 rstart:03.2020
+		Ghc_8.8.4 rstart:07.2020
+		Ghc_8.10.2 rstart:08.2020

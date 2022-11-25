@@ -225,7 +225,7 @@ people +a:Person ; keys-order:name,bdate,ddate,alma-mater,bsc,msc,ma,phd,job,hom
 	Dan_Murphy
 	Jose_Valim
 	Brendan_Eich
-	Bill_Joy
+	Bill_Joy bdate:1954 alma-mater:UMichigan
 	Jack_Tramiel
 	Mahmoud_Fayed
 	Chris_Pressey

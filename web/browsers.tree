@@ -1,4 +1,4 @@
-browsers
+browsers +a:Browser
 	Mosaic released:23.01.1993 company:NCSA
 	NN1 deabbr:"Netscape_Navigator" released:15.12.1994 code-from:Mosaic company:Netscape
 	NN2 released:1995
@@ -10,7 +10,7 @@ browsers
 	Opera_2 released:1996 company:Opera_Software
 	IE2_Mac released:04.1996 os:Windows_3.1,MacOS
 	IE3 released:08.1996 os:Windows_95,Windows_NT
-	Konqueror released:10.1996 organization:KDE
+	Konqueror released:10.1996 org:KDE
 	IE3_Mac released:01.1997 os:MacOS
 	IE4 released:10.1997
 	Opera_3 released:12.1997
@@ -64,5 +64,8 @@ browsers
 	Safari_11 released:09.2017
 	Яндекс.Браузер_17 released:10.2017
 	Safari_12 released:10.2018
+engines +a:BrowserEngine
+	Presto rstart:2003 written-in:C++ company:Opera_Software
+	WebKit
 	
 	

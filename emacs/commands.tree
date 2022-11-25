@@ -1,4 +1,4 @@
-commands
+commands +a:CodeEditorCommand
 	buffers
 		delete-other-windows kb:C-x-1
 		list-buffers kb:C-x-C-b

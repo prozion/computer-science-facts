@@ -1,4 +1,4 @@
-it-company +a:Company
+it-organizations +a:Company
 	europe
 		czech_republic
 			JetBrains hq:Prague start:2000		
@@ -21,6 +21,7 @@ it-company +a:Company
 		germany
 			SAP name:"SAP SE" deabbr:"Systems, Applications & Products in Data Processing" hq:Walldorf start:1972
 			Omix_Visualization hq:Lennestadt
+			Paragon start:1994 hq:Freiburg former-hq:Долгопрудный
 			YWorks name:"yWorks GmbH" city:Tubingen
 		italy
 			SGS_Microelettronica end:1987 merged-to:STMicroelectronics			
@@ -29,6 +30,8 @@ it-company +a:Company
 		netherlands
 			TIOBE deabbr:"The Importance Of Being Earnest" hq:Eindhoven
 			STMicroelectronics hq:Amsterdam start:1987
+		russia
+			Физтех-софт start:1991
 		scotland
 			Eight_Pillars name:"Eight Pillars Ltd" hq:Edinburgh
 		sweden
@@ -52,12 +55,14 @@ it-company +a:Company
 			Blizzard_Entertainment alt-id:Blizzard hq:Irvine start:1991 
 			Blue_World_Communications hq:Fort_Lauderdale former-hq:Bellevue
 			Borland name:"Borland Software Corporation" hq:Austin start:1983 end:2009
+			Be_Incorporated hq:Menlo_Park start:1990 end:2001 
 			Compaq hq:Harris_County start:1982 acquired-by:Hewlett-Packard:2013
 			Cortex
 			Cray_Inc alt-id:Cray former-name:"Cray Research" hq:Seattle start:1972
+			CSRG deabbr:"Computer Systems Research Group" a:ResearchGroup uni:UC_Berkeley start:1995
 			DEC name:"Digital Equipment Corporation" hq:Maynard start:1957
 			Digital_Mars founder:Walter_Bright
-			Digital_Research hq:Pacific_Grove start:1974 takeover-by:Novell:2001
+			Digital_Research hq:Pacific_Grove start:1974 takeover-by:Novell^2001
 			Dropbox hq:San_Francisco start:2007
 			EMP_Inc name:"EMP Project Inc." hq:Naperville	
 			Epic_Games hq:Cary start:1991
@@ -65,12 +70,15 @@ it-company +a:Company
 			Firaxis_Games hq:Sparks start:1996
 			Fog_Creek_Software hq:New_York start:2000
 			General_Electric hq:Boston start:1892
-				Smallworld_Systems hq:Cambridge start:1989			
+				Smallworld_Systems hq:Cambridge start:1989
+			GNU_Project a:PublicProject founder:Richard_Stallman	
 			Google hq:Menlo_Park start:1998
 			Guidewire_Software hq:Foster_City start:2001
 			Hewlett-Packard hq:Palo_Alto start:1939 
+			Honeywell hq:Charlotte start:1906
 			IBM name:"International Business Machines (IBM)" hq:Armonk start:1911
 				SSEC name:"IBM Selective Sequence Electronic Calculator" hq:New_York
+			IEEE deabbr:"Institute of Electrical and Electronics Engineers" a:Organization start:1963 hq:New_York
 			IIT_VIS hq:Broomfield
 			Informatics name:"Informatics General" hq:Los_Angeles start:1962 end:1985
 			Intermetrics hq:Cambridge_MA start:1969
@@ -93,6 +101,7 @@ it-company +a:Company
 			Optimized_Systems_Software hq:Cupertino start:1981 end:1988 merged-to:ICD
 			Oracle_Corporation alt-id:Oracle hq:Santa_Clara start:1977 
 			PARC name:"Palo Alto Research Center Incorporated" alt-id:Xerox_PARC hq:Palo_Alto start:1970
+			PortlandLabs hq:Portland
 			Psion hq:London start:1980 end:2012 purchased-by:Motorola_Solutions
 			PTC hq:Needham start:1985		
 			RAND_Corporation deabbr:"Research ANd Development" hq:Santa-Monica start:1948
@@ -102,6 +111,7 @@ it-company +a:Company
 			Remington_Rand hq:New_York start:1927 end:1955 acquired-by:Sperry_Corporation
 			RemObjects_Software hq:Hanover_Park start:2002
 			SDC name:"System Development Corporation (SDC)" hq:Santa-Monica start:1955
+			SHARE a:UserGroup start:1955 url:share.org
 			Skype_Technologies start:2003 hq:Luxembourg,Palo_Alto purchased-by:Microsoft:2011
 			Speakeasy_Computing_Corporation
 			Sperry_Corporation hq:Lake_Success start:1910 end:1986 merged-to:Unisys
