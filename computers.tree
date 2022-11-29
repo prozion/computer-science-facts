@@ -1,0 +1,70 @@
+computers +a:Computer
+	Analytical_Engine year:1910 designer:Henry_Babbage
+	Z1 year:1938 designer:Konrad_Zuse
+	Z3 year:1941 designer:Konrad_Zuse
+	Z4 year:1942 designer:Konrad_Zuse
+	Colossus_Mark_I year:1943 designer:Tommy_Flowers
+	Colossus_Mark_II year:1944 designer:Tommy_Flowers
+	ENIAC year:1945 designer:John_Mauchly,Presper_Eckert lang:Brief_Code,Short_Code organization:US_Army bulbs:18K
+	EDVAC
+	CSIRAC year:1949 designer:Trevor_Pearcey lang:INTERPROGRAM uni:UMelbourne
+	EDSAC year:1950 uni:UCambridge
+	Whirlwind_I year:1951 uni:MIT
+	LEO_I year:1951 company:J_Lyons_Co
+	ERA_ATLAS year:1950 company:US_Navy 
+	UNIVAC_1101 year:1951 pred:ERA_ATLAS designer:Seymour_Cray company:ERA
+	IAS_machine year:1952 designer:John_von_Neumann
+	IBM_701 year:1952 designer:Nathaniel_Rochester lang:Speedcoding company:IBM
+	IBM_608 year:1954 gen:2
+	IBM_709 year:1958 gen:1 company:IBM
+	UNIVAC_I year:1951 designer:Presper_Eckert company:Remington_Rand
+	UNIVAC_1103 year:1953 designer:Seymour_Cray company:ERA
+	IBM_650 year:1953 company:IBM
+	IBM_704 year:1954 lang:Fortran,Lisp,COMIT company:IBM
+	Datamatic_1000 year:1955 company:Honeywell,Raytheon
+	IBM_7070 year:1958 company:IBM
+	IBM_1620 year:1959 company:IBM
+	IBM_1401 year:1959 lang:COBOL,RPG,Fortran  memory-max-chars:16K company:IBM
+	IBM_1410 year:1960 memory-max-chars:80K company:IBM
+	IBM_7090 year:1959 gen:2 pred:IBM_709 company:IBM
+	PDP-1 year:1959 company:DEC
+	Honeywell_200 year:1960? lang:COBOL company:Honeywell
+	Honeywell_800 year:1960 lang:COBOL,Fortran company:Honeywell
+	CDC-1604 year:1960 company:CDC chief-designer:Seymour_Cray
+	AN/USQ-20 year:1961 part-of:NTDS ; US Navy
+	IBM_7094 year:1962 pred:IBM_7090 company:IBM
+	CDC-6600 year:1963 company:CDC 
+	GE_635 year:1963 company:General_Electric
+	System/360 year:1965 gen:3 company:IBM 
+	PDP-7 year:1965 company:DEC
+	CDC-7600 year:1969 company:CDC
+	GE_645 year:1965? pred:GE_635 company:General_Electric
+	System/370 year:1970 gen:3 pred:System/360 company:IBM
+	PDP-11 year:1970 company:DEC
+	CDC-8600 end:1972 company:CDC
+	STAR-100 company:CDC designer:Jim_Thornton
+	Interdata_8/32 year:1973 os:OS/32 company:PerkinElmer
+	Commodore_PET a:PersonalComputer year:1977 company:CBM os:KERNAL,Commodore_BASIC
+	Atari_400 a:PersonalComputer year:1979 company:Atari cpu:MOS_Technology_6502
+	IBM_4300 year:1979 pred:System/360 company:IBM
+	VIC-20 a:PersonalComputer year:1980 rend:1985 os:KERNAL,Commodore_BASIC company:CBM cpu:MOS_Technology_6502
+	IBM_308x year:1981 pred:System/360 company:IBM
+	Commodore_64 a:PersonalComputer year:1982 company:CBM os:KERNAL,Commodore_BASIC cpu:MOS_Technology_6510
+	Macintosh a:PersonalComputer year:1984 
+	Sinclair_QL a:PersonalComputer year:1984 company:Sinclair_Research cpu:Motorola_68008
+	Atari_ST a:PersonalComputer year:1985 company:Atari_Corporation cpu:Motorola_68000
+	IBM_3090 year:1985 pred:System/370 company:IBM
+	BeBox a:PersonalComputer year:1995 company:Be_Incorporated
+	; CCCР
+	Стрела city:Москва plant:САМ year:1953 machines-n:8
+	Урал-1 city:Пенза plant:САМ year:1957
+	Урал-2 city:Пенза plant:САМ year:1959
+	Урал-3 city:Пенза plant:САМ year:1964
+	БЭСМ-6 city:Москва plant:САМ year:1967 machines-n:355
+	Эльбрус-КБ city:Москва plant:САМ company:МЦСТ,ИНЭУМ
+	EC-1840 city:Минск
+	ДВК version:ДВК-3,ДВК-4 plant:Квант company:НИИ_Научный_Центр
+	УК-НЦ plant:Квант company:НИИ_Научный_Центр
+	БК-0010 plant:Квант company:НИИ_Научный_Центр production-time-interval:1983-1993
+	МАРС deabbr:"модульная асинхронная развиваемая система" year:1988 company:НИЦЭВТ
+	Искра-1030 city:Курск year:1989

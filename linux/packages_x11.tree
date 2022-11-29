@@ -1,0 +1,16 @@
+x11_packages +a:Package
+	libglvnd0 dep:libc6
+	libglx-mesa0 dep:libc6,libdrm2,libexpat1,libglapi-mesa,libstdc++6,libx11-6,libx11-xcb1,libxcb-dri2-0,libxcb-dri3-0,libxcb-present0,libxcb-shm0,libxcb-sync1,libxcb-xfixes0,libxcb1,libxext6,libfixes3,libxshmfence1,libxxf86m1,libgl1-mesa-dri ; TODO
+	libgl1 dep:libc6,libglvnd0,libglx0
+	libgl1-mesa-dri dep:libc6,libdrmlibdrm-amdgpu1,libdrm-nouveau2,libdrm-radeon1,libdrm2,libelf1,libexpat1,libgcc-s1,libglapi-mesa,libllvm13,libsensors5,libstdc++6,libvulkan1,libzstd1,zlib1g ; TODO
+	libglx0 dep:libc6,libglvnd0,libx11-6,libglx-mesa0
+	libxcb1 dep:libc6
+	libxmuu1 dep:libc6,libx11-6
+	libx11-data dep:<n>
+	libx11-xcb1 dep:libx11-6
+	libx11-6 dep:libc6,libxcb1,libx11-data 
+	xauth dep:libc6,libx11-6,libxau6,libxmuu1
+	x11-common dep:lsb-base
+	x11-utils dep:libc6,libfontconfig1,libfontenc1,libgl1,libx11-6,libx11-xcb1,libxaw7,libxcb-shape0,libxcb1,libxcomposite1,libxext6,libxft2,libxi6,libxinerama1,libxkbfile1,libxmu6,libxmuu1,libxrandr2,libxrender1,libxt6,libxtst6,libxv1,libxxf86dga1,libxxf86vm1 ; TODO
+	xinit dep:libc6,libx11-6,coreutils,x11-common,xauth
+	xkb-data dep:<n>

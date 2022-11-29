@@ -7,28 +7,39 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 		skos ns:http://www.w3.org/2004/02/skos/core#
 	classes +a:owl/Class +hi-inv-rel:subclass-of
 		Architecture
+			CISC
+			RISC
 		Artifact subclass-of:Nameable,Datable
-			Application
-				Browser
-				CodeEditor
-			Compiler
-			Computer
-				PersonalComputer
-			CPU
-			Database
-			Kernel
-			Language
-				ProgrammingLanguage
-					EsotericProgrammingLanguage
-				MarkupLanguage
-				DataFormat
-			OperatingSystem
-				OperatingSystemRelease subclass-of:_1 
-					_1 a:owl/Restriction owl/onProperty:release-of owl/someValuesFrom:OperatingSystem
-			Package
-			VirtualMachine
-				BrowserEngine
-				RuntimeEnvironment
+			Hardware
+				Computer
+					Mainframe
+					PersonalComputer
+					Server
+					WorkingStation
+				CPU
+			Software
+				Application
+					Browser
+					CodeEditor
+				Compiler
+				Database
+				Kernel
+				Language
+					ProgrammingLanguage
+						Assembler
+							ATTAssembler d:"AT&T syntax assembler"
+							IAssembler d:"Intel syntax assembler"
+						EsotericProgrammingLanguage
+					MarkupLanguage
+					DataFormat
+				OperatingSystem
+					OperatingSystemRelease subclass-of:_1 
+						_1 a:owl/Restriction owl/onProperty:release-of owl/someValuesFrom:OperatingSystem
+					ROMResidentOperatingSystem
+				Package
+				VirtualMachine
+					BrowserEngine
+					RuntimeEnvironment
 		Command
 			BashCommand
 			CodeEditorCommand
@@ -50,7 +61,8 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 			Nameable
 			Locatable
 			Structurable
-		Integer subclass-of:rdfs/Literal
+		IntegerInterval subclass-of:rdfs/Literal
+			Integer d:"single value is a subclass of interval, it is interpreted as the left and rigth border of interval are the same"
 		NasdaqIndex subclass-of:rdfs/Literal
 		Organization subclass-of:Locatable,Structurable,Contactable,Nameable
 			Company
@@ -77,9 +89,11 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 		alma-mater domain:Person range:University
 		author eq-property:designer
 		bdate domain:Person range:Date d:"when a person was born"
+		bits domain:Architecture range:Integer
 		book domain:Person range:Book
-		bus domain:CPU range:Integer
-			databus
+		bus domain:CPU range:IntegerInterval
+			abus d:"address bus"
+			dbus d:"data bus"
 		city domain:Locatable range:City
 		closed domain:Artifact range:Date
 		codeset domain:CPU range:Architecture
@@ -101,16 +115,17 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 			rend d:"last release" domain:Artifact
 		engine domain:Browser range:BrowserEngine
 		founder domain:Organization range:Person
+		freq domain:CPU range:rdfs/Literal ; (k/M/G)Hz
 		from domain:Artifact range:Artifact
 			code-from
 			modification-of
 		from-database domain:Language range:Database
 		from-editor domain:Language range:CodeEditor
-		from-hardware domain:Language range:Computer
 		from-os domain:Language range:OperatingSystem
 		gen d:"computer generation" domain:Computer range:Integer
 		group domain:Artifact range:WorkingGroup
-		hardware domain:OperatingSystem range:Computer,CPU,Architecture
+		hardware domain:OperatingSystem,Assembler range:Computer,CPU,Architecture
+		has-species domain:Architecture range:Architecture
 		homepage domain:Person range:Website
 		hometown domain:Person range:City
 		hq d:"headquarters" domain:Locatable range:Place
@@ -122,6 +137,9 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 		lang domain:Artifact range:Language
 			system-lang domain:OperatingSystem
 		member domain:Person,Organization range:Organization
+		memory domain:Hardware
+			memory-max
+				memory-max-chars domain:Mainframe range:rdfs/Literal
 		merged-to domain:Company range:Company
 		name domain:Nameable range:rdfs/Literal
 		nasdaq domain:Company range:NasdaqIndex
@@ -130,6 +148,8 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 		org range:Organization
 		os domain:Artifact range:OperatingSystem
 		part-of domain:Structurable
+		pins domain:CPU range:IntegerInterval
+			dip
 		pkg domain:Artifact,Command range:Package
 		plant domain:Computer range:Plant
 		pred d:"predecessor" domain:Computer range:Computer
@@ -152,8 +172,8 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 		written-in domain:Artifact range:ProgrammingLanguage
 		year domain:Datable range:Year
 	individuals
-		[organizations.tree]
-		[hardware.tree]
+		[companies.tree]
+		[computers.tree]
 		[languages.tree]
 		[operating-systems.tree]
 		[people.tree]

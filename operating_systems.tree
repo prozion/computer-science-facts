@@ -27,6 +27,7 @@ operating_systems +a:OperatingSystem
 	IOCS deabbr:"Input/Output Control System" year:195x company:IBM
 	IRIX company:Silicon_Graphics
 	iOS
+	KERNAL a:ROMResidentOperatingSystem
 	Linux year:1991 from:Minix designer:Linus_Thorvalds
 	Minix year:1987 designer:Andrew_Tanenbaum from:Unix
 		Minix_1.5 year:1991
@@ -77,13 +78,15 @@ operating_systems +a:OperatingSystem
 		macOS_13 released:2022
 	Multics year:1969 written-in:PL/I hardware:GE_645 uni:MIT company:General_Electric,Bell_Labs
 	NeXTSTEP year:1989 kernel:Mach,BSD written-in:C,Objective-C hardware:M68K,x86-32,SPARC,PA-RISC company:NeXT
-	OS/360 year:1966 company:IBM hardware:System/360 from:IBSYS,IOCS
+	OS/360 year:1966 company:IBM hardware:System/360 from:IBSYS,IOCS,PR155
+	PR155 company:IBM hardware:IBM1410
 	PTS-DOS deabbr:"Физтех-ДОС" year:1993 company:Физтех-софт,Paragon compatible-with:MS-DOS_6,MS-DOS_7 hardware:x86-32 url:phystechsoft.ru/pts-dos
 	RT-11 year:1970 company:DEC hardware:PDP-11
 	Solaris
 	SOS year:1959 company:SHARE hardware:IBM_709,IBM_7090
 	Unix
-		BSD year:1978 designer:Bill_Joy org:CSRG uni:UC_Berkeley
+		BSD year:1978 deabbr:"Berkeley Software Distrubution" designer:Bill_Joy org:CSRG uni:UC_Berkeley
+			BSDi
 			FreeBSD rstart:1993
 			NetBSD
 			OpenBSD year:1995 from:NetBSD designer:Theo_de_Raadt

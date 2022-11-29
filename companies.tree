@@ -1,9 +1,10 @@
-it-organizations +a:Company
+it-companies +a:Company
 	europe
 		czech_republic
 			JetBrains hq:Prague start:2000		
 		england
 			Acorn_Computers hq:Cambridge start:1978	
+			Canonical hq:London
 			GlaxoSmithKline city:Brentford
 			INMOS hq:Bristol start:1978 end:1989 acquired-by:SGS-Thomson
 			RRE name:"Royal Radar Establishment" a:ResearchCenter hq:Malvern start:1953
@@ -31,6 +32,7 @@ it-organizations +a:Company
 			TIOBE deabbr:"The Importance Of Being Earnest" hq:Eindhoven
 			STMicroelectronics hq:Amsterdam start:1987
 		russia
+			МЦСТ start:1992 url:mcst.ru
 			Физтех-софт start:1991
 		scotland
 			Eight_Pillars name:"Eight Pillars Ltd" hq:Edinburgh
@@ -40,12 +42,16 @@ it-organizations +a:Company
 			ABB_Group hq:Zurich start:1988
 			Oberon_microsystems hq:Zurich uni:ETH_Zurich
 	north_america
+		canada
+			CBM deabbr:"Commodore Business Machines" hq:Toronto start:1958 end:1994 
 		usa
 			Adobe_Systems alt-id:Adobe hq:San_Jose start:1982
 			Allaire hq:Newton former-hq:Cambridge_MA start:1995 acquired-by:Macromedia:2001
 			Amazon hq:Seattle start:1994
 			Aonix start:1996 end:2010 renamed-to:Atego 
 			Apple alt-id:Apple_Inc,Apple_Computer former-name:"Apple Computer Company","Apple Computer, Inc" hq:Cupertino start:1976
+			Atari hq:Sunnyvale,New_York start:1972
+			Atari_Corporation hq:Sunnyvale start:1984 end:1996 acquired:Atari
 			Atego start:2010 end:2014 acquired-by:PTC
 			AT&T hq:Dallas
 				AT&T_Labs_Research office:Atlanta,Austin,Middletown,Redmond,San_Ramon,Warrenville			

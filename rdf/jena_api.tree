@@ -1,0 +1,70 @@
+jena
+	org.apache.jena
+		JsonLDReadContext extends:Context
+		JsonLDWriteContext extends:Context
+	org.apache.jena.query
+		ARQ
+		Dataset
+		DatasetFactory
+		ModelStore
+		ParameterizedSparqlString
+		Query
+		QueryBuildExceptionion.
+		QueryCancelledException
+		QueryException
+		QueryExecException
+		QueryExecution
+		QueryExecutionBuilder
+		QueryExecutionDatasetBuilder
+		QueryExecutionFactory
+		QueryFactory
+		QueryFatalException
+		QueryParseException
+		QuerySolution
+		QuerySolutionMap
+		QueryType
+		QueryVisitor
+		ReadWrite
+		ResultSet
+		ResultSetCloseable
+		ResultSetFactory
+		ResultSetFormatter
+		ResultSetRewindable
+		SortCondition
+		Syntax
+		TxnType
+	org.apache.jena.rdfs
+		DatasetGraphRDFS
+		GraphRDFS
+		InfStreamRDFS
+		RDFSFactory
+		SetupRDFS
+	org.apache.jena.riot
+		IO_Jena
+		Lang
+		LangBuilder
+		RDFDataMgr
+		RDFFormat
+		RDFFormatVariant
+		RDFFormat.JSONLDVariant
+		RDFParser
+		RDFWriter
+	org.apache.jena.sparql
+		AlreadyExists
+		ARQConstants
+		ARQException
+		ARQInternalErrorException
+		ARQNotImplemented
+		DoesNotExist
+		JenaTransactionException
+		SystemARQ
+	org.apache.jena.sparql.util
+		Context
+	org.jena.datatypes d:"Provides the core interfaces through which datatypes are described to Jena. 	Typed literals"
+	org.jena.ontology d:"Abstractions and convenience classes for accessing and manipulating ontologies represented in RDF. 	Ontology API"
+	org.jena.rdf.listeners d:"Listening for changes to the statements in a model"
+	org.jena.rdf.model d:"The Jena core. Creating and manipulating RDF graphs."
+	org.jena.reasoner d:"The reasoner subsystem is supports a range of inference engines which derive additional information from an RDF model 	Reasoner how-to"
+	org.jena.shared d:"Common utility classes"
+	org.jena.vocabulary d:"A package containing constant classes with predefined constant objects for classes and properties defined in well known vocabularies"
+	org.riot d:"Reading and Writing RDF."

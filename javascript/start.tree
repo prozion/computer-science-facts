@@ -9,7 +9,24 @@ javascript start:04.12.1995 designer:Brendan_Eich
 			W3schools url:w3schools.com/jsref
 			library_references
 				Lodash url:lodash.com/docs
-	libraries
-		JQuery start:2006 author:John_Resig
-		Lodash from:Underscore.js start:2009 url:lodash.com
+	frameworks_and_libraries
+		Prototype start:02.2005 library-for:Ruby_on_Rails author:Sam_Stephenson
+		Dojo start:03.2005 author:Alex_Russell,Dylan_Schiemann,David_Schontzler
+		JQuery start:08.2006 author:John_Resig
+		ExtJS start:04.2007 library-for:YUI author:Jack_Slocum
+		Lodash start:2009 from:Underscore.js url:lodash.com
+		AngularJS start:10.2010 developer:Google
+		Backbone.js start:10.2010 author:Jeremy_Ashkenas
+		Ember.js start:12.2011 author:Yehuda_Katz
+		React start:05.2013 author:Jordan_Walke,Sebastian_Markbåge,Dan_Abramov,Rachel_Nabors,Andrew_Clark developer:Facebook
+		Vue.js start:02.2014 author:Evan_You
+		Angular2 start:09.2016 developer:Google
+		Svelte start:11.2016 author:Rich_Harris
+	languages
+		JavaScript
+		CoffeeScript start:12.2009 author:Jeremy_Ashkenas
+		TypeScript start:10.2012 developer:Microsoft
+		PureScript start:2013 language:Haskell author:Phil_Freeman 
+		ClojureScript start:2011 author:Rich_Hickey
+		Nim
 					

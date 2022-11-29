@@ -1,5 +1,11 @@
-vim-scheme a:owl/Ontology
-	classes
+vim a:owl/Ontology ns:https://purl.org/vim# dc/title:"Vim ontology and knowledge graph"
+	namespaces
+		rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
+		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
+		owl ns:http://www.w3.org/2002/07/owl#
+		dc ns:http://purl.org/dc/elements/1.1/
+		skos ns:http://www.w3.org/2004/02/skos/core#
+	classes +a:owl/Class +hi-inv-rel:subclass-of
 		Register
 			UnnamedRegister one-of:`""`
 			NumberedRegister one-of:`"[0-9]/i`
@@ -24,7 +30,7 @@ vim-scheme a:owl/Ontology
 		Operator
 		Mode
 		Motion
-	properties +a:rdf/Property
+	properties +a:rdf/Property +hi-inv-rel:subproperty-of
 		cmd domain:AbstractCommand range:BashCommand
 		modes +a:Mode
 			Normal_mode

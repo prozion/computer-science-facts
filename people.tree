@@ -1,3 +1,5 @@
+; possible sources:
+; https://github.com/deepin-community/coreutils/blob/master/AUTHORS
 people +a:Person ; keys-order:name,bdate,ddate,alma-mater,bsc,msc,ma,phd,job,hometown,town,book,homepage,email,twitter
 	Adam_Lindsay
 	Adriaan_van_Wijngaarden
@@ -342,4 +344,5 @@ people +a:Person ; keys-order:name,bdate,ddate,alma-mater,bsc,msc,ma,phd,job,hom
 	Clark_Evans
 	Ingy_dot_Net
 	Oren_Ben-Kiki
+	David_MacKenzie wrote:coreutils
 

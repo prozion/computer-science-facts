@@ -4,7 +4,7 @@ commands rem:"in the command name, when the object (like line, char or word) is 
 	buffer-display-all ckb:ball
 	buffer-display-first ckb:bfirst
 	buffer-display-last ckb:bl,blast
-	buffer-display-next ckb:bn,bnext
+	buffer-display-next ckb:bn,bnext kb:C-^
 	buffer-display-previous ckb:bprevious
 	buffer-list ckb:ls,files,buffers
 	code-find-matching-parenthesis kb:%
@@ -130,7 +130,7 @@ commands rem:"in the command name, when the object (like line, char or word) is 
 	text-visual-block-mode kb:C-v
 	text-visual-mode kb:v
 	window-close-current ckb:q
-	window-exit ckb:q.exit
+	window-exit ckb:exit
 	window-exit-all ckb:qa
 	window-exit-discarding-changes ckb:q!
 	window-jump-to-another kb:C-w-C-w

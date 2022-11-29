@@ -3,21 +3,25 @@ bash_commands +a:BashCommand source:`https://ss64.com/bash/<command-name>.html`
 	adduser d:"Add a user to the system" pkg:adduser
 	alias d:"Create an alias. Show the list of aliases if called without arguments"
 	apropos d:"Search the manual page names and descriptions, whatis database" pkg:man-db
-	apt d:"High-level commandline interface for the package management system" distr:debian,ubuntu pkg:apt
+	apt alt:apt-get d:"High-level commandline interface for the package management system" distr:debian,ubuntu pkg:apt
+	apt-file d:"APT package searching utility" pkg:apt-file
 	arp d:"Linux ARP kernel module" pkg:net-tools
 	at d:"Executes commands at a specified time" pkg:at
 	atq d:"Lists the user's pending jobs" pkg:at
 	atrm d:"Deletes jobs, identified by their job number" pkg:at
+	basename d:"Strip directory and suffix from filenames" pkg:coreutils
 	bc d:"Arbitrary precision calculator language" pkg:bc
 	bg d:"Put a process in the background"
 	cal d:"Display a calendar" pkg:ncal ; pkg:bsdmainutils
 	cat d:"Display the contents of a file" similar:less,more,echo,tee,most pkg:coreutils
 	cd d:"Change the shell working directory"
+	checkinstall d:"Track  installation of local software, and produce a binary manageable with your package management software" pkg:checkinstall
 	chfn d:"Change real user name and information" pkg:shadow-utils
 	chgrp d:"Change group ownership"
 	chmod d:"Change file mode bits"
 	chown d:"Change file owner and group"
 	chsh d:"Change login shell" pkg:shadow-utils
+	chvt d:"Change foreground virtual terminal" pkg:kbd
 	clear d:"Clear the terminal screen" pkg:ncurses-bin
 	comm d:"Compare two sorted files line by line" pkg:coreutils
 	cp d:"Copy files and directories"
@@ -29,6 +33,7 @@ bash_commands +a:BashCommand source:`https://ss64.com/bash/<command-name>.html`
 	dc d:"Desk Calculator" pkg:dc
 	df d:"Report file system disk space usage"
 	declare d:"Declare variables and give them attributes"
+	dhclient d:"Dynamic Host Configuration Protocol Client" pkg:isc-dhcp-client
 	diff d:"Compare files line by line" pkg:diffutils
 	dig d:"DNS lookup utility" +trace:"Tracing of the delegation path from the root name servers for the name being looked up" pkg:bind9-dnsutils
 	disown d:"Remove jobs from current shell"
@@ -39,12 +44,12 @@ bash_commands +a:BashCommand source:`https://ss64.com/bash/<command-name>.html`
 	echo d:"Display message on screen"
 	e2fsck d:"Check a Linux ext2/ext3/ext4 file system" pkg:e2fsprogs
 	egrep d:"Search file(s) for lines that match an extended expression"
-	env d:"Display, set, or remove environment variables" pkg:coreutils
+	env d:"Run a program in a modified environment" pkg:coreutils
 	ethtool d:"Query or control network driver and hardware settings"
 	exec d:"Replace the shell with the given command"
 	exit d:"Cause normal process termination" rem:"Use for logout after su"
-	expect d:"Programmed dialogue with interactive programs" pkg:expect pkg-dep:tcl-expect,tk
-	export d:"set an environment variable"
+	expect d:"Programmed dialogue with interactive programs" pkg:expect 
+	export d:"Set an environment variable"
 	expr d:"Evaluate expressions" pkg:coreutils
 	factor d:"Print prime factors" pkg:coreutils
 	false d:"Do nothing, unsuccessfully" pkg:coreutils
@@ -56,6 +61,8 @@ bash_commands +a:BashCommand source:`https://ss64.com/bash/<command-name>.html`
 	fmt d:"Reformat paragraph text" pkg:coreutils
 	fold d:"Wrap input lines to fit in specified width" pkg:coreutils
 	free d:"Display amount of free and used memory in the system" pkg:procps
+	ftp alt:tnftp d:"Internet file transfer progra" pkg:tnftp
+	fusermount d:"Mount and unmount FUSE filesystems" pkg:fuse
 	gawk d:"Find and Replace text within file(s)"
 	getconf d:"Query system configuration variables" pkg:libc-bin
 	getent d:"Get entries from Name Service Switch libraries" database:group,hosts,services pkg:libc-bin
@@ -69,6 +76,7 @@ bash_commands +a:BashCommand source:`https://ss64.com/bash/<command-name>.html`
 	halt d:"Halt the machine"
 	head d:"Output the first part of file(s)" pkg:coreutils
 	help d:"Display information about shell builtin commands"
+	history d:"GNU History Library"
 	host d:"DNS lookup utility" pkg:bind9-host
 	hostname d:"Print or set system host name"
 	htop d:"Interactive process viewer" pkg:htop
@@ -76,14 +84,19 @@ bash_commands +a:BashCommand source:`https://ss64.com/bash/<command-name>.html`
 	iconv d:"Convert text from one character encoding to another" pkg:libc-bin
 	id d:"Print real and effective user and group IDs" pkg:coreutils
 	ifconfig d:"Configure a network interface" pkg:net-tools
+	ifdown d:"take a network interface down" pkg:ifupdown
+	ifup d:"bring a network interface up" pkg:ifupdown
+	info d:"Read Info documents" pkg:info
 	ip d:"Show/manipulate routing, network devices, interfaces and tunnels" pkg:iproute2
 	jobs d:"List your own processes (returns Job No.)" arg:l
 	join d:"Join lines on a common field" pkg:coreutils
 	journalctl d:"Query the systemd journal" pkg:systemd
 	kill d:"Stop a process from running"
 	killall d:"kill processes by name" pkg:psmisc
+	ld d:"The GNU linker" pkg:binutils
 	ldd d:"Print shared object dependencies" pkg:libc-bin
 	less d:"Display output one screen at a time" extends:more pkg:less
+	libinput d:"Tool to interface with libinput (X.Org input driver)" pkg:libinput-tools
 	link d:"Create a link to a file" pkg:coreutils
 	ln d:"Make links between files"
 	local d:"Create variables"
@@ -101,6 +114,7 @@ bash_commands +a:BashCommand source:`https://ss64.com/bash/<command-name>.html`
 	lscpu d:"Display information about the CPU architecture" pkg:util-linux
 	lshw d:"List hardware" pkg:lshw
 	lsscsi d:"List SCSI devices (or hosts), list NVMe devices" pkg:lsscsi
+	make d:"GNU make utility to maintain groups of programs" pkg:make
 	man d:"Format and display help pages" syn:info,help pkg:man-db
 	mesg d:"Display (or do not display) messages from other users" man:util-linux
 	mkinitramfs d:"Low-level tool for generating an initramfs image" pkg:initramfs-tools
@@ -108,17 +122,27 @@ bash_commands +a:BashCommand source:`https://ss64.com/bash/<command-name>.html`
 	most d:"Browse or page through a text file"
 	mount d:"Mount a filesystem"
 	mv d:"Move (rename) files"
+	nasm d:"The Netwide Assembler, a portable 80x86 assembler" pkg:nasm
+	netcat alt:nc d:"Arbitrary TCP and UDP connections and listens"
 	netstat d:"Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships" pkg:net-tools
 	newgrp d:"Log in to a new group" pkg:login
+	nft d:"Administration tool of the nftables framework for packet filtering and classification" pkg:nftables
+	nm d:"List symbols from object files" pkg:binutils
+	nmap d:"Network exploration tool and port scanner" pkg:nmap
+	nmcli d:"Command-line tool for controlling NetworkManage" pkg:network-manager
+	nm-online d:"Ask NetworkManager whether the network is connected" pkg:network-manager
 	nohup d:"Run a command immune to hangups, with output to a non-tty" pkg:coreutils
+	nslookup d:"Query Internet name servers interactively" pkg:bind9-dnsutils
 	objdump d:"Display information from object files" pkg:binutils
 	parted d:"A partition manipulation program"
-	passwd d:"Change user password" pkg:paswd
+	patch d:"Apply a diff file to an original" pkg:patch
+	passwd d:"Change user password" pkg:passwd
 	paste d:"Merge lines of files" pkg:coreutils
 	pgrep d:"Find signal processes by name" pkg:procps
 	pkg-config d:"Return metainformation about installed libraries" pkg:pkg-config
 	ping d:"Send ICMP ECHO_REQUEST to network hosts" pkg:iputils
 	pinky d:"Lightweight finger" pkg:coreutils
+	pkg-config d:"Return metainformation about installed libraries" pkg:pkg-config
 	pkill d:"Kill processes by a full or partial name" pkg:procps
 	poweroff d:"Power-off the machine"
 	pr d:"Prepare files for printing, printing and pagination filter for text files" related:cat,more pkg:coreutils
@@ -128,6 +152,7 @@ bash_commands +a:BashCommand source:`https://ss64.com/bash/<command-name>.html`
 	pwd d:"print name of current/working directory"
 	pidstat d:"Report statistics for Linux tasks" pkg:sysstat
 	read d:"Read one line from the standard input, (or from a file) and assign the word(s) to variable name(s)"
+	readelf d:"Display information about ELF files" pkg:binutils
 	readonly d:"Mark variables/functions as readonly"
 	reboot d:"Rebbot the machine"
 	renice d:"Alter priority of running processes" pkg:util-linux
@@ -135,18 +160,32 @@ bash_commands +a:BashCommand source:`https://ss64.com/bash/<command-name>.html`
 	rm d:"Remove files or directories"
 	rmdir d:"Remove empty directories" arg:ignore-fail-on-non-empty
 	route d:"Route traffic control filter" pkg:iproute2
+	rpcinfo d:"Report RPC information" pkg:rpcbind
+	rsync d:"Remote (and local) file-copying tool" pkg:rsync
 	runlevel d:"Print previous and current SysV runlevel"
 	runuser d:"Run a command with substitute user and group ID"
-	scp d:"OpenSSH secure file copy" pkg:openssh-client
+	scp alt:rcp d:"OpenSSH secure file copy" pkg:openssh-client
+	screen d:"Screen manager with VT100/ANSI terminal emulation" pkg:screen
+	script d:"Make typescript of terminal session" pkg:util-linux
 	sed d:"Stream Editor - Find and Replace text within file(s)" pkg:sed
 	seq d:"Print a sequence of numbers" pkg:coreutils
+	set
 	setuid d:"Set user identity" pkg:super
+	setxkbmap d:"Set the keyboard using the X Keyboard Extension" pkg:x11-xkb-utils
+	sftp d:"OpenSSH secure file transfer" pkg:openssh-client
 	shift d:"Shift positional parameters"
 	shutdown d:"Halt, power-off or reboot the machine"
+	smbclient pkg:samba-common-bin
+	smbpasswd pkg:samba-common-bin
 	split d:"Split a file into fixed-size pieces" pkg:coreutils
 	ss d:"Dump socket statistics"
+	ssh d:"OpenSSH remote login client" pkg:openssh-client
+	sshfs pkg:sshfs
+	startx d:"Initialize an X session" pkg:xinit
+	stat d:"Display file or file system status" pkg:coreutils
 	strace d:"Trace system calls and signals" pkg:strace
 	symlink d:"Make a new name for a file"
+	sysctl d:"Configure kernel parameters at runtime" pkg:procps-ng
 	systemd-analyze d:"Analyze and debug system manager" pkg:systemd
 	systemctl d:"Control the systemd system and service manager"
 	su d:"Run a command with substitute user and group I"
@@ -154,6 +193,7 @@ bash_commands +a:BashCommand source:`https://ss64.com/bash/<command-name>.html`
 	suspend d:"Suspend execution of this shell"
 	tail d:"Output the last part of files" pkg:coreutils
 	tar d:"An archiving utility"
+	tcpdump d:"Dump traffic on a network" pkg:tcpdump
 	tee d:"Redirect output to multiple files" related:echo,head,less,more pkg:coreutils
 	telinit d:"Change SysV runlevel"
 	test d:"Check file types and compare values" pkg:coreutils
@@ -170,6 +210,7 @@ bash_commands +a:BashCommand source:`https://ss64.com/bash/<command-name>.html`
 	uniq d:"Report or omit repeated lines" pkg:coreutils
 	units d:"Convert units from one scale to another"
 	unmkinitramfs d:"Extract content from an initramfs image" pkg:initramfs-tools
+	unset
 	useradd d:"Create a new user or update default new user information" pkg:shadow-utils
 	userdel d:"Delete a user account and related files" pkg:shadow-utils
 	usermod d:"Modify a user account" pkg:shadow-utils
@@ -184,8 +225,12 @@ bash_commands +a:BashCommand source:`https://ss64.com/bash/<command-name>.html`
 	who d:"Show who is logged on" pkg:coreutils
 	whoami d:"Print effective userid" pkg:coreutils
 	write d:"Send a message to another user" pkg:util-linux
+	xargs d:"Build and execute command lines from standard input" pkg:findutils
 	xev d:"Print contents of X events" pkg:x11-utils author:Jim_Fulton
+	xinit d:"X Window System initializer" pkg:xinit
+	xlsclients d:"List client applications running on a display" pkg:x11-utils
 	xmodmap d:"Utility for modifying keymaps and pointer button mappings in X" pkg:x11-xserver-utils
+	xwininfo d:"window information utility for X" pkg:x11-utils
 	yes d:"Output a string repeatedly until killed" pkg:coreutils
 	
 

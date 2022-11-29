@@ -11,17 +11,17 @@ programming_languages +a:ProgrammingLanguage
 	Brief_Code year:1949 designer:John_Mauchly from:ENIAC_Short_Code
 	;; 1950s
 	Short_Code year:1950 designer:William_Schmidt from:Brief_Code
-	Birkbeck_Assembler year:1950 designer:Kathleen_Booth from:ARC_Assembly
+	Birkbeck_Assembler year:1950 a:Assembler designer:Kathleen_Booth from:ARC_Assembly
 	Superplan year:1951 designer:Heinz_Rutishauser from:Plankalkul
 	ALGAE year:1951 designer:Edward_Voorhees,Karl_Balke from:<unique>
 	Intermediate_Programming_Language year:1951 designer:Arthur_Burks from:Short_Code
-	Regional_Assembly_Language year:1951 designer:Maurice_Wilkes from-hardware:EDSAC
+	Regional_Assembly_Language year:1951 designer:Maurice_Wilkes hardware:EDSAC
 	Boehm_unnamed_coding_system year:1951 designer:Corrado_Bohm from:CPC_Coding_scheme
 	Klammerausdrucke year:1951 designer:Konrad_Zuse from:Plankalkul
 	OMNIBAC_Symbolic_Assembler year:1951 designer:Charles_Katz from:Short_Code
 	Stanislaus year:1951 type:"notation" designer:Fritz_Bauer from:<unique>
-	Whirlwind_Assembler year:1951 designer:Charles_Adams,Jack_Gilmore project:Whirlwind_I from-hardware:EDSAC
-	Rochester_Assembler year:1951 designer:Nat_Rochester from-hardware:EDSAC
+	Whirlwind_Assembler year:1951 designer:Charles_Adams,Jack_Gilmore project:Whirlwind_I hardware:EDSAC
+	Rochester_Assembler year:1951 designer:Nat_Rochester hardware:EDSAC
 	Sort_Merge_Generator year:1951 alt-name:"SORT/MERGE" designer:Betty_Holberton from:<unique>
 	A-0 year:1952 designer:Grace_Hopper from:Short_Code
 	Autocode year:1952 designer:Alick_Glennie,Alan_Turing from:CPC_Coding_scheme
@@ -215,6 +215,7 @@ programming_languages +a:ProgrammingLanguage
 	BBC_BASIC year:1980 designer:Sophie_Wilson company:Acorn_Computers from:BASIC
 	CHILL year:1980 organization:CCITT from:COBOL,PL/I
 	IBM_BASICA year:1981 company:Microsoft from:MBASIC
+	MASM year:1981 a:IAssembler hardware:x86 company:Microsoft
 	T year:1981 designer:Jonathan_Rees,Kent_Pitman,Norman_Adams uni:UYale from:Scheme
 	Speakeasy-4 year:1982 designer:Stanley_Cohen company:Speakeasy_Computing_Corporation from:Speakeasy-3	
 	Draco year:1982 designer:Chris_Gray from:Pascal,C,ALGOL_68
@@ -249,6 +250,7 @@ programming_languages +a:ProgrammingLanguage
 	Clarion year:1986 designer:Bruce_Barrington 
 	CorVision year:1986 company:Cortex from:INFORM
 	Eiffel year:1986 designer:Bertrand_Meyer from:Simula_67,Ada
+	GAS year:1986 a:ATTAssembler name:"GNU Assembler" designer:Dean_Elsner hardware:VAX,x86
 	GFA_BASIC year:1986 designer:Frank_Ostrowski from:BASIC
 	Informix-4GL year:1986 company:Informix 
 	LabVIEW year:1986 company:National_Instruments 
@@ -256,7 +258,7 @@ programming_languages +a:ProgrammingLanguage
 	Object_Pascal year:1986 company:Apple from:Pascal
 	PROMAL year:1986 deabbr:"PROgrammer's Microapplication Language" company:Systems_Management_Associates from:C
 	Erlang year:1986 designer:Joe_Armstrong company:Ericsson from:Prolog
-	AutoLISP year:1986 company:Autodesk cad:AutoCAD from:XLISP	
+	AutoLISP year:1986 company:Autodesk cad:AutoCAD from:XLISP
 	Ada_ISO_8652 year:1987 from:Ada_83
 	Self_concept year:1987 company:Sun_Microsystems from:Smalltalk
 	occam_2 year:1987 designer:David_May company:INMOS from:occam
@@ -279,6 +281,7 @@ programming_languages +a:ProgrammingLanguage
 	PicoLisp year:1988 designer:Alexander_Burger organization:ISO from:Lisp,APL,C,FORTRAN,Pascal,Prolog,Simula,Smalltalk,SMP
 	Wolfram_Language year:1988 designer:Stephen_Wolfram company:Wolfram_Research from:Lisp,Common_Lisp
 	Turbo_Pascal_OOP year:1989 designer:Anders_Hejlsberg company:Borland from:Turbo_Pascal,Object_Pascal
+	TASM year:1989 a:IAssembler hardware:x86 company:Borland
 	Modula-3 year:1989 company:DEC,Olivetti from:Modula-2
 	PowerBASIC year:1989 designer:Robert_Zale from:Turbo_Basic
 	VisSim year:1989 designer:Peter Darnell company:Visual_Solutions 
@@ -341,6 +344,7 @@ programming_languages +a:ProgrammingLanguage
 	Perl_Data_Language year:1996 designer:Karl_Glazebrook,Jarle_Brinchmann,Tuomas_Lukka,Christian_Soeller from:APL,Perl
 	VBScript year:1996 company:Microsoft from:Visual_Basic
 	OCaml year:1996 research-center:INRIA from:Caml_Light,Standard_ML
+	NASM year:1996 a:IAssembler name:"Netwide Assembler" designer:Simon_Tatham,Julian_Hall hardware:x86
 	NetRexx year:1996 designer:Mike_Cowlishaw from:REXX
 	Etoys year:1996 designer:Alan_Kay from:Logo,Smalltalk,HyperCard,StarLogo,AgentSheets
 	Component_Pascal year:1997 company:Oberon_microsystems from:Oberon-2
@@ -362,6 +366,7 @@ programming_languages +a:ProgrammingLanguage
 	UnrealScript year:1998 designer:Tim_Sweeney company:Epic_Games from:C++,Java
 	XSLT year:1998 deabbr:"Extensible Stylesheet Language Transformations" designer:James_Clark organization:W3C from:DSSSL
 	sdlBasic year:1998 designer:Neil_Hodgson from:AMOS_BASIC,wxBasic
+	FASM year:1999 deabbr:"Flat Assembler" a:IAssembler designer:Tomasz_Grysztar
 	Game_Maker_Language year:1999 designer:Mark_Overmars from:Game_Maker
 	Harbour year:1999 designer:Antonio_Linares from:dBase
 	ALF deabbr:"Another logical framework" year:199x uni:Chalmers
