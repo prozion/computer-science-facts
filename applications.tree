@@ -7,6 +7,7 @@ applications
 		Internet_Explorer start:08.1995 company:Microsoft
 		Chrome start:2008 company:Google
 		Firefox start:2002 company:Mozilla_Foundation
+	cad
 	code_editors
 		TECO start:1962 designer:Dan_Murphy
 		QED start:1966 designer:Butler_Lampson,Peter_Deutsch from:<?>
@@ -44,7 +45,9 @@ applications
 		Far_Manager start:1996 deabbr:"File and archive manager" designer:Eugene_Roshal
 		Total_Commander start:1993 designer:Christian_Ghisler previous-name:Windows_Commander
 	graph_editors ref:graphs/apps.tree
-	ide
+	ide_for_hardware
+		AVR_Studio company:Atmel
+	ide_for_software
 		Microsoft_Visual_Studio start:1997 company:Microsoft
 		NetBeans start:1996 company:Apache_Software_Foundation,Oracle_Corporation
 		Eclipse start:11.2001 company:Eclipse_Foundation

@@ -1,0 +1,16 @@
+window_managers +a:WindowManager +hi-inv-rel:from
+	Fluxbox
+	FVWM
+	Gnome rstart:1999
+	IceWM rstart:1997
+	KDE
+	LXDE a:DesktopEnvironment rstart:2006
+		LXQt a:DesktopEnvironment rstart:2013
+	swm year:1990 designer:Tom_LaStrange company:Solbourne_Computer
+	twm rstart:1987 designer:Tom_LaStrange
+		vtwm
+		tvtwm
+		CTWM
+		FVWM
+	WindowMaker
+	Xfce rstart:1997 designer:Olivier_Fourdan

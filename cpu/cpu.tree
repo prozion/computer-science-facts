@@ -11,10 +11,40 @@ cpu +a:CPU
 	NEC_V20 year:1982 company:NEC emulates:Intel_8080 bus:16 
 	NEC_V30 year:1982 company:NEC compat:Intel_8086 dbus:16 
 	Эльбрус year:2005? company:МЦСТ,ИНЭУМ
+mcu +a:MCU +hi-inv-rel:family
+	AVR_microcontroller company:Atmel
+		AVR_Dx
+			AVR_DA
+			AVR_DB
+			AVR_DD
+			AVR_EA
+		megaAVR
+		tinyAVR
+		XMega
+	ARM
+	Intel_8051 company:Intel bus:8
+	Microchip_AVR company:Microchip_Technology bus:8
+	Microchip_AVR_32 company:Microchip_Technology bus:32
+	Microchip_PIC company:Microchip_Technology bus:8
+	Microchip_PIC_24 company:Microchip_Technology bus:16
+	Microchip_PIC_32 company:Microchip_Technology bus:32
+	ST_Micro_STM_8 company:STMicroelectronics bus:8
+	TI_MSP_430 company:Texas_Instruments bus:16
 architectures +a:Architecture +hi-rel:has-species
-	ARM a:RISC year:2011 company:Acorn designer:Sophie_Wilson,Steve_Furber
-		ARM1
-		ARM2
+	ARM a:RISC year:2011 company:Acorn,Arm_Holdings designer:Sophie_Wilson,Steve_Furber
+		ARM_Cortex-A
+		ARM_Cortex-M
+			ARM_Cortex-M0
+			ARM_Cortex-M0+
+			ARM_Cortex-M1
+			ARM_Cortex-M3
+			ARM_Cortex-M4
+			ARM_Cortex-M4F
+			ARM_Cortex-M7
+			ARM_Cortex-M23
+			ARM_Cortex-M33
+			ARM_Cortex-M55 start:02.2020 instruction-cache:4K,8K,16K,32K,64K data-cache:4K,8K,16K,32K,64K
+		ARM_Cortex-R
 	IBM_mainframe
 		System/360
 		System/370

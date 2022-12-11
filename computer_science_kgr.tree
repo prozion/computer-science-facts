@@ -16,7 +16,9 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 					PersonalComputer
 					Server
 					WorkingStation
-				CPU
+				IntegratedCircuit
+					CPU
+					MCU
 			Software
 				Application
 					Browser
@@ -37,6 +39,8 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 						_1 a:owl/Restriction owl/onProperty:release-of owl/someValuesFrom:OperatingSystem
 					ROMResidentOperatingSystem
 				Package
+				WindowManager
+					DesktopEnvironment
 				VirtualMachine
 					BrowserEngine
 					RuntimeEnvironment
@@ -94,6 +98,9 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 		bus domain:CPU range:IntegerInterval
 			abus d:"address bus"
 			dbus d:"data bus"
+		cache
+			data-cache
+			instruction-cache
 		city domain:Locatable range:City
 		closed domain:Artifact range:Date
 		codeset domain:CPU range:Architecture
@@ -114,6 +121,7 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 		end domain:Datable range:Date
 			rend d:"last release" domain:Artifact
 		engine domain:Browser range:BrowserEngine
+		family domain:IntegratedCircuit range:IntegratedCircuit
 		founder domain:Organization range:Person
 		freq domain:CPU range:rdfs/Literal ; (k/M/G)Hz
 		from domain:Artifact range:Artifact

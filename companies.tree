@@ -30,7 +30,7 @@ it-companies +a:Company
 			Norsk_Regnesentral name:"Norwegian Computing Center" hq:Oslo start:1952
 		netherlands
 			TIOBE deabbr:"The Importance Of Being Earnest" hq:Eindhoven
-			STMicroelectronics hq:Amsterdam start:1987
+			STMicroelectronics alt:STMicro hq:Amsterdam,Geneva start:1987
 		russia
 			МЦСТ start:1992 url:mcst.ru
 			Физтех-софт start:1991
@@ -53,6 +53,7 @@ it-companies +a:Company
 			Atari hq:Sunnyvale,New_York start:1972
 			Atari_Corporation hq:Sunnyvale start:1984 end:1996 acquired:Atari
 			Atego start:2010 end:2014 acquired-by:PTC
+			Atmel hq:San_Jose start:1984 end:2016 acquired-by:Microchip_Technology^year:2015
 			AT&T hq:Dallas
 				AT&T_Labs_Research office:Atlanta,Austin,Middletown,Redmond,San_Ramon,Warrenville			
 			Autodesk nasdaq:ADSK hq:San_Rafael start:1982
@@ -62,6 +63,7 @@ it-companies +a:Company
 			Blue_World_Communications hq:Fort_Lauderdale former-hq:Bellevue
 			Borland name:"Borland Software Corporation" hq:Austin start:1983 end:2009
 			Be_Incorporated hq:Menlo_Park start:1990 end:2001 
+			Cadence_Design_Systems hq:Mountain_View start:1988
 			Compaq hq:Harris_County start:1982 acquired-by:Hewlett-Packard:2013
 			Cortex
 			Cray_Inc alt-id:Cray former-name:"Cray Research" hq:Seattle start:1972
@@ -95,6 +97,7 @@ it-companies +a:Company
 			Macromedia hq:San_Francisco start:1992 end:2005 purchased-by:Adobe
 			MAI_BASIC_Four_Inc hq:Irvine start:197x
 			Mango_Technologies hq:Palo_Alto			
+			Microchip_Technology hq:Chandler start:1989
 			MicroProse hq:Hunt_Valley,Alameda start:1982 end:2003 sold-to:Infogrames_Entertainment
 			Motorola hq:Chicago start:1928 splitted-to:Motorola_Solutions,Motorola_Mobility:2001
 			Motorola_Solutions hq:Chicago start:2011
@@ -125,7 +128,9 @@ it-companies +a:Company
 			Stack_Overflow office:New_York,London,Denver hq:New_York founder:Jeff_Atwood,Joel_Spolsky start:2008
 			State_Software start:2001
 			Sun_Microsystems nasdaq:SUNW,JAVA hq:Menlo_Park start:1982 end:2010 purchased-by:Oracle
+			Synopsis hq:Mountain_View start:1986
 			Systems_Management_Associates
+			Texas_Instruments hq:Dallas start:1930
 			Thomson_Software_Products merged-to:Aonix
 			Unisys hq:Blue_Bell start:1986
 			VisiCorp hq:Boston start:1976

@@ -1,4 +1,4 @@
-distribs
+distribs +hi-inv-rel:from
 	Alpine_Linux start:2005 inits:OpenRC
 	Arch_Linux start:2002 pkg:pacman inits:systemd
 		Ctlos_Linux
@@ -24,6 +24,7 @@ distribs
 			Kali_Linux
 			Linux_Mint start:2006
 			Parsix
+			Xubuntu
 	Gentoo start:1999
 		Calculate_Linux start:2007 inits:OpenRC
 	GoboLinux fhs:<f>
