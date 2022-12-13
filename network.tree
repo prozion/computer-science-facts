@@ -1,0 +1,14 @@
+network
+	protocols +a:NetworkProtocol
+		IP
+		TCP
+		UDP
+		web +a:WebProtocol
+			FTP
+			Gopher released:1991 rfc:RFC_1436
+			HTTP
+			HTTPS
+			MTProto
+			SMTP
+			SSH
+			Telnet

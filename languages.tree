@@ -258,7 +258,7 @@ programming_languages +a:ProgrammingLanguage
 	Object_Pascal year:1986 company:Apple from:Pascal
 	PROMAL year:1986 deabbr:"PROgrammer's Microapplication Language" company:Systems_Management_Associates from:C
 	Erlang year:1986 designer:Joe_Armstrong company:Ericsson from:Prolog
-	AutoLISP year:1986 company:Autodesk cad:AutoCAD from:XLISP
+	AutoLISP year:1986 company:Autodesk env:AutoCAD from:XLISP
 	Ada_ISO_8652 year:1987 from:Ada_83
 	Self_concept year:1987 company:Sun_Microsystems from:Smalltalk
 	occam_2 year:1987 designer:David_May company:INMOS from:occam
@@ -371,7 +371,7 @@ programming_languages +a:ProgrammingLanguage
 	Harbour year:1999 designer:Antonio_Linares from:dBase
 	ALF deabbr:"Another logical framework" year:199x uni:Chalmers
 	Vim_script alt:VimL year:199x from:ex_script
-	Zeno year:199x from:Pascal,QuickBASIC^? designer:Stephen_Schmitt company:Abecedarical_Systems
+	Zeno year:199x from:Pascal,QuickBASIC<?> designer:Stephen_Schmitt company:Abecedarical_Systems
 	; 2000s
 	Join_Java year:2000 designer:Stewart_von_Itzstein from:Java
 	C# year:2000 designer:Anders_Hejlsberg organization:ECMA company:Microsoft from:C,C++,Java,Delphi,Modula-2

@@ -1,4 +1,4 @@
-packages +a:Package ; apt show <package-name>
+packages +a:LinuxPackage ; apt show <package-name>
 	adduser dep:passwd,debconf
 	binutils dep:binutils-common,libbinutils,binutils-x86-64-linux-gnu
 	binutils-common dep:<n>
@@ -106,6 +106,7 @@ packages +a:Package ; apt show <package-name>
 	libtirpc3 dep:libc6,libgssapi-krb5-2,libtirpc-common
 	libudev1 dep:libc6
 	libunistring2 dep:libc6
+	libusb-1.0-0 dep:libc6,libudev1
 	libutempter0 dep:libc6
 	libuuid1 dep:libc6
 	libxau6 dep:libc6
@@ -136,9 +137,11 @@ packages +a:Package ; apt show <package-name>
 	tk dep:tk8.6,tcl
 	tk8.6 dep:libc6,libtcl8.6,libtk8.6
 	tnftp dep:libc6,libedit2,libssl3
+	usbutils dep:libc6,libudev1,libusb-1.0-0
 	util-linux dep:libaudit1,libblkid1,libc6,libcap-ng0,libcrypt1,libmount1,libpam0g,libselinux1,libsmartcols1,libsystemd0,libtinfo6,libudev1,libuuid1,zlib1g
 	vim dep:vim-common,vim-runtime,libacl1,libc6,libgpm2,libpython3.10,libselinux1,libsodium23,libtinfo6
 	vim-common dep:xxd
-	vim-runtime:<n>
+	vim-runtime dep:<n>
 	xxd dep:libc6
+	xz-utils dep:libc6,liblzma5
 	zlib1g dep:libc6

@@ -5,8 +5,8 @@ computers +a:Computer
 	Z4 year:1942 designer:Konrad_Zuse
 	Colossus_Mark_I year:1943 designer:Tommy_Flowers
 	Colossus_Mark_II year:1944 designer:Tommy_Flowers
-	ENIAC year:1945 designer:John_Mauchly,Presper_Eckert lang:Brief_Code,Short_Code organization:US_Army bulbs:18K
-	EDVAC
+	ENIAC year:1945 designer:John_Mauchly,Presper_Eckert lang:Brief_Code,Short_Code uni:UPenn organization:US_Army bulbs:18K
+	EDVAC uni:UPennr
 	CSIRAC year:1949 designer:Trevor_Pearcey lang:INTERPROGRAM uni:UMelbourne
 	EDSAC year:1950 uni:UCambridge
 	Whirlwind_I year:1951 uni:MIT
@@ -56,6 +56,8 @@ computers +a:Computer
 	IBM_3090 year:1985 pred:System/370 company:IBM
 	BeBox a:PersonalComputer year:1995 company:Be_Incorporated
 	; CCCР
+	МЭСМ year:1948 city:Киев deabbr:"Малая электронно-счетная машина" designer:Сергей_Лебедев 
+	М-1 year:1950 city:Москва designer:Исаак_Брук gen:2 institute:ЭНИН
 	Стрела city:Москва plant:САМ year:1953 machines-n:8
 	Урал-1 city:Пенза plant:САМ year:1957
 	Урал-2 city:Пенза plant:САМ year:1959

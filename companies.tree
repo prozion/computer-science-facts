@@ -34,6 +34,7 @@ it-companies +a:Company
 		russia
 			МЦСТ start:1992 url:mcst.ru
 			Физтех-софт start:1991
+			ЭНИН deabbr:"Энергетический институт" a:Institute hq:Москва start:1930
 		scotland
 			Eight_Pillars name:"Eight Pillars Ltd" hq:Edinburgh
 		sweden
@@ -46,9 +47,11 @@ it-companies +a:Company
 			CBM deabbr:"Commodore Business Machines" hq:Toronto start:1958 end:1994 
 		usa
 			Adobe_Systems alt-id:Adobe hq:San_Jose start:1982
-			Allaire hq:Newton former-hq:Cambridge_MA start:1995 acquired-by:Macromedia:2001
+			Allaire hq:Newton former-hq:Cambridge_MA start:1995 acquired-by:Macromedia^year:2001
+			Altera hq:San_Jose start:1983 acquired-by:Intel^year:2015
 			Amazon hq:Seattle start:1994
-			Aonix start:1996 end:2010 renamed-to:Atego 
+			AMD deabbr:"Advanced Micro Devices" hq:Santa_Clara start:1969
+			Aonix start:1996 renamed-to:Atego^year:2010
 			Apple alt-id:Apple_Inc,Apple_Computer former-name:"Apple Computer Company","Apple Computer, Inc" hq:Cupertino start:1976
 			Atari hq:Sunnyvale,New_York start:1972
 			Atari_Corporation hq:Sunnyvale start:1984 end:1996 acquired:Atari
@@ -89,29 +92,32 @@ it-companies +a:Company
 			IEEE deabbr:"Institute of Electrical and Electronics Engineers" a:Organization start:1963 hq:New_York
 			IIT_VIS hq:Broomfield
 			Informatics name:"Informatics General" hq:Los_Angeles start:1962 end:1985
+			Intel hq:Santa_Clara start:1968
 			Intermetrics hq:Cambridge_MA start:1969
-			Informix hq:Menlo_Park start:1980 end:2005 purchased-by:IBM
+			Informix hq:Menlo_Park start:1980 end:2005 acquired-by:IBM
 			ITT_Inc alt-id:ITT deabbr:"International Telephone & Telegraph" hq:White_Plains start:1920
 			JSoftware start:1990
 			Kent_Informatics hq:Santa_Cruz start:2003 owner:Jim_Kent,Heidi_Brumbaugh
-			Macromedia hq:San_Francisco start:1992 end:2005 purchased-by:Adobe
+			Macromedia hq:San_Francisco start:1992 end:2005 acquired-by:Adobe
 			MAI_BASIC_Four_Inc hq:Irvine start:197x
-			Mango_Technologies hq:Palo_Alto			
+			Mango_Technologies hq:Palo_Alto
+			Mentor_Graphics hq:Wilsonville start:1981
 			Microchip_Technology hq:Chandler start:1989
 			MicroProse hq:Hunt_Valley,Alameda start:1982 end:2003 sold-to:Infogrames_Entertainment
+			Monolithic_Memories start:1969 merged-to:AMD^year:1987
 			Motorola hq:Chicago start:1928 splitted-to:Motorola_Solutions,Motorola_Mobility:2001
 			Motorola_Solutions hq:Chicago start:2011
 			Mozilla start:1998
 			Microsoft name:"Microsoft Corporation" hq:Redmond former-hq:Albuquerque,Bellevue start:1975
 			Nantucket_Corporation founder:Brett_Oliver,Jim_Warner,Brian_Russell,Richard_McConnell start:1984 
 			National_Instruments hq:Austin start:1976
-			Netscape hq:Mountain_View,Dulles start:1994 purchased-by:AOL:1999
+			Netscape hq:Mountain_View,Dulles start:1994 acquired-by:AOL^year:1999
 			Novell hq:Provo start:1979
 			Optimized_Systems_Software hq:Cupertino start:1981 end:1988 merged-to:ICD
 			Oracle_Corporation alt-id:Oracle hq:Santa_Clara start:1977 
 			PARC name:"Palo Alto Research Center Incorporated" alt-id:Xerox_PARC hq:Palo_Alto start:1970
 			PortlandLabs hq:Portland
-			Psion hq:London start:1980 end:2012 purchased-by:Motorola_Solutions
+			Psion hq:London start:1980 end:2012 acquired-by:Motorola_Solutions
 			PTC hq:Needham start:1985		
 			RAND_Corporation deabbr:"Research ANd Development" hq:Santa-Monica start:1948
 			Rapidsoft hq:New_York start:2006
@@ -121,22 +127,25 @@ it-companies +a:Company
 			RemObjects_Software hq:Hanover_Park start:2002
 			SDC name:"System Development Corporation (SDC)" hq:Santa-Monica start:1955
 			SHARE a:UserGroup start:1955 url:share.org
-			Skype_Technologies start:2003 hq:Luxembourg,Palo_Alto purchased-by:Microsoft:2011
+			Skype_Technologies start:2003 hq:Luxembourg,Palo_Alto acquired-by:Microsoft^year:2011
 			Speakeasy_Computing_Corporation
 			Sperry_Corporation hq:Lake_Success start:1910 end:1986 merged-to:Unisys
 			SRI alt:Stanford_Research_Institute start:1946 hq:Menlo_Park url:sri.com
 			Stack_Overflow office:New_York,London,Denver hq:New_York founder:Jeff_Atwood,Joel_Spolsky start:2008
 			State_Software start:2001
-			Sun_Microsystems nasdaq:SUNW,JAVA hq:Menlo_Park start:1982 end:2010 purchased-by:Oracle
+			Sun_Microsystems nasdaq:SUNW,JAVA hq:Menlo_Park start:1982 end:2010 acquired-by:Oracle
 			Synopsis hq:Mountain_View start:1986
 			Systems_Management_Associates
 			Texas_Instruments hq:Dallas start:1930
 			Thomson_Software_Products merged-to:Aonix
 			Unisys hq:Blue_Bell start:1986
+			US_Defence a:GovernmentUnit
+			US_Navy a:GovernmentUnit
 			VisiCorp hq:Boston start:1976
 			Visual_Solutions hq:Westford
 			Wolfram_Research hq:Champaign start:1987
 			XEROX name:"Xerox Corporation" hq:Norwalk start:1906
+			Xilinx hq:San_Jose start:1984 acquired-by:AMD^year:2022
 			Y_Combinator hq:Mountain_View start:2005
 			Zend_Technologies hq:Cupertino start:1999
 			Zoom_Video_Communications hq:San_Jose start:2011 founder:Eric_Yuan

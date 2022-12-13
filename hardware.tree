@@ -1,0 +1,69 @@
+architectures +a:Architecture +hi-rel:has-species
+	ARM a:RISC year:2011 company:Acorn,Arm_Holdings designer:Sophie_Wilson,Steve_Furber
+	IBM_mainframe
+		System/360
+		System/370
+		S/370-XA
+		ESA/370
+		ESA/390 year:1990 from:System/360
+		z/Architecture a:CISC year:2000 bits:64 company:IBM
+	m68k a:CISC
+	x86 a:CISC
+		x86-16
+		x86-32
+			x86-64
+hardware
+	cpu +a:CPU
+		MP944 year:1970 freq:375K designer:Ray_Holt,Steve_Geller company:American_Microsystems orderer:US_Navy 
+		Intel_4004 year:1971 freq:740K-750K bus:4
+		Intel_8080 year:1974 company:Intel bus:8 
+		Intel_8086 year:1978 eq:iAPX_86/10 company:Intel bus:16 codeset:x86-16 
+		Intel_8088 year:1979 company:Intel modification-of:Intel_8086 dbus:8 
+		MOS_Technology_6502 year:1975 company:MOS_Technology,Rockwell,Synertek codeset:MOS_6502 dip:40 dbus:8 abus:16 transistors-n:3.5K
+		MOS_Technology_6510 year:1981 from:MOS_Technology_6502 company:MOS_Technology,Rockwell,Synertek codeset:MOS_6502 dip:40 dbus:8 abus:16
+		Motorola_68000 year:1979 company:Motorola codeset:m68k dip:64 dbus:16 abus:24 transistors-n:68K
+		Motorola_68008 year:1982 rend:1996 company:Motorola codeset:m68k dip:48-52 dbus:8 abus:20-22 transistors-n:70K
+		NEC_V20 year:1982 company:NEC emulates:Intel_8080 bus:16 
+		NEC_V30 year:1982 company:NEC compat:Intel_8086 dbus:16 
+		Эльбрус year:2005? company:МЦСТ,ИНЭУМ
+	hardware_description_languages +a:HardwareDescriptionLanguage
+		AHDL deabbr:"Altera Hardware Description Language" company:Altera
+		Chisel deabbr:"Constructing Hardware in a Scala Embedded Language" from:Scala
+		Gezel
+		SystemVerilog start:2002 from:Verilog
+		Verilog start:1984
+		VHDL start:198x org:US_Defence
+	integrated_circuits +a:IntegratedCircuit
+	mcu +a:MCU +hi-inv-rel:family
+		AVR_microcontroller company:Atmel
+			AVR_Dx
+				AVR_DA
+				AVR_DB
+				AVR_DD
+				AVR_EA
+			megaAVR
+			tinyAVR
+			XMega
+		ARM_family architecture:ARM
+			ARM_Cortex-A
+			ARM_Cortex-M
+				ARM_Cortex-M0
+				ARM_Cortex-M0+
+				ARM_Cortex-M1
+				ARM_Cortex-M3
+				ARM_Cortex-M4
+				ARM_Cortex-M4F
+				ARM_Cortex-M7
+				ARM_Cortex-M23
+				ARM_Cortex-M33
+				ARM_Cortex-M55 start:02.2020 instruction-cache:4K,8K,16K,32K,64K data-cache:4K,8K,16K,32K,64K
+			ARM_Cortex-R
+		Intel_8051 company:Intel bus:8
+		Microchip_AVR company:Microchip_Technology bus:8
+		Microchip_AVR_32 company:Microchip_Technology bus:32
+		Microchip_PIC company:Microchip_Technology bus:8
+		Microchip_PIC_24 company:Microchip_Technology bus:16
+		Microchip_PIC_32 company:Microchip_Technology bus:32
+		ST_Micro_STM_8 company:STMicroelectronics bus:8
+		TI_MSP_430 company:Texas_Instruments bus:16
+

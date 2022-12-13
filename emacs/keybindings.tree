@@ -464,7 +464,7 @@ keystrokes +scope:global-map
 				M-s-h-u cmd:unhighlight-regexp
 				M-s-h-w cmd:hi-lock-write-interactive-patterns
 			M-s-M-w cmd:eww-search-words
-		M-d cmd:kill-word xfce:minimize-all-windows^?
+		M-d cmd:kill-word xfce:minimize-all-windows<?>
 		M-f cmd:forward-word
 		M-g-
 			M-g-Tab cmd:move-to-column

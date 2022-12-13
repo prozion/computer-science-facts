@@ -19,26 +19,48 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 				IntegratedCircuit
 					CPU
 					MCU
+					ProgrammableIntegratedCircuit
+						FPGA deabbr:"Filed-programmable Gate Array"
+						PAL deabbr:"Programmable Array Logic"
+						PLD deabbr:"Programmable Logic Device"
+							CPLD deabbr:"Complex Programmable Logic Device"
 			Software
 				Application
 					Browser
 					CodeEditor
+					CAD deabbr:"Computer-Aided Design"
+						EDA deabbr:"Electronic Design Automation"
+							HDLTool deabbr:"Hardware Description Language Tool"
+								HDLSynthesysTool
+					DevelopmentTool
+						CodeEditor
+							IDE
+						IssueTracker
+					OperatingSystemUtility
+						FileManager
+					ProjectManagementSystem
 				Compiler
 				Database
+					DBMS
 				Kernel
 				Language
+					DataFormat
+					HardwareDescriptionLanguage
+					MarkupLanguage
 					ProgrammingLanguage
 						Assembler
 							ATTAssembler d:"AT&T syntax assembler"
 							IAssembler d:"Intel syntax assembler"
 						EsotericProgrammingLanguage
-					MarkupLanguage
-					DataFormat
+				Library
 				OperatingSystem
 					OperatingSystemRelease subclass-of:_1 
 						_1 a:owl/Restriction owl/onProperty:release-of owl/someValuesFrom:OperatingSystem
 					ROMResidentOperatingSystem
 				Package
+					LinuxPackage
+				Repository
+					CloudRepository
 				WindowManager
 					DesktopEnvironment
 				VirtualMachine
@@ -73,17 +95,23 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 			GroupOfPeople
 				UserGroup
 				WorkingGroup
+			GovernmentUnit
 			PublicProject
 			ResearchCenter
+				Institute
 			University
 		Person subclass-of:Locatable,Contactable,Nameable
 		Plant subclass-of:Locatable,Structurable
 		Project
+		Protocol subclass-of:Standard
+			NetworkProtocol
+				WebProtocol
 		Publication
 			Article
 				PeerReviewedArticle
 			Book
 			Website
+		Standard
 		TimeInterval subclass-of:rdfs/Literal
 		TimePoint subclass-of:rdfs/Literal
 			Date
@@ -91,6 +119,7 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 	properties +a:rdf/Property +hi-inv-rel:subproperty-of
 		acquired-by domain:Company range:Company
 		alma-mater domain:Person range:University
+		architecture domain:IntegratedCircuit range:Architecture
 		author eq-property:designer
 		bdate domain:Person range:Date d:"when a person was born"
 		bits domain:Architecture range:Integer
@@ -115,12 +144,14 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 		degree domain:Person range:University
 			ba 
 			ma
+		dep domain:Package range:Package d:"Package or library dependencies"
 		designer domain:Artifact range:Person
 			chief-designer
 		emulates domain:CPU range:CPU
 		end domain:Datable range:Date
 			rend d:"last release" domain:Artifact
 		engine domain:Browser range:BrowserEngine
+		env domain:Language range:Software
 		family domain:IntegratedCircuit range:IntegratedCircuit
 		founder domain:Organization range:Person
 		freq domain:CPU range:rdfs/Literal ; (k/M/G)Hz
@@ -140,6 +171,7 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 			current-hq
 			former-hq
 		implementation domain:Language range:Artifact
+		invested-by domain:Company range:Artifact
 		job domain:Person range:Organization
 		kernel domain:OperatingSystem range:Kernel
 		lang domain:Artifact range:Language
@@ -150,10 +182,13 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 				memory-max-chars domain:Mainframe range:rdfs/Literal
 		merged-to domain:Company range:Company
 		name domain:Nameable range:rdfs/Literal
+			previous-name
 		nasdaq domain:Company range:NasdaqIndex
 		nick domain:Nameable range:rdfs/Literal
 		office domain:Organization range:City
 		org range:Organization
+			uni domain:Artifact range:University
+			institute domain:Artifact range:Institute
 		os domain:Artifact range:OperatingSystem
 		part-of domain:Structurable
 		pins domain:CPU range:IntegerInterval
@@ -167,6 +202,7 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 		released domain:Artifact range:Date
 		renamed-to domain:Organization range:Organization
 		research-center domain:Artifact range:ResearchCenter
+		rfc domain:Standard range:rdfs/Literal
 		start domain:Datable range:Date
 			dstart d:"start of development" domain:Artifact 
 			rstart d:"first release" domain:Artifact 
@@ -176,15 +212,16 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 		production-time-interval domain:Datable range:TimeInterval
 		project range:Project
 		released domain:Artifact range:Date
-		uni domain:Artifact range:University
 		written-in domain:Artifact range:ProgrammingLanguage
 		year domain:Datable range:Year
 	individuals
+		[applications.tree]
 		[companies.tree]
 		[computers.tree]
+		[hardware.tree]
 		[languages.tree]
+		[network.tree]
 		[operating-systems.tree]
 		[people.tree]
 		[web/browsers.tree]
-		[cpu/cpu.tree]
 		[various-kgr//universities.tree]

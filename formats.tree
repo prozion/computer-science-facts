@@ -1,5 +1,7 @@
 ; formats or descriptive languages
 formats +a:DataFormat
+	digital_circuits_design
+		RBF deabbr:"Raw Binary File"
 	graphics
 		SVG year:2001 group:W3C deabbr:"Scalable Vector Graphics" from:XML
 		Canvas

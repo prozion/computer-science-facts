@@ -114,6 +114,7 @@ bash_commands +a:BashCommand source:`https://ss64.com/bash/<command-name>.html`
 	lscpu d:"Display information about the CPU architecture" pkg:util-linux
 	lshw d:"List hardware" pkg:lshw
 	lsscsi d:"List SCSI devices (or hosts), list NVMe devices" pkg:lsscsi
+	lsusb d:"List USB devices" pkg:usbutils
 	make d:"GNU make utility to maintain groups of programs" pkg:make
 	man d:"Format and display help pages" syn:info,help pkg:man-db
 	mesg d:"Display (or do not display) messages from other users" man:util-linux
