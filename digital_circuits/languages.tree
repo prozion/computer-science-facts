@@ -1,5 +1,17 @@
 formats
+	DEF deabbr:"Design Exchange Format" company:Cadence
 	GDS deabbr:"Graphic Design System" start:1971 company:Calma
 	GDSII start:1978 from:GDS company:Calma d:"topology spatial configuration?"
+	JSON
+	LEF deabbr:"Library Exchange Format" company:Tangent
 	SDC deabbr:"Synopsis Design Constraints" d:"project constaints"
+	SVRF deabbr:"Standard Verification Rule Format"
+	TVF deabbr:"TCL Verification Format"
+	XML
+	YAML
 languages ref:hardware.tree//hardware/hardware_description_languages
+scripting_languages
+	languages/Bash
+	languages/Python
+	languages/Tcl
+	Make

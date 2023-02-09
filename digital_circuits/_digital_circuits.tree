@@ -1,4 +1,4 @@
-eda a:owl/Ontology ns:https://purl.org/cs_eda# dc/title:"EDA ontology" deabbr:"Electronic design automation"
+eda a:owl/Ontology ns:https://purl.org/cs_eda# dc/title:"Digital circuits engineering ontology"
 	namespaces
 		rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
 		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
@@ -11,7 +11,9 @@ eda a:owl/Ontology ns:https://purl.org/cs_eda# dc/title:"EDA ontology" deabbr:"E
 			TransistorModel
 				BipolarTransistorModel
 				MOSTransistorModel
+		EDAStage d:"A stage in the design route"
 	properties +a:rdf/Property +hi-inv-rel:subproperty-of
 		nm deabbr:"nanometer" domain:TransistorModel range:cs/Integer
+		f deabbr:"a function" domain:Application range:EDAStage
 	individuals
 		[transistor_models.tree]

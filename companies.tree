@@ -20,6 +20,7 @@ it-companies +a:Company
 			Infogrames_Entertainment hq:Paris renamed-to:Atari start:1983
 			Atari hq:Paris start:2009
 		germany
+			Infineon_Technologies alt:Infineon hq:Neubiberg start:1999
 			SAP name:"SAP SE" deabbr:"Systems, Applications & Products in Data Processing" hq:Walldorf start:1972
 			Omix_Visualization hq:Lennestadt
 			Paragon start:1994 hq:Freiburg former-hq:Долгопрудный
@@ -45,6 +46,7 @@ it-companies +a:Company
 			Oberon_microsystems hq:Zurich uni:ETH_Zurich
 	north_america
 		canada
+			ATI_Technologies alt:ATI hq:Markham start:1985 acquired-by:AMD^year:2006
 			CBM deabbr:"Commodore Business Machines" hq:Toronto start:1958 end:1994 
 		usa
 			Adobe_Systems alt-id:Adobe hq:San_Jose start:1982
@@ -67,13 +69,13 @@ it-companies +a:Company
 			Blue_World_Communications hq:Fort_Lauderdale former-hq:Bellevue
 			Borland name:"Borland Software Corporation" hq:Austin start:1983 end:2009
 			Be_Incorporated hq:Menlo_Park start:1990 end:2001 
-			Cadence_Design_Systems hq:Mountain_View start:1988
+			Cadence_Design_Systems alt:Cadence hq:Mountain_View start:1988
 			Calma hq:Sunnyvale start:1965 end:1988
 			Compaq hq:Harris_County start:1982 acquired-by:Hewlett-Packard:2013
 			Cortex
 			Cray_Inc alt-id:Cray former-name:"Cray Research" hq:Seattle start:1972
 			CSRG deabbr:"Computer Systems Research Group" a:ResearchGroup uni:UC_Berkeley start:1995
-			DEC name:"Digital Equipment Corporation" hq:Maynard start:1957
+			DEC name:"Digital Equipment Corporation" hq:Maynard start:1957 acquired-by:Compaq^year:1998
 			Digital_Mars founder:Walter_Bright
 			Digital_Research hq:Pacific_Grove start:1974 takeover-by:Novell^2001
 			Dropbox hq:San_Francisco start:2007
@@ -103,8 +105,9 @@ it-companies +a:Company
 			Macromedia hq:San_Francisco start:1992 end:2005 acquired-by:Adobe
 			MAI_BASIC_Four_Inc hq:Irvine start:197x
 			Mango_Technologies hq:Palo_Alto
-			Mentor_Graphics hq:Wilsonville start:1981
+			Mentor_Graphics alt:Mentor hq:Wilsonville start:1981
 			Microchip_Technology hq:Chandler start:1989
+			Micron_Technology hq:Boise start:1978
 			MicroProse hq:Hunt_Valley,Alameda start:1982 end:2003 sold-to:Infogrames_Entertainment
 			Monolithic_Memories start:1969 merged-to:AMD^year:1987
 			Motorola hq:Chicago start:1928 splitted-to:Motorola_Solutions,Motorola_Mobility:2001
@@ -123,6 +126,7 @@ it-companies +a:Company
 			PTC hq:Needham start:1985		
 			RAND_Corporation deabbr:"Research ANd Development" hq:Santa-Monica start:1948
 			Rapidsoft hq:New_York start:2006
+			RCA deabbr:"Radio Corporation of America" hq:New_York start:1919 end:1987
 			Rebol_Technologies
 			Red_Hat hq:Raleigh start:1993
 			Remington_Rand hq:New_York start:1927 end:1955 acquired-by:Sperry_Corporation
@@ -153,7 +157,14 @@ it-companies +a:Company
 			Zoom_Video_Communications hq:San_Jose start:2011 founder:Eric_Yuan
 	asia
 		japan
-			Sony hq:Tokyo
+			Elpida city:Tokyo hq:Chuo start:1999 acquired-by:Micron_Technology
+			Fujitsu city:Tokyo hq:Minato start:1935
+			NEC city:Tokyo hq:Minato start:1899
+			NTT deabbr:"Nippon Telegraph and Telephone" city:Tokyo hq:Chiyoda start:1952,1985
+			Sony city:Tokyo hq:Chuo start:1946
+			Toshiba city:Tokyo hq:Minato start:1875
+		south_korea
+			Samsung hq:Seoul start:1938
 		taiwan
 			Powerchip hq:Hsinchu_Science_Park start:1994
 			TSMC deabbr:"Taiwan Semiconductor Manufacturing Company" hq:Hsinchu_Science_Park start:1987

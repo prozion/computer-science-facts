@@ -1,4 +1,4 @@
-computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some humble knowledge graph for Computer Science"
+computer_science a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some humble knowledge graph for Computer Science"
 	namespaces
 		rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
 		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
@@ -32,6 +32,7 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 						EDA deabbr:"Electronic Design Automation"
 							HDLTool deabbr:"Hardware Description Language Tool"
 								HDLSynthesysTool
+							EDAScript
 					DevelopmentTool
 						CodeEditor
 							IDE

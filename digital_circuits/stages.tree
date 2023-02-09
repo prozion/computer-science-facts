@@ -1,0 +1,25 @@
+stages +a:EDAStage +hi-inv-rel:subclass-of
+	design_creation
+		DFT
+		ECO
+		LEC
+		RTL_power_analysis
+		LP
+		Synthesis
+			RTL_Synthesis
+	design_implementation
+		Floorplanning
+		Routing
+		Placement
+	signoff
+		Antenna_check
+		CVC
+		DFM
+		DRC
+		LVS
+		Signal_integrity_analysis
+		STA
+		Voltage_drop_analysis
+	Extraction
+	Tapeout
+	

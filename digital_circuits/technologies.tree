@@ -1,0 +1,23 @@
+mosfet_scaling_process
+	10mk year:1971 company:RCA,Intel
+	6mk year:1974 company:Intel
+	3mk year:1977 company:Intel
+	1.5mk year:1981 company:Intel,IBM
+	1mk year:1984 company:Intel,IBM,NEC,NTT
+	800nm year:1987 company:Intel,IBM,ATI
+	600nm year:1990 company:Intel,IBM
+	350nm year:1993 company:Intel,IBM
+	250nm year:1996 company:Intel,DEC,AMD,Sony
+	180nm year:1999
+	130nm year:2001
+	90nm year:2003 company:Toshiba,Sony,Samsung,IBM,Intel,Fujitsu,TSMC,Elpida,AMD,Infineon,Texas_Instruments,Micron_Technology
+	65nm year:2005
+	45nm year:2007
+	32nm year:2009
+	22nm year:2012
+	14nm year:2014
+	10nm year:2016
+	7nm year:2018
+	5nm year:2020
+	3nm year:2022
+	2nm year:2024

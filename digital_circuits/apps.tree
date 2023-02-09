@@ -1,0 +1,65 @@
+applications
+	Abc project:OpenLane f:RTL_synthesis
+	Assura company:Cadence f:DRC,LVS
+	Calibre company:Mentor f:DRC,LVS
+	CeltIC company:Cadence f:Signal_integrity_analysis
+	Conformal company:Cadence f:LEC,ECO,LP
+	CVC project:OpenLane f:CVC
+	Design_Compiler_NXT company:Synopsys
+	ETS company:Cadence f:STA
+	FastRoute project:OpenLane f:Routing d:"Performs global routing to generate a guide file for the detailed router"
+	Formality company:Synopsys
+	Fusion_Compiler company:Synopsys
+	Genus company:Cadence f:RTL_Synthesis
+	GoldTime company:Synopsys f:Signal_integrity_analysis,STA
+	Hercules company:Synopsys f:DRC,LVS
+	HyperLynx company:Mentor f:DRC,LVS
+	IC_Compiler company:Synopsys
+	IC_Validator_NXT company:Synopsys
+	Init_fp project:OpenLane f:Floorplanning d:"Defines the core area for the macro as well as the riows (used for placement) and the tracka (used for routing)"
+	Innovus company:Cadence
+	Ioplacer project:OpenLane f:Floorplanning d:"Places the macro input and output ports"
+	Joules company:Cadence f:RTL_power_analysis
+	KLayout project:OpenLane f:Tapeout,DRC d:"Streams out the final GDSII layout file from the routed DEF as a back-up"
+	Modus company:Cadence f:DFT
+	Monitor_IP company:Synopsys
+	Nagic project:OpenLane f:Tapeout,DRC,Antenna_check d:"Streams out the final GDSII layout file from the routed DEF"
+	Netgen project:OpenLane f:LVS
+	OpenDP project:OpenLane f:Placement d:"Performs detailed placement to legalize the globally place components"
+	OpenROAD project:OpenLane f:design_implementation
+	OpenSTA project:OpenLane f:STA
+	OpenRCX project:OpenLane f:Routing d:"Performs SPEF extraction"
+	Pdngen project:OpenLane f:Floorplanning d:"Generates the power distribution network"
+	Pegasus company:Cadence f:DRC,LVS,DFM
+	PrimeLib company:Synopsys
+	PrimePower company:Synopsys
+	PrimeShield company:Synopsys
+	PrimeTime company:Synopsys f:Signal_integrity_analysis,STA
+	RTL_Architect company:Synopsys
+	Quantus company:Cadence f:Extraction
+	Quartus company:Intel
+	Quartz company:Magma f:DRC,LVS
+	Quartz_Rail company:Magma f:Voltage_drop_analysis
+	Quartz_SSTA company:Magma f:STA
+	Redhawk company:Apache f:Voltage_drop_analysis
+	RedHawk_Analysis_Fusion company:Synopsys
+	RePlace project:OpenLane f:Placement d:"Performs global placement"
+	Resizer project:OpenLane f:Placement d:"Performs optional optimizations on the design"
+	SiliconDash company:Synopsys
+	StatRC company:Synopsys
+	Stratus company:Cadence f:Synthesis
+	Tapcell project:OpenLane f:Floorplanning d:"Inserts welltap and decap cells in the floorplan"
+	Tempus company:Cadence f:Signal_integrity_analysis,STA
+	TritonCTS project:OpenLane f:CTS d:"Synthesizes the clock distribution network (the clock tree)"
+	TritonRoute project:OpenLane f:Routing d:"Performs detailed routing"
+	Tweaker company:Synopsys
+	Voltus company:Cadence f:Voltage_drop_analysis
+	Yield_Explorer company:Synopsys
+	Yosis project:OpenLane f:RTL_synthesis
+
+
+
+
+
+
+
