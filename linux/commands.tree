@@ -113,6 +113,7 @@ bash_commands +a:BashCommand source:`https://ss64.com/bash/<command-name>.html`
 	lsblk d:"List block devices"
 	lscpu d:"Display information about the CPU architecture" pkg:util-linux
 	lshw d:"List hardware" pkg:lshw
+	lspci d:"List all PCI devices" pkg:pciutils
 	lsscsi d:"List SCSI devices (or hosts), list NVMe devices" pkg:lsscsi
 	lsusb d:"List USB devices" pkg:usbutils
 	make d:"GNU make utility to maintain groups of programs" pkg:make
@@ -231,6 +232,7 @@ bash_commands +a:BashCommand source:`https://ss64.com/bash/<command-name>.html`
 	xinit d:"X Window System initializer" pkg:xinit
 	xlsclients d:"List client applications running on a display" pkg:x11-utils
 	xmodmap d:"Utility for modifying keymaps and pointer button mappings in X" pkg:x11-xserver-utils
+	xrandr d:"Primitive command line interface to RandR extension" pkg:x11-xserver-utils
 	xwininfo d:"window information utility for X" pkg:x11-utils
 	yes d:"Output a string repeatedly until killed" pkg:coreutils
 	

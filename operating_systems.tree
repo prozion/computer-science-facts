@@ -96,6 +96,7 @@ operating_systems +a:OperatingSystem
 			SVR3 year:1987
 			SVR4 year:1990
 		Xenix year:1980 company:Microsoft
+	vxWorks a:RTOS
 	Windows
 		Windows_1.0 year:1985
 		Windows_3.0 year:1990

@@ -57,6 +57,7 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 					OperatingSystemRelease subclass-of:_1 
 						_1 a:owl/Restriction owl/onProperty:release-of owl/someValuesFrom:OperatingSystem
 					ROMResidentOperatingSystem
+					RTOS deabbr:"Real-Time Operating System"
 				Package
 					LinuxPackage
 				Repository
@@ -176,6 +177,7 @@ computer_science_kgr a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some hu
 		kernel domain:OperatingSystem range:Kernel
 		lang domain:Artifact range:Language
 			system-lang domain:OperatingSystem
+			target-lang domain:IDE
 		member domain:Person,Organization range:Organization
 		memory domain:Hardware
 			memory-max

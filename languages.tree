@@ -166,6 +166,7 @@ programming_languages +a:ProgrammingLanguage
 	CS-4 year:1975 designer:James_Miller,Benjamin_Brosgol company:Intermetrics from:ALGOL_68,BLISS,ECL,HAL
 	Modula year:1975 designer:Niklaus_Wirth from:Pascal
 	Robik year:1975 name:"Робик" designer:Gennadiy_Zvenigorodskiy
+	Beta year:1976 designer:Kristen_Nygaard,Birger_Møller-Pedersen uni:UAarhus from:Simula
 	Plus year:1976 designer:Allan_Ballard,Paul_Whaley uni:UBColumbia from:Pascal,Sue
 	Smalltalk-76 year:1976 alt-id:Smalltalk company:Xerox_PARC from:Smalltalk-72
 	Mesa year:1976 company:Xerox_PARC from:ALGOL

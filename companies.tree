@@ -29,6 +29,7 @@ it-companies +a:Company
 		norway
 			Norsk_Regnesentral name:"Norwegian Computing Center" hq:Oslo start:1952
 		netherlands
+			ASML deabbr:"Advanced Semiconductor Materials Lithography" hq:Veldhoven start:1984
 			TIOBE deabbr:"The Importance Of Being Earnest" hq:Eindhoven
 			STMicroelectronics alt:STMicro hq:Amsterdam,Geneva start:1987
 		russia
@@ -67,6 +68,7 @@ it-companies +a:Company
 			Borland name:"Borland Software Corporation" hq:Austin start:1983 end:2009
 			Be_Incorporated hq:Menlo_Park start:1990 end:2001 
 			Cadence_Design_Systems hq:Mountain_View start:1988
+			Calma hq:Sunnyvale start:1965 end:1988
 			Compaq hq:Harris_County start:1982 acquired-by:Hewlett-Packard:2013
 			Cortex
 			Cray_Inc alt-id:Cray former-name:"Cray Research" hq:Seattle start:1972
@@ -152,6 +154,9 @@ it-companies +a:Company
 	asia
 		japan
 			Sony hq:Tokyo
+		taiwan
+			Powerchip hq:Hsinchu_Science_Park start:1994
+			TSMC deabbr:"Taiwan Semiconductor Manufacturing Company" hq:Hsinchu_Science_Park start:1987
 	south_america
 		argentina
 			Manas_Technology_Solutions hq:Buenos_Aires start:2003

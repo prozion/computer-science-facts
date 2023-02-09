@@ -1,0 +1,60 @@
+risc5
+	0000011 +type:I
+		0000011_000 lb d:"load byte"
+		0000011_001 lh d:"load half"
+		0000011_010 lw d:"load word"
+		0000011_011 ld d:"load double word"
+		0000011_100 lbu d:"load byte unsigned"
+		0000011_101 lhu d:"load half unsigned"
+		0000011_110 lwu d:"load word unsigned"
+	0010011 +type:I
+		0010011_000 addi d:"add immediate"
+		0010011_001_0000000 slli d:"shift left logical immediate"
+		0010011_010 slti d:"set less than immediate"
+		0010011_011 sltiu d:"set less than immediate unsigned"
+		0010011_100 xori d:"xor immediate"
+		0010011_101_0000000 srli d:"shift right logical immediate"
+		0010011_101_0100000 srai d:"shift right arithmetic immediate"
+		0010011_110 ori d:"or immediate"
+		0010011_111 andi d:"and immediate"
+	0010111 auipc d:"add upper immediate to PC" type:U
+	0011011 +type:I
+		0011011_000 addiw d:"add immediate word"
+		0011011_001_0000000 slliw d:"shift left logical immediate word"
+		0011011_101_0000000 srliw d:"shift left logical immediate word"
+		0011011_101_0100000 sraiw d:"shift right arithmetic immediate word"
+	0100011 +type:S
+		0100011_000 sb d:"store byte"
+		0100011_001 sh d:"store half"
+		0100011_010 sw d:"store word"
+		0100011_011 sd d:"store double word"
+	0110011 +type:R
+		0110011_000_0000000 add d:"add"
+		0110011_000_0100000 sub d:"sub"
+		0110011_001_0000000 sll d:"shift left logical"
+		0110011_010_0000000 slt d:"set less than"
+		0110011_011_0000000 sltu d:"set less than unsigned"
+		0110011_100_0000000 xor d:"xor"
+		0110011_101_0000000 srl d:"shift right logical"
+		0110011_101_0100000 sra d:"shift right arithmetic"
+		0110011_110_0000000 or d:"or"
+		0110011_111_0000000 and d:"and"
+	0110111 lui d:"load upper immediate" type:U
+	0111011 +type:R
+		0111011_000_0000000 addw d:"add word"
+		0111011_000_0100000 subw d:"subtract word"
+		0111011_001_0000000 sllw d:"shift left logical word"
+		0111011_101_0000000 srlw d:"shift right logical word"
+		0111011_101_0100000 sraw d:"shift right arithmetic word"
+	1100011 +type:B
+		1100011_000 beq d:"branch if ="
+		1100011_001 bne d:"branch if !="
+		1100011_100 blt d:"branch if <"
+		1100011_101 bge d:"branch if >="
+		1100011_110 bltu d:"branch if < unsigned"
+		1100011_111 bgeu d:"branch if >= unsigned"
+	1100111
+		1100111_000 jalr d:"jump and link register" type:I
+	1101111 jal d:"jump and link" type:J
+	
+	

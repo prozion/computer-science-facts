@@ -1,0 +1,17 @@
+slime
+	keybindings src-url:https://raw.githubusercontent.com/slime/slime/master/doc/slime-refcard.pdf
+		C-c-C-b d:"interrupt (send SIGINT)"
+		C-c-C-c d:"compile defun"
+		C-c-C-d-d d:"describe symbol"
+		C-c-C-k d:"compile and load file"
+		C-c-C-q d:"close parens at point"
+		C-c-C-r d:"eval region"
+		C-c-C-s d:"complete form"
+		C-c-C-y d:"call defun"
+		C-c-C-z d:"switch to output buffer"
+		C-c-M-p d:"set package in REPL"
+		C-c-I d:"inspect from minibuffer"
+		C-x-C-e d:"eval last expression"
+		M-. d:"edit definition"
+		M-, d:"pop definition stack"
+		M-* d:"pop definition stack"

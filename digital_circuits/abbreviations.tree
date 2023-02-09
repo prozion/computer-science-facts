@@ -1,0 +1,12 @@
+abbreviations
+	CTS deabbr:"Clock-Tree Synthesis"
+	CVC deabbr:"Circuit Validity Check"
+	DRC deabbr:"Design Rule Checking"
+	EDA deabbr:"Electronic Design Automation"
+	FET deabbr:"Field-Effect Transistor"
+	GDSII deabbr:"Graphic Design System 2"
+	HDL deabbr:"Hardware Description Language"
+	PDK deabbr:"Process Design Kit"
+	PVT deabbr:"Process-Voltage-Temperature"
+	RTL deabbr:"Register Transfer Level"
+	SPEF deabbr:"Standard Parasitic Extraction Format"

@@ -83,6 +83,7 @@ packages +a:LinuxPackage ; apt show <package-name>
 	libpam-modules-bin dep:libaudit1,libc6,libcrypt1,libpam0g,libselinux1
 	libpam0g dep:libaudit1,libc6,debconf
 	libpcap0.8 dep:libc6,libdbus-1-3
+	libpci3 dep:libc6,libudev1,zlib1g,pci.ids
 	libpcre2-8-0 dep:libc6
 	libpcre3 dep:libc6
 	libperl5.34 dep:libbz2-1.0,libc6,libcrypt1,libdb5.3,libgdbm-compat4,libgdbm6,zlib1g,perl-modules-5.34 
@@ -121,6 +122,8 @@ packages +a:LinuxPackage ; apt show <package-name>
 	nftables dep:libnftables1,libc6,libedit2
 	passwd dep:libaudit1,libc6,libcrypt1,libpam0g,libselinuz1,libsemanage2,libpam-modules
 	patch dep:libc6
+	pciutils dep:libc6,libkmod2,libpci3
+	pci.ids dep:<n>
 	perl dep:dpkg,perl-base,perl-modules-5.34,libperl5.34
 	perl-base dep:libc6,libcrypt1,dpkg
 	perl-modules-5.34 dep:dpkg,perl-base

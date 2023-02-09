@@ -1,0 +1,17 @@
+eda a:owl/Ontology ns:https://purl.org/cs_eda# dc/title:"EDA ontology" deabbr:"Electronic design automation"
+	namespaces
+		rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
+		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
+		owl ns:http://www.w3.org/2002/07/owl#
+		dc ns:http://purl.org/dc/elements/1.1/
+		skos ns:http://www.w3.org/2004/02/skos/core#
+		cs ns:https://purl.org/cskgr#
+	classes +a:owl/Class +hi-inv-rel:subclass-of
+		CalculationModel
+			TransistorModel
+				BipolarTransistorModel
+				MOSTransistorModel
+	properties +a:rdf/Property +hi-inv-rel:subproperty-of
+		nm deabbr:"nanometer" domain:TransistorModel range:cs/Integer
+	individuals
+		[transistor_models.tree]

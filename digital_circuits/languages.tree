@@ -1,0 +1,5 @@
+formats
+	GDS deabbr:"Graphic Design System" start:1971 company:Calma
+	GDSII start:1978 from:GDS company:Calma d:"topology spatial configuration?"
+	SDC deabbr:"Synopsis Design Constraints" d:"project constaints"
+languages ref:hardware.tree//hardware/hardware_description_languages

@@ -1,0 +1,15 @@
+transistor_models +a:TransistorModel
+	mos_transistors +a:MOSTransistorModel
+		BSIMSOI
+		BSIM3 deabbr:"Berkeley Short channel Insulated gate field effect transistor Model 3" nm:180 cs/released:1993
+		BSIM4
+		EKV2.6
+		EKV3
+		MOS3
+		PSP
+		HiSIM_HV
+	bipolar_transistors +a:BipolarTRansistorModel
+		Gummel-Poon
+		VBIC
+		HICUM
+		MEXTRAM

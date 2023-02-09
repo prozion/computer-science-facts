@@ -1,0 +1,33 @@
+risc5_registers
+	zero n:0
+	ra n:1
+	sp n:2
+	gp n:3
+	tp n:4
+	t0 n:5
+	t1 n:6
+	t2 n:7
+	s0 alt:fp n:8
+	s1 n:9
+	a0 n:10
+	a1 n:11
+	a2 n:12
+	a3 n:13
+	a4 n:14
+	a5 n:15
+	a6 n:16
+	a7 n:17
+	s2 n:18
+	s3 n:19
+	s4 n:20
+	s5 n:21
+	s6 n:22
+	s7 n:23
+	s8 n:24
+	s9 n:25
+	s10 n:26
+	s11 n:27
+	t3 n:28
+	t4 n:29
+	t5 n:30
+	t6 n:31

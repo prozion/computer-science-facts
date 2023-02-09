@@ -23,6 +23,11 @@ applications +a:Application
 		ed start:1971 designer:Ken_Thompson from:QED
 		sed start:1974 designer:Lee_McMahon from:ed	
 		vi start:1976 designer:Bill_Joy written-in:C from:<?>	
+		TECMACS
+		TMACS
+		EINE
+		ZWEI
+		Zmacs
 		Emacs start:1976 designer:Richard_Stallman,Guy_Steele	
 		PSPad start:03.2001 designer:Jan_Fiala
 		Notepad++ start:11.2003 designer:Don_Ho
@@ -57,6 +62,7 @@ applications +a:Application
 	ide_for_hardware +a:IDE
 		AVR_Studio company:Atmel
 	ide_for_software +a:IDE
+		Aporia target-lang:Nim
 		Microsoft_Visual_Studio start:1997 company:Microsoft
 		NetBeans start:1996 company:Apache_Software_Foundation,Oracle_Corporation
 		Eclipse start:11.2001 company:Eclipse_Foundation

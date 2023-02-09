@@ -15,7 +15,7 @@ architectures +a:Architecture +hi-rel:has-species
 hardware
 	cpu +a:CPU
 		MP944 year:1970 freq:375K designer:Ray_Holt,Steve_Geller company:American_Microsystems orderer:US_Navy 
-		Intel_4004 year:1971 freq:740K-750K bus:4
+		Intel_4004 year:1971 freq:740K-750K bus:4 transistors-n:2300
 		Intel_8080 year:1974 company:Intel bus:8 
 		Intel_8086 year:1978 eq:iAPX_86/10 company:Intel bus:16 codeset:x86-16 
 		Intel_8088 year:1979 company:Intel modification-of:Intel_8086 dbus:8 
