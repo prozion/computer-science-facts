@@ -20,7 +20,7 @@ computer_science a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some humble
 					CPU
 					MCU
 					ProgrammableIntegratedCircuit
-						FPGA deabbr:"Filed-programmable Gate Array"
+						FPGA deabbr:"Field-programmable Gate Array"
 						PAL deabbr:"Programmable Array Logic"
 						PLD deabbr:"Programmable Logic Device"
 							CPLD deabbr:"Complex Programmable Logic Device"
@@ -94,6 +94,8 @@ computer_science a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some humble
 		NasdaqIndex subclass-of:rdfs/Literal
 		Organization subclass-of:Locatable,Structurable,Contactable,Nameable
 			Company
+				DesignCompany
+					CPUDesignCompany
 			GroupOfPeople
 				UserGroup
 				WorkingGroup
@@ -210,6 +212,7 @@ computer_science a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some humble
 			dstart d:"start of development" domain:Artifact 
 			rstart d:"first release" domain:Artifact 
 		status domain:Artifact range:rdfs/Literal
+		subsidiary-of domain:Organization range:Organization
 		time-interval range:TimeInterval
 		town domain:Person range:City
 		production-time-interval domain:Datable range:TimeInterval

@@ -161,13 +161,19 @@ it-companies +a:Company
 			Fujitsu city:Tokyo hq:Minato start:1935
 			NEC city:Tokyo hq:Minato start:1899
 			NTT deabbr:"Nippon Telegraph and Telephone" city:Tokyo hq:Chiyoda start:1952,1985
+			Panasonic hq:Osaka start:1918
 			Sony city:Tokyo hq:Chuo start:1946
 			Toshiba city:Tokyo hq:Minato start:1875
+		singapore
+			Chartered hq:Woodlands start:1995
 		south_korea
 			Samsung hq:Seoul start:1938
 		taiwan
+			Centaur_Technology a:CPUDesignCompany subsidiary-of:VIA_Technologies start:1995
 			Powerchip hq:Hsinchu_Science_Park start:1994
 			TSMC deabbr:"Taiwan Semiconductor Manufacturing Company" hq:Hsinchu_Science_Park start:1987
+			UMC deabbr:"United Microelectronics Corporation" hq:Hsinchu_Science_Park start:1980
+			VIA_Technologies alt:VIA hq:New_Taipei start:1987
 	south_america
 		argentina
 			Manas_Technology_Solutions hq:Buenos_Aires start:2003

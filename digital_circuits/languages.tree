@@ -5,6 +5,7 @@ formats
 	JSON
 	LEF deabbr:"Library Exchange Format" company:Tangent
 	SDC deabbr:"Synopsis Design Constraints" d:"project constaints"
+	SLF deabbr:"Synopsis Liberty Format" ext:".lib"
 	SVRF deabbr:"Standard Verification Rule Format"
 	TVF deabbr:"TCL Verification Format"
 	XML

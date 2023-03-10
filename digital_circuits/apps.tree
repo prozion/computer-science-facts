@@ -8,6 +8,7 @@ applications
 	Design_Compiler_NXT company:Synopsys
 	ETS company:Cadence f:STA
 	FastRoute project:OpenLane f:Routing d:"Performs global routing to generate a guide file for the detailed router"
+	Fault project:OpenLane
 	Formality company:Synopsys
 	Fusion_Compiler company:Synopsys
 	Genus company:Cadence f:RTL_Synthesis
@@ -21,9 +22,9 @@ applications
 	Ioplacer project:OpenLane f:Floorplanning d:"Places the macro input and output ports"
 	Joules company:Cadence f:RTL_power_analysis
 	KLayout project:OpenLane f:Tapeout,DRC d:"Streams out the final GDSII layout file from the routed DEF as a back-up"
+	Magic project:OpenLane f:Tapeout,DRC,Antenna_check d:"Streams out the final GDSII layout file from the routed DEF"
 	Modus company:Cadence f:DFT
 	Monitor_IP company:Synopsys
-	Nagic project:OpenLane f:Tapeout,DRC,Antenna_check d:"Streams out the final GDSII layout file from the routed DEF"
 	Netgen project:OpenLane f:LVS
 	OpenDP project:OpenLane f:Placement d:"Performs detailed placement to legalize the globally place components"
 	OpenROAD project:OpenLane f:design_implementation

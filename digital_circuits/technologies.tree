@@ -8,11 +8,11 @@ mosfet_scaling_process
 	600nm year:1990 company:Intel,IBM
 	350nm year:1993 company:Intel,IBM
 	250nm year:1996 company:Intel,DEC,AMD,Sony
-	180nm year:1999
-	130nm year:2001
+	180nm year:1999 company:Intel,ATI,Sony,AMD,Motorola
+	130nm year:2001 company:Intel,AMD,Motorola,IBM,VIA,МЦСТ
 	90nm year:2003 company:Toshiba,Sony,Samsung,IBM,Intel,Fujitsu,TSMC,Elpida,AMD,Infineon,Texas_Instruments,Micron_Technology
-	65nm year:2005
-	45nm year:2007
+	65nm year:2005 company:Intel,AMD,IBM,UMC,Chartered
+	45nm year:2007 company:Intel,AMD,Panasonic,IBM,Infineon,Samsung,Chartered
 	32nm year:2009
 	22nm year:2012
 	14nm year:2014
