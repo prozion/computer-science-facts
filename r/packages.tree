@@ -1,0 +1,13 @@
+packages +hi-inv-rel:part-of
+	tidyverse a:PackagesSet +a:Package
+		ggplot2 d:"data visualization"
+		dplyr d:"data manipulation"
+		tidyr d:"data tidying"
+		readr d:"data import"
+		purr d:"functional programming"
+		tibble d:"tibbles - extended dataframes"
+		stringr
+		forcats d:"factors"
+		lubridate d:"date/times"
+		
+		
