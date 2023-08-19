@@ -45,6 +45,7 @@ computer_science a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some humble
 					DBMS
 				Kernel
 				Language
+				Language
 					DataFormat
 					HardwareDescriptionLanguage
 					MarkupLanguage
@@ -104,6 +105,7 @@ computer_science a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some humble
 			ResearchCenter
 				Institute
 			University
+		PackagesSet subclass-of:Structurable
 		Person subclass-of:Locatable,Contactable,Nameable
 		Plant subclass-of:Locatable,Structurable
 		Project
@@ -195,7 +197,7 @@ computer_science a:owl/Ontology ns:https://purl.org/cskgr# dc/title:"Some humble
 			uni domain:Artifact range:University
 			institute domain:Artifact range:Institute
 		os domain:Artifact range:OperatingSystem
-		part-of domain:Structurable
+		part-of range:Structurable
 		pins domain:CPU range:IntegerInterval
 			dip
 		pkg domain:Artifact,Command range:Package
