@@ -1,0 +1,4 @@
+language +a:RacketLanguage
+	Brag d:"Parser generator (BNF to source code)"
+	Pollen author:Matthew_Butterick based-on:Scribble
+	Scribble
